@@ -24,7 +24,7 @@
     <main class="page-main">
       <div class="main-promo">
         <h1 class="visually-hidden">Приложение "Пинк"</h1>
-        <p class="main-promo__slogan">Взгляните на жизнь иначе!</p>
+        <p class="main-promo__slogan h1-tytle-style">Взгляните на жизнь иначе!</p>
         <img class="main-promo__image" src="#" width="320" height="314" alt="Телефон в руке">
         <a class="main-promo__download" href="#">Скачать приложение</a>
         <ul class="main-promo__list icon-list">
@@ -59,7 +59,7 @@
         <h2 class="visually-hidden">Отзывы</h2>
         <h3 class="reviews__author">Николай Петров</h3>
         <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        <p class="rewiews__toggles slider__toggles">
+        <p class="rewiews__toggles slider__toggles slider">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
@@ -67,16 +67,16 @@
       </section>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <h3>Стандарт 3,99 USD</h3>
+        <h3 class="filter__title">Стандарт 3,99 USD</h3>
         <table class="filter__list">
           <tr>
-            <td class="filter__value">Розовый фильтр</td>
+            <td class="filter__value filter__value--pink">Розовый фильтр</td>
           </tr>
           <tr>
-            <td class="filter__value">Смайлики</td>
+            <td class="filter__value filter__value--smiles">Смайлики</td>
           </tr>
           <tr>
-            <td class="filter__value">Комментарии</td>
+            <td class="filter__value filter__value--comments">Комментарии</td>
           </tr>
         </table>
         <p class="filter__toggles slider__toggles">
@@ -86,12 +86,14 @@
         </p>
       </section>
     </main>
-    <footer>
-      <p>Остались вопросы? Свяжитесь с нами!</p>
-      <p>Звоните:<a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-      <p>Пишите:<a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-      <p>Приезжайте в гости:<a href="#">ул. Большая Конюшенная, 19/8</a></p>
-      <img src="#" width="320" height="645" alt="Наш офис по адресу: ул. Большая Конюшенная, 19/8">
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__phone">Звоните:<a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+        <p class="contacts__mail">Пишите:<a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+        <p class="contacts__address">Приезжайте в гости:<a href="#">ул. Большая Конюшенная, 19/8</a></p>
+      </div>
+      <img class="contacts__map" src="#" width="320" height="645" alt="Наш офис по адресу: ул. Большая Конюшенная, 19/8">
     </footer>
   </body>
 </html>
