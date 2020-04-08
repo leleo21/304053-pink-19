@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,64 +14,65 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a>Главная</a></li>
-            <li class="site-list__item"><a href="#">Фотографии</a></li>
-            <li class="site-list__item"><a href="#">Конкурс</a></li>
-            <li class="site-list__item"><a href="#">Html academy</a></li>
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a>Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="photo-main">
       <section class="users-photo">
-        <h1 class="users-photo__title h1-tytle-style">Фотографии пользователей</h1>
+        <h1 class="users-photo__title h1-title-style">Фотографии пользователей</h1>
+        <img class="page-photo__background-image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение">
         <p class="users-photo__description description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="users-photo__list photo-list">
           <li class="photo-list__item photo">
-            <p class="photo__best-photo">Панорама дня</p>
-            <img class="photo__image" src="#" width="320" height="137" alt="Панорама">
+            <p class="photo__best-photo best-photo">Панорама дня</p>
+            <img class="photo__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
             <h3 class="photo__author">Анна</h3>
             <p class="photo__time">(5 минут назад)</p>
             <p class="photo__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <p class="photo__likes">Нравится: 215</p>
           </li>
           <li class="photo-list__item photo">
-            <img class="photo__image" src="#" width="280" height="180" alt="Автомобиль">
+            <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
             <h3 class="photo__author">Левон</h3>
             <p class="photo__time">(5 часов назад)</p>
             <p class="photo__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="photo__likes">Нравится: 356</p>
           </li>
           <li class="photo-list__item photo">
-            <img class="photo__image" src="#" width="280" height="180" alt="Ударная установка">
+            <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Ударная установка">
             <h3 class="photo__author">Антон</h3>
             <p class="photo__time">(12 часов назад)</p>
             <p class="photo__message">Соседи будут рады!</p>
             <p class="photo__likes">Нравится: 666</p>
           </li>
           <li class="photo-list__item photo">
-            <img class="photo__image" src="#" width="280" height="180" alt="Крыша">
+            <img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Крыша">
             <h3 class="photo__author">Борис</h3>
             <p class="photo__time">(20 часов назад)</p>
             <p class="photo__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="photo__likes">Нравится: 215</p>
           </li>
           <li class="photo-list__item photo">
-            <img class="photo__image" src="#" width="280" height="180" alt="Бахча">
+            <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Бахча">
             <h3 class="photo__author">Сергей</h3>
             <p class="photo__time">(25 часов назад)</p>
             <p class="photo__message">Самая кубанская в мире!</p>
             <p class="photo__likes">Нравится: 4</p>
           </li>
           <li class="photo-list__item photo">
-            <img class="photo__image" src="#" width="280" height="180" alt="Горы">
+            <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Горы">
             <h3 class="photo__author">Максим</h3>
             <p class="photo__time">(40 часов назад)</p>
             <p class="photo__message">Где снег-то?</p>
             <p class="photo__likes">Нравится: 150</p>
           </li>
           <li class="photo-list__item photo">
-            <img class="photo__image" src="#" width="280" height="180" alt="Самолет">
+            <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Самолет">
             <h3 class="photo__author">Надежда</h3>
             <p class="photo__time">(45 часов назад)</p>
             <p class="photo__message">Всем GM и взаимные лайки!</p>
@@ -78,13 +80,13 @@
           </li>
         </ul>
       </section>
-      <section class="user-photo">
-        <div class="user-photo__wrapper">
+      <section class="your-photo">
+        <div class="your-photo__wrapper">
           <h2 class="visually-hiddden">Ваше фото</h2>
-          <p class="user-photo__description description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <img class="user-photo__image" src="#" width="280" height="374" alt="Дорога">
-          <button class="user-photo__button" type="submit">Запостить</button>
-          <button class="user-photo__button" type ="button">Отмена</button>
+          <p class="your-photo__description description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <img class="your-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+          <p><button class="your-photo__button button" type="submit">Запостить</button></p>
+          <p><button class="your-photo__button button" type ="button">Отмена</button></p>
         </div>
       </section>
     </main>

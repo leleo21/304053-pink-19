@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,9 +15,9 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a>Главная</a></li>
-            <li class="site-list__item"><a href="#">Фотографии</a></li>
-            <li class="site-list__item"><a href="#">Конкурс</a></li>
-            <li class="site-list__item"><a href="#">Html academy</a></li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
           </ul>
         </div>
       </nav>
@@ -24,9 +25,10 @@
     <main class="page-main">
       <div class="main-promo">
         <h1 class="visually-hidden">Приложение "Пинк"</h1>
-        <p class="main-promo__slogan">Взгляните на жизнь иначе!</p>
-        <img class="main-promo__image" src="#" width="320" height="314" alt="Телефон в руке">
-        <a class="main-promo__download" href="#">Скачать приложение</a>
+        <p class="main-promo__slogan h1-title-style">Взгляните на жизнь иначе!</p>
+        <img class="page-photo__background-image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение">
+        <img class="main-promo__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Телефон в руке">
+        <p class="main-promo__download"><a class="button" href="#">Скачать приложение</a></p>
         <ul class="main-promo__list icon-list">
           <li class="icon-list__item"><a href="#">Иконка Apple</a></li>
           <li class="icon-list__item"><a href="#">Иконка Android</a></li>
@@ -52,7 +54,7 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__image" src="#" width="157" height="320" alt="Экран телефона">
+          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Экран телефона">
         </div>
       </section>
       <section class="reviews">
@@ -67,7 +69,8 @@
       </section>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <h3 class="filter__title">Стандарт 3,99 USD</h3>
+        <h3 class="filter__title">Стандарт</h3>
+        <p class="filter__price">3,99 USD</p>
         <table class="filter__list">
           <tr>
             <td class="filter__value filter__value--pink">Розовый фильтр</td>
@@ -88,12 +91,15 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__phone">Звоните:<a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-        <p class="contacts__mail">Пишите:<a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-        <p class="contacts__address">Приезжайте в гости:<a href="#">ул. Большая Конюшенная, 19/8</a></p>
+        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__phone contacts__title">Звоните:</p>
+        <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <p class="contacts__mail contacts__title">Пишите:</p>
+        <a class="contacts__link" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
+        <p class="contacts__address contacts__title">Приезжайте в гости:</p>
+        <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
       </div>
-      <img class="contacts__map" src="#" width="320" height="645" alt="Наш офис по адресу: ул. Большая Конюшенная, 19/8">
+      <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Наш офис по адресу: ул. Большая Конюшенная, 19/8">
     </footer>
   </body>
 </html>
