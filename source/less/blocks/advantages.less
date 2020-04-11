@@ -1,4 +1,10 @@
 .advantages__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  margin-right: 60px;
+  text-align: center;
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
@@ -7,6 +13,18 @@
 
 .advantages__list {
   .list-style-none();
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 99px;
+  margin: 0;
+  margin-right: 34px;
+  text-align: center;
+
+  /*временно для сетки*/
+  outline: 2px solid red;
 }
 
 .advantages__title {
@@ -21,4 +39,9 @@
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+}
+
+.advantages__image {
+  display: block;
+  margin-left: 82px;
 }

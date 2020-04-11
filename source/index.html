@@ -23,12 +23,13 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main container">
       <div class="main-promo">
         <h1 class="visually-hidden">Приложение "Пинк"</h1>
-        <p class="main-promo__slogan h1-title-style">Взгляните на жизнь иначе!</p>
-        <img class="page-photo__background-image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение">
-        <img class="main-promo__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Телефон в руке">
+        <div class="page-photo">
+          <p class="main-promo__slogan h1-title-style">Взгляните&nbsp;на&nbsp;жизнь иначе!</p>
+          <img class="main-promo__image" src="img/iphone-hand-mobile@1x.png" alt="Телефон в руке">
+        </div>
         <p class="main-promo__download"><a class="button" href="#">Скачать приложение</a></p>
         <ul class="main-promo__list icon-list">
           <li class="icon-list__item"><a href="#">Иконка Apple</a></li>
@@ -40,7 +41,8 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="advantages__text">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <p class="advantages__text">Устали от серости мегаполиса?</p>
+          <p class="advantages__text">Нам есть, что вам предложить!</p>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--mood">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -70,9 +72,14 @@
       </section>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <h3 class="filter__title">Стандарт</h3>
-        <p class="filter__price">3,99 USD</p>
         <table class="filter__list">
+          <tr>
+            <td class="filter__table">
+              <p class="filter__title">Стандарт</p>
+              <span class="filter__price">3,99 USD</span>
+              <span class="filter__hit">Хит</span>
+            </td>
+          </tr>
           <tr>
             <td class="filter__value filter__value--pink">Розовый фильтр</td>
           </tr>
@@ -90,7 +97,7 @@
         </p>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__contacts contacts">
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
         <p class="contacts__phone contacts__title">Звоните:</p>
