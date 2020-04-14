@@ -11,8 +11,7 @@
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="#" width="75" height="22" alt="Логотип Пинк">
         </a>
-        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <button class="page-header__toggle" type="button">Закрыть меню</button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list nav-list">
@@ -26,7 +25,7 @@
     <main class="page-main container">
       <div class="main-promo">
         <h1 class="visually-hidden">Приложение "Пинк"</h1>
-        <div class="page-photo">
+        <div class="main-promo__page-photo">
           <p class="main-promo__slogan h1-title-style">Взгляните&nbsp;на&nbsp;жизнь иначе!</p>
           <img class="main-promo__image" src="img/iphone-hand-mobile@1x.png" alt="Телефон в руке">
         </div>
@@ -72,22 +71,44 @@
       </section>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <table class="filter__list">
+        <table class="filter__list container__content">
           <tr>
+            <td class="filter__table visually-hidden">
+              <p class="filter__title">Пусто</p>
+            </td>
+            <td class="filter__table visually-hidden">
+              <p class="filter__title">База</p>
+              <span class="filter__price">1,99 USD</span>
+              <span class="filter__hit">Хит</span>
+            </td>
             <td class="filter__table">
               <p class="filter__title">Стандарт</p>
               <span class="filter__price">3,99 USD</span>
               <span class="filter__hit">Хит</span>
             </td>
+            <td class="filter__table visually-hidden">
+              <p class="filter__title">Анлим</p>
+              <span class="filter__price">3,99 USD</span>
+              <span class="filter__hit">Хит</span>
+            </td>
           </tr>
           <tr>
-            <td class="filter__value filter__value--pink">Розовый фильтр</td>
+            <td class="filter__value filter__value--pink visually-hidden">Розовый фильтр</td>
+            <td class="filter__value filter__value--pink visually-hidden">Розовый фильтр чекбокс</td>
+            <td class="filter__value filter__value--pink">Розовый фильтр чекбокс</td>
+            <td class="filter__value filter__value--pink visually-hidden">Розовый фильтр чекбокс</td>
           </tr>
           <tr>
-            <td class="filter__value filter__value--smiles">Смайлики</td>
+            <td class="filter__value filter__value--smiles visually-hidden">Смайлики</td>
+            <td class="filter__value filter__value--smiles visually-hidden">Смайлики чекбокс</td>
+            <td class="filter__value filter__value--smiles">Смайлики чекбокс</td>
+            <td class="filter__value filter__value--smiles visually-hidden">Смайлики чекбокс</td>
           </tr>
           <tr>
-            <td class="filter__value filter__value--comments">Комментарии</td>
+            <td class="filter__value filter__value--comments visually-hidden">Комментарии</td>
+            <td class="filter__value filter__value--comments visually-hidden">Комментарии чекбокс</td>
+            <td class="filter__value filter__value--comments">Комментарии чекбокс</td>
+            <td class="filter__value filter__value--comments visually-hidden">Комментарии чекбокс</td>
           </tr>
         </table>
         <p class="filter__toggles slider__toggles slider">
@@ -98,7 +119,7 @@
       </section>
     </main>
     <footer class="page-footer container">
-      <div class="page-footer__contacts contacts">
+      <div class="page-footer__contacts contacts container__content">
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
         <p class="contacts__phone contacts__title">Звоните:</p>
         <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
