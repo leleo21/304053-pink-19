@@ -1,4 +1,4 @@
-.page-header__wrapper {
+.page-header__logo-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -13,3 +13,28 @@
   /*временно для сетки*/
   outline: 2px solid red;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 40px;
+  }
+
+  .page-header__logo-wrapper {
+    min-height: 109px;
+  }
+}
+
+/*@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    /*временно для сетки
+    outline: 2px solid white;
+  }
+
+  .page-header__logo {
+    height: 40px;
+  }
+}*/

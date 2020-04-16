@@ -1,9 +1,14 @@
 .main-promo {
   background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 314px;
 }
 
 .main-promo__page-photo {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  min-height: 396px;
 }
 
 .main-promo__slogan {
@@ -55,4 +60,22 @@
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-promo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    min-height: 619px;
+  }
+
+  .main-promo__wrapper {
+    width: 300px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .main-promo__page-photo {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    min-height: 545px;
+  }
 }
