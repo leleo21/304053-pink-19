@@ -1,7 +1,34 @@
 .photo-list__item {
   display: block;
+  min-height: 325px;
   margin: 0;
   padding: 0;
   text-align: left;
   background-color: #f2f2f2;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+.photo-list__wrapper {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  /*временно для сетки*/
+  outline: 2px solid pink;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-list__item {
+    width: 300px;
+    min-height: 455px;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*временно для сетки*/
+    outline: 2px solid pink;
+  }
 }

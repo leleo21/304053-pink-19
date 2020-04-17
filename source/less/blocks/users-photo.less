@@ -3,8 +3,6 @@
   display: block;
   margin: 0;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   /*временно для сетки*/
   outline: 2px solid red;
 }
@@ -21,10 +19,46 @@
   display: block;
   text-align: center;
   margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 57px;
+  padding-bottom: 57px;
   background-color: #ffffff;
+  min-height: 184px;
+  /*временно для сетки*/
+  outline: 2px solid red;
 }
 
 .users-photo__title {
   display: block;
   text-align: center;
+  padding-left: 76px;
+  padding-right: 76px;
+  padding-top: 40px;
+  padding-bottom: 87px;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__title {
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-top: 81px;
+    padding-bottom: 150px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .users-photo__description {
+    display: block;
+    min-height: 228px;
+    text-align: center;
+    margin: 0;
+    padding-left: 111px;
+    padding-right: 111px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
 }
