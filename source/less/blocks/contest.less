@@ -3,19 +3,32 @@
 }
 
 .contest__page-photo {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-}
-
-.contest__description {
-  display: block;
-  text-align: center;
   margin: 0;
-  background-color: #ffffff;
+  padding: 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
 .contest__title {
   display: block;
   text-align: center;
+  min-height: 170px;
+  margin: 0;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 36px;
+  padding-bottom: 57px;
+}
+
+.contest__description {
+  display: block;
+  min-height: 178px;
+  text-align: center;
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 54px;
+  padding-bottom: 79px;
+  background-color: #ffffff;
 }
 
 .contest__form {
@@ -26,4 +39,29 @@
   margin-right: 20px;
   /*временно для сетки*/
   outline: 2px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .contest__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: normal;
+    min-height: 330px;
+    margin: 0;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 83px;
+    padding-bottom: 79px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .contest__description {
+    display: block;
+    min-height: 253px;
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-top: 100px;
+    padding-bottom: 76px;
+  }
 }

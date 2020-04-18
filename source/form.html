@@ -8,41 +8,43 @@
   <body>
     <header class="page-header container">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="#" width="75" height="22" alt="Логотип Пинк">
-        </a>
-        <button class="page-header__toggle" type="button">Закрыть меню</button>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="#" width="75" height="22" alt="Логотип Пинк">
+          </a>
+          <button class="page-header__toggle" type="button">Закрыть меню</button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item"><a href="index.html">Главная</a></li>
+            <li class="nav-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="nav-list__item"><a>Конкурс</a></li>
+            <li class="nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item"><a href="index.html">Главная</a></li>
-          <li class="nav-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="nav-list__item"><a>Конкурс</a></li>
-          <li class="nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="form-main container">
       <section class="form-contest">
         <div class="contest">
           <div class="contest__page-photo">
-            <h1 class="contest__title h1-title-style">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            <h1 class="contest__title h1-title-style">Конкурс на самое безбашенное путешествие&nbsp;с&nbsp;Пинк</h1>
             <p class="contest__description description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
           </div>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="contest__form">
-              <div class="form__personal-data">
-                <div class="data">
-                  <label class="data__label" for="user_second_name">Фамилия:</label>
-                  <input class="data__input" id="user_second_name" type="text" name="personal_data" placeholder="Укажите фамилию *">
+              <div class="form__personal-data personal">
+                <div class="data personal__wrapper">
+                  <label class="data__label personal__label" for="user_second_name">Фамилия:</label>
+                  <input class="data__input personal__input" id="user_second_name" type="text" name="personal_data" placeholder="Укажите фамилию *">
                 </div>
-                <div class="data">
-                  <label class="data__label" for="user_name">Имя:</label>
-                  <input class="data__input" id="user_name" type="text" name="personal_data" placeholder="Введите ваше имя *">
+                <div class="data personal__wrapper">
+                  <label class="data__label personal__label" for="user_name">Имя:</label>
+                  <input class="data__input personal__input" id="user_name" type="text" name="personal_data" placeholder="Введите ваше имя *">
                 </div>
-                <div class="data">
-                  <label class="data__label" for="user_middle_name">Отчество:</label>
-                  <input class="data__input" id="user_middle_name" type="text" name="personal_data" placeholder="Ну и отчество тоже">
+                <div class="data personal__wrapper">
+                  <label class="data__label personal__label" for="user_middle_name">Отчество:</label>
+                  <input class="data__input personal__input" id="user_middle_name" type="text" name="personal_data" placeholder="Ну и отчество тоже">
                 </div>
               </div>
               <div class="form__user-achievments">
@@ -87,13 +89,16 @@
                 </ul>
               </div>
               <div class="form__user-contacts">
-                <div class="data">
-                  <label class="data__label" for="user_phone">Номер телефона</label>
-                  <input class="data__input" id="user_phone" type="text" name="user_contacts" placeholder="Номер, пожалуйста">
-                </div>
-                <div class="data">
-                  <label class="data__label" for="user_mail">Адрес почты</label>
-                  <input class="data__input" id="user_mail" type="text" name="user_contacts" placeholder="Введите почту *">
+                <p class="form__contacts h2-title-style">Контактная информация</p>
+                <div class="form__contacts-wrapper">
+                  <div class="data form-contacts">
+                    <label class="data__label form-contacts__label" for="user_phone">Номер телефона</label>
+                    <input class="data__input form-contacts__input" id="user_phone" type="text" name="user_contacts" placeholder="Номер, пожалуйста">
+                  </div>
+                  <div class="data form-contacts">
+                    <label class="data__label form-contacts__label" for="user_mail">Адрес почты</label>
+                    <input class="data__input form-contacts__input" id="user_mail" type="text" name="user_contacts" placeholder="Введите почту *">
+                  </div>
                 </div>
               </div>
               <div class="form__user-app user-application">
@@ -120,17 +125,19 @@
                 </ul>
               </div>
               <div class="form__user-emotions emotions">
-                <p class="emotions__wrapper">
+                <div class="emotions__wrapper">
                   <label class="emotions__description data__label" for="emotions_text">Опишите свои эмоции</label>
-                </p>
+                </div>
+                <div class="emotions__text-wrapper">
                   <textarea class="emotions__message data" name="emotions_text" id="emotions_text" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </div>
               </div>
               <div class="form__submit-form submit-form">
                 <button class="submit" type="submit">Отправить форму</button>
+                <p class="data__label">*<span class="data"> — обязательные поля</span></p>
               </div>
             </div>
           </form>
-          <p class="data__label">*<span class="data"> — обязательные поля</span></p>
         </div>
       </section>
     </main>
