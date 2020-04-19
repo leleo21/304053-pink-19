@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -27,24 +28,28 @@
     <main class="page-main container">
       <div class="main-promo">
         <div class="main-promo__page-photo">
-          <div class="main-promo__wrapper">
-            <h1 class="visually-hidden">Приложение "Пинк"</h1>
-            <p class="main-promo__slogan h1-title-style">Взгляните&nbsp;на&nbsp;жизнь иначе!</p>
-            <p class="main-promo__download"><a class="button" href="#">Скачать приложение</a></p>
-            <ul class="main-promo__list icon-list">
-              <li class="icon-list__item"><a href="#">Иконка Apple</a></li>
-              <li class="icon-list__item"><a href="#">Иконка Android</a></li>
-              <li class="icon-list__item"><a href="#">Иконка Windows</a></li>
-            </ul>
-            <p class="main-promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="container__content">
+            <div class="main-promo__wrapper">
+              <h1 class="visually-hidden">Приложение "Пинк"</h1>
+              <p class="main-promo__slogan h1-title-style">Взгляните&nbsp;на&nbsp;жизнь иначе!</p>
+              <p class="main-promo__download"><a class="button" href="#">Скачать приложение</a></p>
+              <ul class="main-promo__list icon-list">
+                <li class="icon-list__item"><a href="#">Иконка Apple</a></li>
+                <li class="icon-list__item"><a href="#">Иконка Android</a></li>
+                <li class="icon-list__item"><a href="#">Иконка Windows</a></li>
+              </ul>
+              <p class="main-promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              </div>
             </div>
         </div>
       </div>
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="advantages__wrapper container__content">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="advantages__text">Устали от серости мегаполиса?</p>
-          <p class="advantages__text">Нам есть, что вам предложить!</p>
+          <div class="advantages__text-wrapper">
+            <p class="advantages__text">Устали&nbsp;от&nbsp;серости&nbsp;мегаполиса?</p>
+            <p class="advantages__text">Нам есть, что вам предложить!</p>
+          </div>
           <div class="advantages__list-wrapper">
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--mood">
@@ -63,78 +68,95 @@
           </div>
         </div>
       </section>
+      <section class="research">
+        <div class="container__content">
+          <div class="research__wrapper">
+            <h3 class="research__title">Эффект на 24 часа!</h3>
+            <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="research__more-link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <h3 class="reviews__author">Николай Петров</h3>
-        <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        <p class="rewiews__toggles slider__toggles slider">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="container__content">
+          <div class="reviews__wrapper">
+            <h2 class="visually-hidden">Отзывы</h2>
+            <div class="reviews__message-wrapper">
+              <h3 class="reviews__author">Николай Петров<span class="reviews__about-author">25&nbsp;лет,&nbsp;водитель&nbsp;трамвая</span></h3>
+              <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой&nbsp;в комментариях&nbsp;к&nbsp;выложенной&nbsp;фотографии!»</p>
+            </div>
+            <p class="rewiews__toggles slider__toggles slider">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
+        </div>
       </section>
       <section class="filter">
-        <h2 class="visually-hidden">Фильтр</h2>
-        <table class="filter__list container__content">
-          <tr>
-            <td class="filter__table">
-              <p class="filter__title">Пусто</p>
-            </td>
-            <td class="filter__table">
-              <p class="filter__title">База</p>
-              <span class="filter__price">1,99 USD</span>
-              <span class="filter__hit">Хит</span>
-            </td>
-            <td class="filter__table">
-              <p class="filter__title">Стандарт</p>
-              <span class="filter__price">3,99 USD</span>
-              <span class="filter__hit">Хит</span>
-            </td>
-            <td class="filter__table">
-              <p class="filter__title">Анлим</p>
-              <span class="filter__price">3,99 USD</span>
-              <span class="filter__hit">Хит</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="filter__value filter__value--pink">Розовый фильтр</td>
-            <td class="filter__value filter__value--pink">Розовый фильтр чекбокс</td>
-            <td class="filter__value filter__value--pink">Розовый фильтр чекбокс</td>
-            <td class="filter__value filter__value--pink">Розовый фильтр чекбокс</td>
-          </tr>
-          <tr>
-            <td class="filter__value filter__value--smiles">Смайлики</td>
-            <td class="filter__value filter__value--smiles">Смайлики чекбокс</td>
-            <td class="filter__value filter__value--smiles">Смайлики чекбокс</td>
-            <td class="filter__value filter__value--smiles">Смайлики чекбокс</td>
-          </tr>
-          <tr>
-            <td class="filter__value filter__value--comments">Комментарии</td>
-            <td class="filter__value filter__value--comments">Комментарии чекбокс</td>
-            <td class="filter__value filter__value--comments">Комментарии чекбокс</td>
-            <td class="filter__value filter__value--comments">Комментарии чекбокс</td>
-          </tr>
-        </table>
-        <p class="filter__toggles slider__toggles slider">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="filter__wrapper">
+          <h2 class="visually-hidden">Фильтр</h2>
+          <table class="filter__list container__content">
+            <tr>
+              <td class="filter__table">
+                <p class="filter__title">Пусто</p>
+              </td>
+              <td class="filter__table">
+                <p class="filter__title">База</p>
+                <span class="filter__price">1,99 USD</span>
+                <span class="filter__hit">Хит</span>
+              </td>
+              <td class="filter__table">
+                <p class="filter__title">Стандарт</p>
+                <span class="filter__price">3,99 USD</span>
+                <span class="filter__hit">Хит</span>
+              </td>
+              <td class="filter__table">
+                <p class="filter__title">Анлим</p>
+                <span class="filter__price">3,99 USD</span>
+                <span class="filter__hit">Хит</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="filter__value filter__value--pink">Розовый фильтр</td>
+              <td class="filter__value filter__value--pink">Розовый фильтр чекбокс</td>
+              <td class="filter__value filter__value--pink">Розовый фильтр чекбокс</td>
+              <td class="filter__value filter__value--pink">Розовый фильтр чекбокс</td>
+            </tr>
+            <tr>
+              <td class="filter__value filter__value--smiles">Смайлики</td>
+              <td class="filter__value filter__value--smiles">Смайлики чекбокс</td>
+              <td class="filter__value filter__value--smiles">Смайлики чекбокс</td>
+              <td class="filter__value filter__value--smiles">Смайлики чекбокс</td>
+            </tr>
+            <tr>
+              <td class="filter__value filter__value--comments">Комментарии</td>
+              <td class="filter__value filter__value--comments">Комментарии чекбокс</td>
+              <td class="filter__value filter__value--comments">Комментарии чекбокс</td>
+              <td class="filter__value filter__value--comments">Комментарии чекбокс</td>
+            </tr>
+          </table>
+          <p class="filter__toggles slider">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
       <section class="contacts container">
-        <div class="contacts__wrapper">
-          <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__wrapper container__content">
+          <p class="contacts__text">Остались&nbsp;вопросы? Свяжитесь с нами!</p>
           <div class="contacts__info-wrapper">
             <ul class="contacts__list">
-              <li>
+              <li class="contacts__item">
                 <p class="contacts__phone contacts__title">Звоните:</p>
                 <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
               </li>
-              <li>
+              <li class="contacts__item">
                 <p class="contacts__mail contacts__title">Пишите:</p>
                 <a class="contacts__link" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
               </li>
-              <li>
+              <li class="contacts__item">
                 <p class="contacts__address contacts__title">Приезжайте в гости:</p>
                 <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
               </li>

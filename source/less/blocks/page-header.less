@@ -24,17 +24,27 @@
   }
 }
 
-/*@media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 960px;
     margin: 0 auto;
-    /*временно для сетки
+    /*временно для сетки*/
     outline: 2px solid white;
   }
 
   .page-header__logo {
     height: 40px;
   }
-}*/
+
+  .page-header__logo-wrapper {
+    min-height: 109px;
+    /*временно для сетки*/
+    outline: 2px solid greenyellow;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

@@ -38,3 +38,40 @@
     outline: 2px solid red;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    display: block;
+    min-height: 271px;
+    /*временно для сетки*/
+    outline: 2px solid yellowgreen;
+  }
+
+  .contacts__text {
+    display: block;
+    margin: 0 auto;
+    width: 456px;
+    min-height: 98px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: normal;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
+  .contacts__list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    display: block;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 1;
+  }
+}
