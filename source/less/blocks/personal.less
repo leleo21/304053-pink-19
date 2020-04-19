@@ -1,3 +1,39 @@
+.personal__data-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 325px;
+  /*временно для сетки*/
+  outline: 2px solid violet;
+}
+
+.personal__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90px;
+  /*временно для сетки*/
+  outline: 2px solid blue;
+}
+
+.personal__label {
+  display: block;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 22px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+.personal__input {
+  display: block;
+  width: 100%;
+  min-height: 59px;
+  padding-left: 20px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
 @media (min-width: @tablet-width) {
   .personal {
     display: flex;
@@ -5,6 +41,49 @@
     min-height: 273px;
     /*временно для сетки*/
     outline: 2px solid yellowgreen;
+  }
+
+  .personal__wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .personal__input {
+    display: block;
+    width: 100%;
+    min-height: 59px;
+    padding-left: 20px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .personal__label {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 22px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .personal {
+    display: flex;
+    justify-content: space-between;
+    min-height: 273px;
+    /*временно для сетки*/
+    outline: 2px solid yellowgreen;
+  }
+
+  .personal__data-wrapper {
+    display: block;
+    width: 436px;
+    min-height: 302px;
+    /*временно для сетки*/
+    outline: 2px solid violet;
   }
 
   .personal__wrapper {

@@ -31,16 +31,6 @@
   background-color: #ffffff;
 }
 
-.contest__form {
-  display: block;
-  margin: 0;
-  padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  /*временно для сетки*/
-  outline: 2px solid red;
-}
-
 @media (min-width: @tablet-width) {
   .contest__title {
     font-size: 50px;
@@ -59,6 +49,35 @@
   .contest__description {
     display: block;
     min-height: 253px;
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-top: 100px;
+    padding-bottom: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: normal;
+    min-height: 330px;
+    margin: 0;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 83px;
+    padding-bottom: 79px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .contest__description {
+    display: block;
+    /*width: 752px;*/
+    min-height: 49px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
     padding-left: 86px;
     padding-right: 86px;
     padding-top: 100px;

@@ -10,9 +10,11 @@
 }
 
 .photo-list__wrapper {
-  display: block;
-  margin-left: 20px;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  /*margin: 0 auto;*/
   /*временно для сетки*/
   outline: 2px solid pink;
 }
@@ -26,8 +28,31 @@
 
   .photo-list__wrapper {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    /*временно для сетки*/
+    outline: 2px solid pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__image {
+    min-height: 400px;
+  }
+
+  .photo-list__item {
+    width: 300px;
+    min-height: 555px;
+    margin-bottom: 20px;
+  }
+
+  .photo-list__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
     /*временно для сетки*/
     outline: 2px solid pink;
   }
