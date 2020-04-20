@@ -1,8 +1,11 @@
-.filter {
+.filter__wrapper {
   display: block;
-  text-align: center;
-  min-height: 506px;
+  /*text-align: center;*/
+  width: 660px;
+  min-height: 400px;
   background-color: #f2f2f2;
+  /*временно для сетки*/
+  outline: 2px solid yellowgreen;
 }
 
 .filter__title {
@@ -58,4 +61,27 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .filter__wrapper {
+    display: block;
+    /*text-align: center;*/
+    width: 1200px;
+    min-height: 534px;
+    background-color: #f2f2f2;
+    /*временно для сетки*/
+    outline: 2px solid yellowgreen;
+  }
+
+  .filter__list {
+    display: block;
+    text-align: center;
+    width: 940px;
+    padding-top: 159px;
+  }
+
+  .filter__toggles {
+    display: none;
+  }
 }

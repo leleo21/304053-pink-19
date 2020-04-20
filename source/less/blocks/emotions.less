@@ -6,3 +6,51 @@
   width: 276px;
   height: 197px;
 }
+
+@media (min-width: @tablet-width) {
+  .emotions__message {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /*padding-left: 20px;
+    padding-right: 26px;*/
+    padding-top: 22px;
+    width: 496px;
+    height: 189px;
+    /*временно для сетки*/
+    outline: 2px solid black;
+  }
+
+  .emotions__text-wrapper {
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 47px;
+    padding-bottom: 53px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions__message {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 22px;
+    width: 816px;
+    height: 124px;
+    /*временно для сетки*/
+    outline: 2px solid black;
+  }
+
+  .emotions__text-wrapper {
+    display: block;
+    margin: 0;
+    /*padding-bottom: 45px;*/
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+}

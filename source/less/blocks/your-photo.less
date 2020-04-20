@@ -1,16 +1,35 @@
-.your-photo {
+.your-photo__wrapper {
   background-color: #f2f2f2;
+}
+
+.your-photo__wrapper-container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  /*временно для сетки*/
+  outline: 2px solid green;
+}
+
+.your-photo__button-wrapper {
+  display: block;
+  padding: 40px 0;
+  /*временно для сетки*/
+  outline: 2px solid red;
 }
 
 .your-photo__description {
   display: block;
   text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 32px;
+  padding-bottom: 52px;
 }
 
 .your-photo__image {
   display: block;
   margin: 0;
-  margin-left: 18px;
   padding: 0;
 }
 
@@ -18,8 +37,85 @@
   display: block;
   width: 281px;
   height: 55px;
-  margin-left: 20px;
   border: 3px solid #d22856;
   border-radius: 50px;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .your-photo__description {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 54px;
+    padding-bottom: 72px;
+  }
+
+  .your-photo__wrapper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 57px;
+    padding-bottom: 54px;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
+  .your-photo__button-wrapper {
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .your-photo__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-left: 261px;
+    padding-right: 261px;
+    padding-top: 68px;
+    padding-bottom: 69px;
+  }
+
+  .your-photo__wrapper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 57px;
+    padding-bottom: 54px;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
+  .your-photo__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .your-photo__image {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 400px;
+  }
+
+  .your-photo__button {
+    width: 183px;
+    height: 55px;
+  }
 }

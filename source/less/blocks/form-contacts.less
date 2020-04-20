@@ -1,0 +1,91 @@
+.form-contacts__wrapper {
+  display: block;
+  width: 280px;
+  min-height: 203px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+.form-contacts {
+  display: block;
+  width: 280px;
+  min-height: 90px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+.form-contacts__label {
+  display: block;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 22px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+.form-contacts__input {
+  display: block;
+  width: 100%;
+  min-height: 59px;
+  padding-left: 20px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .form-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid greenyellow;
+  }
+
+  .form-contacts__input {
+    display: block;
+    width: 496px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    min-height: 59px;
+    /*временно для сетки*/
+    outline: 2px solid greenyellow;
+  }
+
+  .form-contacts__wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    /*padding-left: 60px;
+    padding-right: 60px;*/
+    width: 496px;
+    min-height: 226px;
+    /*временно для сетки*/
+    outline: 2px solid violet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0;
+    padding: 0;*/
+    width: 820px;
+    min-height: 96px;
+    /*временно для сетки*/
+    outline: 2px solid violet;
+  }
+
+  .form-contacts__input {
+    display: block;
+    width: 371px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    min-height: 59px;
+    /*временно для сетки*/
+    outline: 2px solid greenyellow;
+  }
+}
