@@ -1,10 +1,22 @@
 .contacts__wrapper {
   display: block;
   text-align: center;
+  padding-top: 40px;
 }
 
 .contacts__list {
   .list-style-none();
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  display: block;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+  /*временно для сетки*/
+  outline: 2px solid blue;
 }
 
 .contacts__text {
@@ -16,6 +28,10 @@
 }
 
 .contacts__title {
+  display: block;
+  width: 280px;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: normal;
   font-weight: 700;
@@ -23,10 +39,21 @@
 }
 
 .contacts__link {
+  display: block;
+  width: 280px;
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
   color: #d22856;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 645px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -34,8 +61,71 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 540px;
+    min-height: 185px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 0;
     /*временно для сетки*/
     outline: 2px solid red;
+  }
+
+  .contacts__item {
+    display: block;
+    min-height: 50px;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
+  .contacts__item--address {
+    display: block;
+    width: 215px;
+    min-height: 84px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 45px;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
+  .contacts__title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+    color: #283645;
+  }
+
+  .contacts__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 300;
+    color: #d22856;
+  }
+
+  .contacts__text {
+    display: block;
+    width: 368px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 35px;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 300;
+    color: #283645;
+  }
+
+  .contacts__map {
+    width: 660px;
+    height: 375px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
   }
 }
 

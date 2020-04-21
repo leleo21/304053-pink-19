@@ -1,12 +1,14 @@
 .main-promo {
   background-color: #1d2631;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  /*background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;*/
   min-height: 314px;
 }
 
 .main-promo__wrapper {
   min-height: 667px;
+  margin: 0;
+  padding: 0;
   /*временно для сетки*/
   outline: 2px solid green;
 }
@@ -17,15 +19,13 @@
   min-height: 396px;
 }*/
 
-@media (max-width: @tablet-width) {
-  .main-promo__wrapper-background {
-    display: block;
-    margin: 0;
-    padding: 0;
-    min-height: 400px;
-    /*временно для сетки*/
-    outline: 2px solid red;
-  }
+.main-promo__wrapper-background {
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-height: 400px;
+  /*временно для сетки*/
+  outline: 2px solid purple;
 }
 
 .main-promo__slogan {
@@ -53,6 +53,9 @@
 }
 
 .main-promo__download {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
   display: block;
   width: 276px;
   height: 55px;
@@ -95,12 +98,71 @@
 @media (min-width: @tablet-width) {
   .main-promo {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    min-height: 619px;
   }
 
   .main-promo__wrapper {
     width: 300px;
+    min-height: 619px;
     /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .main-promo__wrapper-background {
+    min-height: 230px;
+  }
+
+  .main-promo__slogan {
+    display: block;
+    width: 190px;
+    min-height: 128px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 90px;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 300;
+    /*временно для сетки*/
+    outline: 2px solid white;
+  }
+
+  .main-promo__download-wrapper {
+    width: 300px;
+    margin: 0;
+    //margin-top: 28px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .main-promo__download {
+    width: 300px;
+    padding-top: 15px;
+    padding-left: 44px;
+  }
+
+  .main-promo__list {
+    .list-style-none();
+    display: flex;
+    min-height: 60px;
+    margin-top: 42px;
+    /*временно для сетки*/
+    height: 47px;
+    outline: 2px solid red;
+  }
+
+  .main-promo__description {
+    display: block;
+    //width: 230px;
+    //margin-top: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 38px;
+    padding-left: 4px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    /*временно для сетки*/
+    height: 47px;
     outline: 2px solid red;
   }
 
