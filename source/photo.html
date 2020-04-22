@@ -28,85 +28,93 @@
     <main class="photo-main container">
       <section class="users-photo">
         <div class="users-photo__page-photo">
-          <h1 class="users-photo__title h1-title-style">Фотографии пользователей</h1>
+          <div class="users-photo__title-wrapper">
+            <h1 class="users-photo__title h1-title-style">Фотографии пользователей</h1>
+          </div>
+          <div class="users-photo__description-wrapper">
             <p class="users-photo__description description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          </div>
         </div>
-        <ul class="users-photo__list photo-list">
-          <li class="photo-list__item-best photo">
+        <div class="users-photo__list-wrapper photo-list">
+          <div class="photo-list__item-best photo">
             <p class="photo__best-photo best-photo">Панорама дня</p>
             <img class="photo__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
-            <div class="photo__text container__content">
-              <h3 class="photo__author">Анна</h3>
+            <div class="photo__best-text photo__best-wrapper container__content">
+              <!--<h3 class="photo__author">Анна</h3>
               <p class="photo__time">(5 минут назад)</p>
               <p class="photo__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="photo__likes">Нравится: 215</p>
-            </div>
-          </li>
-          <div class="container__content">
-            <div class="photo-list__wrapper">
-              <li class="photo-list__item photo">
-                <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
-                <div class="photo__text">
-                  <h3 class="photo__author">Левон</h3>
-                  <p class="photo__time">(5 часов назад)</p>
-                  <p class="photo__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                  <p class="photo__likes">Нравится: 356</p>
-                </div>
-              </li>
-              <li class="photo-list__item photo">
-                <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Ударная установка">
-                <div class="photo__text">
-                  <h3 class="photo__author">Антон</h3>
-                  <p class="photo__time">(12 часов назад)</p>
-                  <p class="photo__message">Соседи будут рады!</p>
-                  <p class="photo__likes">Нравится: 666</p>
-                </div>
-              </li>
-              <li class="photo-list__item photo">
-                <img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Крыша">
-                <div class="photo__text">
-                  <h3 class="photo__author">Борис</h3>
-                  <p class="photo__time">(20 часов назад)</p>
-                  <p class="photo__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                  <p class="photo__likes">Нравится: 215</p>
-                </div>
-              </li>
-              <li class="photo-list__item photo">
-                <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Бахча">
-                <div class="photo__text">
-                  <h3 class="photo__author">Сергей</h3>
-                  <p class="photo__time">(25 часов назад)</p>
-                  <p class="photo__message">Самая кубанская в мире!</p>
-                  <p class="photo__likes">Нравится: 4</p>
-                </div>
-              </li>
-              <li class="photo-list__item photo">
-                <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Горы">
-                <div class="photo__text">
-                  <h3 class="photo__author">Максим</h3>
-                  <p class="photo__time">(40 часов назад)</p>
-                  <p class="photo__message">Где снег-то?</p>
-                  <p class="photo__likes">Нравится: 150</p>
-                </div>
-              </li>
-              <li class="photo-list__item photo">
-                <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Самолет">
-                <div class="photo__text">
-                  <h3 class="photo__author">Надежда</h3>
-                  <p class="photo__time">(45 часов назад)</p>
-                  <p class="photo__message">Всем GM и взаимные лайки!</p>
-                  <p class="photo__likes">Нравится: 2560</p>
-                </div>
-              </li>
+              <p class="photo__likes">Нравится: 215</p>-->
             </div>
           </div>
-        </ul>
+          <div class="container__content">
+            <div class="photo-list__wrapper">
+              <ul class="users-photo__list photo-list">
+                <li class="photo-list__item photo">
+                  <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
+                  <div class="photo__text">
+                    <h3 class="photo__author">Левон</h3>
+                    <p class="photo__time">(5 часов назад)</p>
+                    <p class="photo__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                    <p class="photo__likes">Нравится: 356</p>
+                  </div>
+                </li>
+                <li class="photo-list__item photo">
+                  <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Ударная установка">
+                  <div class="photo__text">
+                    <h3 class="photo__author">Антон</h3>
+                    <p class="photo__time">(12 часов назад)</p>
+                    <p class="photo__message">Соседи будут рады!</p>
+                    <p class="photo__likes">Нравится: 666</p>
+                  </div>
+                </li>
+                <li class="photo-list__item photo">
+                  <img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Крыша">
+                  <div class="photo__text">
+                    <h3 class="photo__author">Борис</h3>
+                    <p class="photo__time">(20 часов назад)</p>
+                    <p class="photo__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                    <p class="photo__likes">Нравится: 215</p>
+                  </div>
+                </li>
+                <li class="photo-list__item photo">
+                  <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Бахча">
+                  <div class="photo__text">
+                    <h3 class="photo__author">Сергей</h3>
+                    <p class="photo__time">(25 часов назад)</p>
+                    <p class="photo__message">Самая кубанская в мире!</p>
+                    <p class="photo__likes">Нравится: 4</p>
+                  </div>
+                </li>
+                <li class="photo-list__item photo">
+                  <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Горы">
+                  <div class="photo__text">
+                    <h3 class="photo__author">Максим</h3>
+                    <p class="photo__time">(40 часов назад)</p>
+                    <p class="photo__message">Где снег-то?</p>
+                    <p class="photo__likes">Нравится: 150</p>
+                  </div>
+                </li>
+                <li class="photo-list__item photo">
+                  <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Самолет">
+                  <div class="photo__text">
+                    <h3 class="photo__author">Надежда</h3>
+                    <p class="photo__time">(45 часов назад)</p>
+                    <p class="photo__message">Всем GM и взаимные лайки!</p>
+                    <p class="photo__likes">Нравится: 2560</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="your-photo">
-        <div class="container__content">
-          <h2 class="visually-hidden">Ваше фото</h2>
+        <h2 class="visually-hidden">Ваше фото</h2>
+        <div class="your-photo__description-wrapper">
           <p class="your-photo__description description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <div class="your-photo__wrapper">
+        </div>
+        <div class="your-photo__wrapper">
+          <div class="container__content">
             <div class="your-photo__wrapper-container">
               <img class="your-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
               <div class="your-photo__button-wrapper">
@@ -119,7 +127,7 @@
       </section>
     </main>
     <footer class="page-footer container">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container__content">
         <img class="page-footer__logo" src="#" width="320" height="284" alt="Логотип Пинк">
         <ul class="page-footer__list social">
           <li class="social__item"><a class="social__link social__link--twitter" href="#">Твиттер</a></li>

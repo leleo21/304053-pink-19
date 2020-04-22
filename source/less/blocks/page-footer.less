@@ -1,4 +1,4 @@
-.page-footer {
+.page-footer-index {
   display: none;
 }
 
@@ -7,8 +7,17 @@
   display: flex;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 285px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
 @media (min-width: @tablet-width) {
-  .page-footer {
+  .page-footer-index {
     display: block;
     background-color: #ffffff;
   }
@@ -23,7 +32,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
+  .page-footer-index {
     display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-height: 224px;
+    /*временно для сетки*/
+    outline: 2px solid red;
   }
 }

@@ -1,20 +1,48 @@
 .photo__image {
   min-height: 180px;
+  margin: 0;
+  padding: 0;
   /*временно для сетки*/
   outline: 2px solid red;
 }
 
 .photo__panorama {
   min-height: 138px;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  margin-top: -58px;
   /*временно для сетки*/
   outline: 2px solid red;
 }
 
 .photo__text {
+  display: block;
+  width: auto;
+  min-height: 143px;
+  margin: 0;
+  padding: 0;
   padding-left: 27px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+.photo__best-wrapper {
+  display: block;
+  width: 282px;
+  min-height: 192px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 27px;
+  background-color: #f2f2f2;
+  /*временно для сетки*/
+  outline: 2px solid red;
 }
 
 .photo__author {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -22,6 +50,9 @@
 }
 
 .photo__time {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -30,6 +61,9 @@
 }
 
 .photo__message {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -37,6 +71,9 @@
 }
 
 .photo__likes {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -45,9 +82,41 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo__best-photo {
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    width: 141px;
+    min-height: 37px;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    margin-top: 60px;
+    margin-right: 20px;
+    color: #ffffff;
+    background-color: #d22856;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .photo__best-wrapper {
+    display: block;
+    width: 623px;
+    min-height: 123px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 27px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
   .photo__panorama {
     min-height: 510px;
     width: 660px;
+    margin: 0;
+    padding: 0;
+    margin-top: -95px;
     /*временно для сетки*/
     outline: 2px solid red;
   }
@@ -56,24 +125,120 @@
     display: block;
     width: 300px;
     height: 300px;
+    margin: 0;
+    padding: 0;
     /*временно для сетки*/
     outline: 2px solid red;
+  }
+
+  .photo__text {
+    display: block;
+    width: auto;
+    min-height: 155px;
+    margin: 0;
+    padding: 0;
+    padding-left: 27px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .photo__author {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo__time {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo__message {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo__likes {
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo__panorama {
+    margin: 0;
+    margin-top: -92px;
+    padding: 0;
     min-height: 506px;
     width: 1200px;
     /*временно для сетки*/
     outline: 2px solid red;
   }
 
-  .photo__image {
+  .photo__best-wrapper {
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 940px;
+    min-height: 95px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 27px;
     /*временно для сетки*/
     outline: 2px solid red;
+  }
+
+  .photo__image {
+    display: block;
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    //height: 300px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .photo__best-photo {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    display: block;
+    width: 142px;
+    min-height: 37px;
+    padding: 0;
+    margin: 0;
+    margin-top: 57px;
+    margin-right: 130px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .photo__text {
+    display: block;
+    width: auto;
+    min-height: 157px;
+    margin: 0;
+    padding: 0;
+    padding-left: 27px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .photo__author {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo__time {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo__message {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo__likes {
+    margin: 0;
+    padding: 0;
   }
 }
