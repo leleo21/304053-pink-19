@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: #ffffff;
+  display: none;
 }
 
 .page-footer__list {
@@ -8,11 +8,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer {
+    display: block;
+    background-color: #ffffff;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     max-height: 127px;
     /*временно для сетки*/
     outline: 2px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    display: block;
   }
 }
