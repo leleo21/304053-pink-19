@@ -10,24 +10,52 @@
   //flex-direction: column-reverse;
 }
 
-.contest__item:nth-child(1) {
-  order: -1;
+/*.contest__item-wrapper {
+  width: auto;
+  min-height: 350px;
+  margin: 0;
+  padding: 0;
+  /*временно для сетки
+  outline: 2px solid black;
+}*/
+
+.contest__item-content {
+  display: block;
+  /*display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;*/
+  width: auto;
+  min-height: 302px;
+  margin: 0;
+  padding: 0;
+  /*временно для сетки*/
+  outline: 2px solid red;
 }
 
-.contest__item:nth-child(4) {
+.contest__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contest__item:nth-child(1) {
+  order: -2;
+}
+
+.contest__item:nth-child(2) {
   order: 0;
 }
 
 .contest__item:nth-child(3) {
-  order: 1;
+  order: 0;
 }
 
-.contest__item:nth-child(2) {
-  order: 2;
+.contest__item:nth-child(4) {
+  order: -1;
 }
 
 .contest__item:nth-child(5) {
-  order: 3;
+  order: 0;
 }
 
 .contest__page-photo {

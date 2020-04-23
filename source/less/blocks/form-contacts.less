@@ -54,14 +54,16 @@
   }
 
   .form-contacts__wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0;
-    //padding-top: 50px;
+    margin-top: 32px;
     /*padding-left: 60px;
     padding-right: 60px;*/
     width: 496px;
-    min-height: 226px;
+    min-height: 231px;
     /*временно для сетки*/
     outline: 2px solid violet;
   }
@@ -70,6 +72,7 @@
 @media (min-width: @desktop-width) {
   .form-contacts__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
