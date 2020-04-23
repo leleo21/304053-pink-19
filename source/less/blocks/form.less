@@ -32,10 +32,14 @@
   outline: 2px solid yellowgreen;
 }
 
+.form__contacts-title {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .form__content {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 620px;
     min-height: 306px;
@@ -81,23 +85,52 @@
     /*временно для сетки*/
     outline: 2px solid greenyellow;
   }
+
+  .form__contacts-title {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .form__personal-data {
+    display: block;
+    min-height: 292px;
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .form__user-app {
+    background-color: transparent;
+  }
+
+  /*.form__content-wrapper {
+    display: block;
+    width: auto;
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+    /*временно для сетки
+    outline: 2px solid black;
+  }*/
+
   .form__user-app-wrapper {
     display: block;
     width: 436px;
-    min-height: 302px;
+    //min-height: 298px;
+    margin: 0;
+    padding: 0;
     /*временно для сетки*/
-    outline: 2px solid violet;
+    outline: 2px solid red;
   }
 
   .form__content {
     display: block;
     width: 936px;
     min-height: 158px;
-    /*margin: 0;
-    padding: 0;*/
+    margin: 0 auto;
+    padding: 0;
     /*временно для сетки*/
     outline: 2px solid black;
   }
@@ -107,18 +140,19 @@
     margin: 0;
     padding: 0;
     min-height: 228px;
+    background-color: transparent;
     /*временно для сетки*/
     outline: 2px solid greenyellow;
   }
 
-  .form__user-emotions {
+  /*.form__user-emotions {
     display: block;
     margin: 0;
     padding: 0;
     min-height: 213px;
-    /*временно для сетки*/
+    /*временно для сетки
     outline: 2px solid greenyellow;
-  }
+  }*/
 
   .form__submit-form {
     display: flex;
@@ -126,9 +160,79 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    padding-top: 67px;
+    //padding-top: 67px;
     min-height: 59px;
     /*временно для сетки*/
     outline: 2px solid greenyellow;
+  }
+
+  .form__contacts-wrapper {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 225px;
+    /*временно для сетки*/
+    outline: 3px solid red;
+  }
+
+  .form__contacts-border {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    min-height: 160px;
+    /*временно для сетки*/
+    outline: 3px solid blue;
+  }
+
+  .form__achievments-wrapper {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 297px;
+    /*временно для сетки*/
+    outline: 3px solid red;
+  }
+
+  .form__achievments-border {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    //margin-top: 20px;
+    min-height: 232px;
+    /*временно для сетки*/
+    outline: 3px solid blue;
+  }
+
+  .form__emotions-wrapper {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 282px;
+    /*временно для сетки*/
+    outline: 3px solid red;
+  }
+
+  .form__emotions-border {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    //margin-top: 20px;
+    min-height: 215px;
+    /*временно для сетки*/
+    outline: 3px solid blue;
+  }
+
+  .form__contacts-title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 }

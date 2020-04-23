@@ -2,6 +2,34 @@
   background-color: #ffffff;
 }
 
+.contest__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  //flex-direction: column-reverse;
+}
+
+.contest__item:nth-child(1) {
+  order: -1;
+}
+
+.contest__item:nth-child(4) {
+  order: 0;
+}
+
+.contest__item:nth-child(3) {
+  order: 1;
+}
+
+.contest__item:nth-child(2) {
+  order: 2;
+}
+
+.contest__item:nth-child(5) {
+  order: 3;
+}
+
 .contest__page-photo {
   margin: 0;
   padding: 0;
@@ -59,6 +87,40 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contest__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    //flex-direction: column-reverse;
+  }
+
+  .contest__item {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contest__item:nth-child(1) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(4) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(3) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(2) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(5) {
+    order: 0;
+  }
+
   .contest__title-wrapper {
     display: block;
     width: auto;
@@ -114,6 +176,61 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contest__item-wrapper {
+    width: auto;
+    min-height: 350px;
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid black;
+  }
+
+  .contest__item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    min-height: 302px;
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .contest__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    //flex-direction: column-reverse;
+  }
+
+  .contest__item {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contest__item:nth-child(1) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(4) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(3) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(2) {
+    order: 0;
+  }
+
+  .contest__item:nth-child(5) {
+    order: 0;
+  }
+
   .contest__title-wrapper {
     display: block;
     width: auto;
@@ -144,7 +261,7 @@
   .contest__description-wrapper {
     display: block;
     width: auto;
-    min-height: 221px;
+    min-height: 222px;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
