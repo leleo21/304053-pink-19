@@ -1,3 +1,24 @@
+.reviews__wrapper {
+  width: 280px;
+  min-height: 310px;
+  margin: 0 auto;
+  padding: 0;
+  //padding-top: 193px;
+  text-align: center;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
+.reviews__message-wrapper {
+  display: block;
+  min-height: 210px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  /*временно для сетки*/
+  outline: 2px solid yellowgreen;
+}
+
 .reviews__author {
   font-size: 18px;
   line-height: 30px;
@@ -12,15 +33,67 @@
   color: #283645;
 }
 
+.reviews__about-author {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    width: 620px;
+    min-height: 250px;
+    margin: 0;
+    padding: 0;
+    //margin: 0 auto;
+    //padding-top: 193px;
+    /*text-align: center;*/
+    /*временно для сетки*/
+    outline: 2px solid yellowgreen;
+  }
+
+  .reviews__message-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+    padding-top: 10px;
+    width: 620px;
+    min-height: 173px;
+    /*временно для сетки*/
+    outline: 2px solid yellowgreen;
+  }
+
+  .reviews__author {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .reviews__about-author {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .reviews__content {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
     width: 685px;
-    min-height: 405px;
+    min-height: 418px;
     margin: 0 auto;
     padding-top: 193px;
     /*text-align: center;*/
     /*временно для сетки*/
-    outline: 2px solid yellowgreen;
+    outline: 2px solid red;
   }
 
   .reviews__author {
@@ -46,7 +119,7 @@
   .reviews__content {
     display: block;
     text-align: center;
-    width: 688px;
+    width: 690px;
     min-height: 79px;
     font-size: 18px;
     line-height: 30px;
@@ -58,8 +131,11 @@
   .reviews__message-wrapper {
     display: flex;
     flex-direction: column-reverse;
+    width: 688px;
+    margin: 0;
+    padding: 0;
     /*временно для сетки*/
-    outline: 2px solid yellowgreen;
+    outline: 2px solid black;
   }
 
   .rewiews__toggles {

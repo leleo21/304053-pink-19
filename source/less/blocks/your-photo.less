@@ -1,4 +1,7 @@
 .your-photo__wrapper {
+  display: block;
+  width: 320px;
+  min-height: 758px;
   background-color: #f2f2f2;
 }
 
@@ -6,7 +9,10 @@
   display: flex;
   flex-direction: column;
   width: 280px;
+  min-height: 758px;
   margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
   /*временно для сетки*/
   outline: 2px solid green;
 }
@@ -50,11 +56,20 @@
     padding-bottom: 72px;
   }
 
+  .your-photo__wrapper {
+    display: block;
+    width: auto;
+    min-height: 511px;
+    background-color: #f2f2f2;
+  }
+
   .your-photo__wrapper-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 620px;
+    width: auto;
+    //width: 660px;
+    min-height: 511px;
     margin: 0 auto;
     padding: 0;
     padding-top: 57px;
@@ -72,14 +87,49 @@
 }
 
 @media (min-width: @desktop-width) {
+  .your-photo {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .your-photo__wrapper {
+    display: block;
+    width: 942px;
+    min-height: 517px;
+    margin: 0 auto;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .your-photo__description-wrapper {
+    display: block;
+    width: auto;
+    min-height: 137px;
+    margin: 0;
+    //margin-top: -65px;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
   .your-photo__description {
+    display: block;
+    width: 460px;
+    min-height: 47px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: none;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    padding-left: 261px;
-    padding-right: 261px;
-    padding-top: 68px;
-    padding-bottom: 69px;
+    //padding-left: 261px;
+    //padding-right: 261px;
+    //padding-top: 68px;
+    //padding-bottom: 69px;
+    /*временно для сетки*/
+    outline: 2px solid red;
   }
 
   .your-photo__wrapper-container {
@@ -88,8 +138,11 @@
     justify-content: space-between;
     width: 800px;
     min-height: 400px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 82px;
+    //margin: 0 auto;
     padding: 0;
+    //padding-left: 82px;
     padding-top: 57px;
     padding-bottom: 54px;
     /*временно для сетки*/

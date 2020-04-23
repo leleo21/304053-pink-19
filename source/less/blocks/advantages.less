@@ -1,9 +1,9 @@
 .advantages__text {
   display: block;
+  min-height: 50px;
   margin: 0;
   padding: 0;
-  margin-left: 50px;
-  margin-right: 60px;
+  padding-top: 30px;
   text-align: center;
   font-size: 24px;
   line-height: normal;
@@ -11,61 +11,191 @@
   color: #283645;
 }
 
-.advantages__list {
-  .list-style-none();
+.advantages__background-wrapper {
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-height: 218px;
+  outline: 2px solid red;
+}
+
+.advantages__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 204px;
+  min-height: 140px;
+  margin: 0 auto;
+  padding: 0;
+  //padding-top: 42px;
+  /*временно для сетки*/
+  outline: 2px solid blue;
 }
 
 .advantages__list-wrapper {
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  min-height: 320px;
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
+  min-height: 787px;
   background-color: #f2f2f2;
+  /*временно для сетки*/
+  outline: 2px solid blue;
+}
+
+.advantages__list {
+  .list-style-none();
+  //background-image: url("../img/iphone-screen-mobile@1x.png");
+  //background-repeat: no-repeat;
+  //min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 376px;
+  /*временно для сетки*/
+  outline: 2px solid black;
 }
 
 .advantages__item {
   display: flex;
   flex-direction: column;
-  min-height: 99px;
   margin: 0;
-  margin-right: 34px;
-  text-align: center;
+  padding: 0;
+  padding-top: 20px;
+  min-height: 100px;
+  //text-align: center;
   /*временно для сетки*/
   outline: 2px solid red;
 }
 
 .advantages__title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  //min-height: 20px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  /*временно для сетки*/
+  outline: 2px solid blue;
 }
 
 .advantages__description {
+  display: block;
+  text-align: center;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+  /*временно для сетки*/
+  outline: 2px solid blue;
 }
 
-.advantages__image {
+/*.advantages__image {
   display: block;
   margin-left: 82px;
-}
+}*/
 
 @media (min-width: @tablet-width) {
   .advantages__list-wrapper {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
+    //background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    //background-repeat: no-repeat;
     min-height: 547px;
     /*временно для сетки*/
     outline: 2px solid red;
   }
 
+  .advantages__text {
+    //display: block;
+    //width: 585px;
+    //min-height: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 300;
+    color: #283645;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
+  .advantages__text--top {
+    display: block;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    width: 620px;
+    min-height: 38px;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
+  .advantages__text--bottom {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 340px;
+    min-height: 80px;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
+  .advantages__text-wrapper {
+    //display: block;
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //width: 585px;
+    min-height: 135px;
+    padding: 0;
+    margin: 0;
+    //padding-left: 88px;
+    //padding-right: 88px;
+    //padding-top: 42px;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
   .advantages__list {
-    width: 300px;
+    width: 310px;
+    min-height: 360px;
     margin-left: auto;
     /*временно для сетки*/
     outline: 2px solid red;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    min-height: 100px;
+    //text-align: center;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .advantages__title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
+  .advantages__description {
+    display: block;
+    text-align: left;
+    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid blue;
   }
 }
 
@@ -78,26 +208,84 @@
 
   .advantages__text-wrapper {
     display: block;
+    width: 960px;
     margin: 0;
     padding: 0;
-    padding-left: 88px;
+    /*padding-left: 88px;
     padding-right: 88px;
-    padding-top: 78px;
+    padding-top: 78px;*/
     /*временно для сетки*/
     outline: 2px solid greenyellow;
   }
 
+  .advantages__text--top {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    width: 960px;
+    min-height: 38px;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
+  .advantages__text--bottom {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 417px;
+    min-height: 80px;
+    /*временно для сетки*/
+    outline: 2px solid green;
+  }
+
+  .advantages__list-wrapper {
+    margin: 0;
+    padding: 0;
+    min-height: 556px;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
   .advantages__list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    align-content: flex-end;
+    width: 874px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 70px;
     /*временно для сетки*/
     outline: 2px solid red;
   }
 
   .advantages__item {
-    min-height: 193px;
+    min-height: 560px;
     width: 236px;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*временно для сетки*/
+    outline: 2px solid blue;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding: 0;
     /*временно для сетки*/
     outline: 2px solid blue;
   }

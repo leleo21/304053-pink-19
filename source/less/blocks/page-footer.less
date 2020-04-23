@@ -1,5 +1,5 @@
-.page-footer {
-  background-color: #ffffff;
+.page-footer-index {
+  display: none;
 }
 
 .page-footer__list {
@@ -7,11 +7,43 @@
   display: flex;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 285px;
+  /*временно для сетки*/
+  outline: 2px solid red;
+}
+
 @media (min-width: @tablet-width) {
+  .page-footer-index {
+    display: block;
+    background-color: #ffffff;
+  }
+
   .page-footer__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     max-height: 127px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer-index {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    max-height: 224px;
     /*временно для сетки*/
     outline: 2px solid red;
   }

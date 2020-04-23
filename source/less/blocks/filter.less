@@ -1,8 +1,9 @@
 .filter__wrapper {
   display: block;
+  padding-top: 90px;
   /*text-align: center;*/
-  width: 660px;
-  min-height: 400px;
+  width: 320px;
+  min-height: 475px;
   background-color: #f2f2f2;
   /*временно для сетки*/
   outline: 2px solid yellowgreen;
@@ -29,6 +30,9 @@
 }
 
 .filter__list {
+  margin: 0;
+  margin-top: 1px;
+  width: 1120px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -63,12 +67,26 @@
   color: #ffffff;
 }
 
-@media (min-width: @desktop-width) {
+.filter__value--pink {
+  font-size: 0;
+}
+
+.filter__value--smiles {
+  font-size: 0;
+}
+
+.filter__value--comments {
+  font-size: 0;
+}
+
+@media (min-width: @tablet-width) {
   .filter__wrapper {
     display: block;
+    padding: 0;
+    margin: 0;
     /*text-align: center;*/
-    width: 1200px;
-    min-height: 534px;
+    width: 660px;
+    min-height: 380px;
     background-color: #f2f2f2;
     /*временно для сетки*/
     outline: 2px solid yellowgreen;
@@ -77,8 +95,138 @@
   .filter__list {
     display: block;
     text-align: center;
-    width: 940px;
-    padding-top: 159px;
+    width: 617px;
+    min-height: 220px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 88px;
+  }
+
+  .filter__table {
+    padding: 0;
+    margin: 0;
+    padding-top: 18px;
+    //padding-bottom: 21px;
+    width: 155px;
+    min-height: 80px;
+  }
+
+  .filter__title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .filter__price {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .filter__value {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: none;
+    text-align: left;
+    height: 46px;
+    padding: 0;
+    //padding-top: 12px;
+    //padding-bottom: 16px;
+    padding-left: 18px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .filter__value--pink {
+    font-size: 0;
+  }
+
+  .filter__value--smiles {
+    font-size: 0;
+  }
+
+  .filter__value--comments {
+    font-size: 0;
+  }
+
+  .filter__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter__wrapper {
+    display: block;
+    width: 1200px;
+    min-height: 525px;
+    background-color: #f2f2f2;
+    /*временно для сетки*/
+    outline: 2px solid yellowgreen;
+  }
+
+  .filter__list {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 944px;
+    min-height: 281px;
+    padding-top: 140px;
+    /*временно для сетки*/
+    outline: 2px solid red;
+  }
+
+  .filter__table {
+    padding: 0;
+    margin: 0;
+    padding-top: 18px;
+    //padding-bottom: 21px;
+    width: 237px;
+    min-height: 97px;
+  }
+
+  .filter__title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .filter__price {
+    display: block;
+    margin: 0;
+    padding: 0;
+    //padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .filter__value {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: none;
+    text-align: left;
+    height: 61px;
+    padding: 0;
+    //padding-top: 12px;
+    //padding-bottom: 16px;
+    padding-left: 26px;
+    border: 2px solid #e5e5e5;
   }
 
   .filter__toggles {
