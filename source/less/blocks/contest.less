@@ -19,19 +19,6 @@
   outline: 2px solid black;
 }*/
 
-.contest__item-content {
-  display: block;
-  /*display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;*/
-  width: auto;
-  min-height: 302px;
-  margin: 0;
-  padding: 0;
-  /*временно для сетки*/
-  outline: 2px solid red;
-}
-
 .contest__item {
   display: block;
   margin: 0;
@@ -39,7 +26,7 @@
 }
 
 .contest__item:nth-child(1) {
-  order: -2;
+  order: 0;
 }
 
 .contest__item:nth-child(2) {
@@ -51,7 +38,7 @@
 }
 
 .contest__item:nth-child(4) {
-  order: -1;
+  order: 0;
 }
 
 .contest__item:nth-child(5) {
@@ -130,23 +117,23 @@
   }
 
   .contest__item:nth-child(1) {
-    order: 0;
+    order: -1;
+  }
+
+  .contest__item:nth-child(2) {
+    order: 2;
+  }
+
+  .contest__item:nth-child(3) {
+    order: 1;
   }
 
   .contest__item:nth-child(4) {
     order: 0;
   }
 
-  .contest__item:nth-child(3) {
-    order: 0;
-  }
-
-  .contest__item:nth-child(2) {
-    order: 0;
-  }
-
   .contest__item:nth-child(5) {
-    order: 0;
+    order: 3;
   }
 
   .contest__title-wrapper {
@@ -213,21 +200,10 @@
     outline: 2px solid black;
   }
 
-  .contest__item-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: auto;
-    min-height: 302px;
-    margin: 0;
-    padding: 0;
-    /*временно для сетки*/
-    outline: 2px solid red;
-  }
-
   .contest__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
     //flex-direction: column-reverse;
@@ -240,23 +216,23 @@
   }
 
   .contest__item:nth-child(1) {
-    order: 0;
+    order: -1;
+  }
+
+  .contest__item:nth-child(2) {
+    order: 2;
+  }
+
+  .contest__item:nth-child(3) {
+    order: 1;
   }
 
   .contest__item:nth-child(4) {
     order: 0;
   }
 
-  .contest__item:nth-child(3) {
-    order: 0;
-  }
-
-  .contest__item:nth-child(2) {
-    order: 0;
-  }
-
   .contest__item:nth-child(5) {
-    order: 0;
+    order: 3;
   }
 
   .contest__title-wrapper {
@@ -289,7 +265,7 @@
   .contest__description-wrapper {
     display: block;
     width: auto;
-    min-height: 222px;
+    min-height: 230px;
     margin: 0;
     padding: 0;
     background-color: #ffffff;

@@ -39,68 +39,20 @@
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__content contest">
               <div class="contest__wrapper">
-                <div class="contest__item-wrapper">
-                  <div class="contest__item-content">
-                    <div class="form__personal-data contest__item personal">
-                      <div class="personal__data-wrapper">
-                        <div class="data personal__wrapper">
-                          <label class="data__label personal__label" for="user_second_name">Фамилия:</label>
-                          <input class="data__input personal__input" id="user_second_name" type="text" name="personal_data" placeholder="Укажите фамилию *">
-                        </div>
-                        <div class="data personal__wrapper">
-                          <label class="data__label personal__label" for="user_name">Имя:</label>
-                          <input class="data__input personal__input" id="user_name" type="text" name="personal_data" placeholder="Введите ваше имя *">
-                        </div>
-                        <div class="data personal__wrapper">
-                          <label class="data__label personal__label" for="user_middle_name">Отчество:</label>
-                          <input class="data__input personal__input" id="user_middle_name" type="text" name="personal_data" placeholder="Ну и отчество тоже">
-                        </div>
+                <div class="form__personal-data contest__item personal">
+                  <div class="form__personal-wrapper">
+                    <div class="personal__data-wrapper">
+                      <div class="data personal__wrapper">
+                        <label class="data__label personal__label" for="user_second_name">Фамилия:</label>
+                        <input class="data__input personal__input border" id="user_second_name" type="text" name="personal_data" placeholder="Укажите фамилию *">
                       </div>
-                    </div>
-                    <div class="form__user-app user-application contest__item">
-                      <div class="form__content-wrapper">
-                        <div class="form__user-app-wrapper">
-                          <p class="user-application__text h2-title-style">С каким приложением путешествовали?</p>
-                          <ul class="user-application__list application-list">
-                            <li class="application-list__item application">
-                              <label class="application__label data" for="pink_ios">
-                                <input  class="application__input" type="radio" name="application" value="pink_ios" id="pink_ios" checked>
-                                Pink для iOS
-                              </label>
-                            </li>
-                            <li class="application-list__item application">
-                              <label class="application__label data" for="pink_android">
-                                <input  class="application__input" type="radio" name="application" value="pink_android" id="pink_android">
-                                Pink на Android
-                              </label>
-                            </li>
-                            <li class="application-list__item application">
-                              <label class="application__label data" for="pink_windows_phone">
-                                <input  class="application__input" type="radio" name="application" value="pink_windows_phone" id="pink_windows_phone">
-                                Windows Phone
-                              </label>
-                            </li>
-                          </ul>
-                        </div>
+                      <div class="data personal__wrapper">
+                        <label class="data__label personal__label" for="user_name">Имя:</label>
+                        <input class="data__input personal__input border" id="user_name" type="text" name="personal_data" placeholder="Введите ваше имя *">
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form__user-contacts contest__item">
-                  <div class="form__content">
-                    <div class="form__contacts-wrapper">
-                      <div class="form__contacts-border">
-                        <p class="form__contacts h2-title-style form__contacts-title">Контактная информация</p>
-                        <div class="form-contacts__wrapper">
-                          <div class="data form-contacts">
-                            <label class="data__label form-contacts__label" for="user_phone">Номер телефона</label>
-                            <input class="data__input form-contacts__input" id="user_phone" type="text" name="user_contacts" placeholder="Номер, пожалуйста">
-                          </div>
-                          <div class="data form-contacts">
-                            <label class="data__label form-contacts__label" for="user_mail">Адрес почты</label>
-                            <input class="data__input form-contacts__input" id="user_mail" type="text" name="user_contacts" placeholder="Введите почту *">
-                          </div>
-                        </div>
+                      <div class="data personal__wrapper">
+                        <label class="data__label personal__label" for="user_middle_name">Отчество:</label>
+                        <input class="data__input personal__input border" id="user_middle_name" type="text" name="personal_data" placeholder="Ну и отчество тоже">
                       </div>
                     </div>
                   </div>
@@ -108,8 +60,8 @@
                 <div class="form__user-achievments contest__item">
                   <div class="form__content">
                     <div class="form__achievments-wrapper">
-                      <div class="form__achievments-border">
-                        <p class="your-achievments h2-title-style">Ваши безбашенные достижения в путешествии</p>
+                      <div class="form__achievments-border border">
+                        <p class="form__your-achievments-title h2-title-style">Ваши безбашенные достижения в путешествии</p>
                         <ul class="achievments-list">
                           <li class="achievments-list__item achievment">
                             <label class="achievment__label data" for="selfie">
@@ -152,13 +104,59 @@
                     </div>
                   </div>
                 </div>
+                <div class="form__user-contacts contest__item">
+                  <div class="form__content">
+                    <div class="form__contacts-wrapper">
+                      <div class="form__contacts-border border">
+                        <p class="form__contacts h2-title-style form__contacts-title">Контактная информация</p>
+                        <div class="form-contacts__wrapper">
+                          <div class="data form-contacts">
+                            <label class="data__label form-contacts__label" for="user_phone">Номер телефона</label>
+                            <input class="data__input form-contacts__input" id="user_phone" type="text" name="user_contacts" placeholder="Номер, пожалуйста">
+                          </div>
+                          <div class="data form-contacts">
+                            <label class="data__label form-contacts__label" for="user_mail">Адрес почты</label>
+                            <input class="data__input form-contacts__input" id="user_mail" type="text" name="user_contacts" placeholder="Введите почту *">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__user-app user-application contest__item">
+                  <div class="form__content-wrapper">
+                    <div class="form__user-app-wrapper">
+                      <div class="form__user-app-border border">
+                        <p class="user-application__title h2-title-style">С каким приложением путешествовали?</p>
+                        <ul class="user-application__list application-list">
+                          <li class="application-list__item application">
+                            <label class="application__label data" for="pink_ios">
+                              <input  class="application__input" type="radio" name="application" value="pink_ios" id="pink_ios" checked>
+                              Pink для iOS
+                            </label>
+                          </li>
+                          <li class="application-list__item application">
+                            <label class="application__label data" for="pink_android">
+                              <input  class="application__input" type="radio" name="application" value="pink_android" id="pink_android">
+                              Pink на Android
+                            </label>
+                          </li>
+                          <li class="application-list__item application">
+                            <label class="application__label data" for="pink_windows_phone">
+                              <input  class="application__input" type="radio" name="application" value="pink_windows_phone" id="pink_windows_phone">
+                              Windows Phone
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="form__user-emotions emotions contest__item">
                   <div class="form__content">
                     <div class="form__emotions-wrapper">
-                      <div class="form__emotions-border">
-                        <div class="emotions__wrapper">
-                          <label class="emotions__description data__label" for="emotions_text">Опишите свои эмоции</label>
-                        </div>
+                      <div class="form__emotions-border border">
+                        <label class="form__emotions-title data__label" for="emotions_text">Опишите свои эмоции</label>
                         <div class="emotions__text-wrapper">
                           <textarea class="emotions__message data" name="emotions_text" id="emotions_text" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                         </div>
@@ -167,7 +165,7 @@
                   </div>
                   <div class="form__submit-form submit-form">
                     <button class="submit" type="submit">Отправить форму</button>
-                    <p class="data__label">*<span class="data"> — обязательные поля</span></p>
+                    <p class="data__label">*<span class="data"> — обязательные для заполнения поля</span></p>
                   </div>
                 </div>
               </div>

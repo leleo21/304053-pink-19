@@ -1,7 +1,3 @@
-.emotions__description {
-  text-align: center;
-}
-
 .emotions__message {
   width: 276px;
   height: 197px;
@@ -24,6 +20,8 @@
 
   .emotions__text-wrapper {
     display: block;
+    margin: 0;
+    padding: 0;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 47px;
@@ -31,43 +29,32 @@
     /*временно для сетки*/
     outline: 2px solid red;
   }
-
-  .emotions__description {
-    display: block;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .emotions__message {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
     display: block;
     margin: 0 auto;
     padding: 0;
     padding-left: 20px;
-    padding-top: 22px;
+    padding-top: 16px;
     width: 816px;
     height: 124px;
     text-align: start;
     /*временно для сетки*/
-    outline: 2px solid black;
+    //outline: 2px solid black;
   }
 
   .emotions__text-wrapper {
     display: block;
     margin: 0;
     padding: 0;
-    padding-top: 18px;
+    padding-top: 5px;
     /*padding-bottom: 45px;*/
     /*временно для сетки*/
-    outline: 2px solid red;
-  }
-
-  .emotions__description {
-    display: block;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    //outline: 2px solid red;
   }
 }
