@@ -11,6 +11,34 @@
   padding-bottom: 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .achievments-list {
+    .font-form-tablet();
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    //width: 820px;
+    min-height: 452px;
+    /*временно для сетки*/
+    //outline: 2px solid violet;
+  }
+
+  .achievments-list__item {
+    display: block;
+    //width: 257px;
+    margin: 0;
+    padding: 0;
+    padding-left: 92px;
+    min-height: 45px;
+    /*временно для сетки*/
+    //outline: 2px solid blue;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .achievments-list {
     display: flex;

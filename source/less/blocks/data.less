@@ -20,6 +20,28 @@
   color: #283645;
 }
 
+@media (min-width: @tablet-width) {
+  .data__field {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 17px;
+  }
+
+  .data__mark {
+    color: #d22856;
+  }
+
+  .data__to-fill {
+    display: none;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .data {
     font-size: 14px;
@@ -34,5 +56,25 @@
     font-weight: 400;
     text-transform: none;
     color: #283645;
+  }
+
+  .data__label {
+    display: block;
+    padding-top: 4px;
+  }
+
+  .data__field {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .data__mark {
+    color: #d22856;
+  }
+
+  .data__to-fill {
+    display: block;
   }
 }

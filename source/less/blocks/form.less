@@ -21,6 +21,8 @@
 .form__user-app {
   background-color: #f2f2f2;
   min-height: 340px;
+  margin: 0;
+  padding: 0;
 }
 
 .form__content {
@@ -33,10 +35,14 @@
 }
 
 .form__contacts-title {
+  margin: 0;
+  padding: 0;
   display: none;
 }
 
 .form__emotions-title {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -51,15 +57,35 @@
     outline: 2px solid black;
   }
 
+  .form__personal-data {
+    display: block;
+    min-height: 358px;
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
+  .form__personal-wrapper {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    //padding-top: 57px;
+    min-height: 340px;
+    /*временно для сетки*/
+    //outline: 3px solid rgb(134, 73, 73);
+  }
+
   .form__contacts-wrapper {
     display: block;
     width: auto;
     margin: 0;
     padding: 0;
-    padding-top: 38px;
+    //padding-top: 38px;
     min-height: 375px;
     /*временно для сетки*/
-    outline: 3px solid blueviolet;
+    //outline: 3px solid blueviolet;
   }
 
   .form__contacts-border {
@@ -67,10 +93,10 @@
     width: auto;
     margin: 0;
     padding: 0;
-    margin-top: 30px;
+    //margin-top: 30px;
     min-height: 309px;
     /*временно для сетки*/
-    outline: 3px solid blue;
+    //outline: 3px solid blue;
   }
 
   .form__achievments-wrapper {
@@ -78,9 +104,9 @@
     width: auto;
     margin: 0;
     padding: 0;
-    min-height: 560px;
+    min-height: 620px;
     /*временно для сетки*/
-    outline: 3px solid red;
+    //outline: 3px solid red;
   }
 
   .form__achievments-border {
@@ -91,7 +117,7 @@
     margin-top: 65px;
     min-height: 554px;
     /*временно для сетки*/
-    outline: 3px solid blue;
+    //outline: 3px solid blue;
   }
 
   .form__emotions-wrapper {
@@ -99,9 +125,9 @@
     width: auto;
     margin: 0;
     padding: 0;
-    min-height: 365px;
+    min-height: 358px;
     /*временно для сетки*/
-    outline: 3px solid red;
+    //outline: 3px solid red;
   }
 
   .form__emotions-border {
@@ -112,11 +138,38 @@
     //margin-top: 20px;
     min-height: 294px;
     /*временно для сетки*/
-    outline: 3px solid blue;
+    //outline: 3px solid blue;
   }
 
   .form__user-app {
     background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__user-app-wrapper {
+    display: block;
+    //width: 620px;
+    min-height: 365px;
+    margin: 0;
+    //margin-left: 66px;
+    //margin-left: 68px;
+    padding: 0;
+    /*временно для сетки*/
+    //outline: 2px solid black;
+  }
+
+  .form__user-app-border {
+    display: block;
+    //width: auto;
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    //padding-top: 10px;
+    //margin-top: 20px;
+    min-height: 300px;
+    /*временно для сетки*/
+    //outline: 3px solid blue;
   }
 
   /*.form__user-contacts {
@@ -140,6 +193,19 @@
     outline: 2px solid greenyellow;
   }
 
+  .form__your-achievments-title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    width: 436px;
+    min-height: 38px;
+    top: -10px;
+    //left: 30px;
+    background-color: #ffffff;
+  }
+
   /*.form__user-emotions {
     display: block;
     margin: 0;
@@ -153,7 +219,7 @@
     display: flex;
     margin: 0;
     padding: 0;
-    padding-top: 25px;
+    //padding-top: 25px;
     min-height: 59px;
     /*временно для сетки*/
     outline: 2px solid greenyellow;
@@ -161,16 +227,28 @@
 
   .form__contacts-title {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    position: relative;
     text-align: center;
+    width: 260px;
+    min-height: 38px;
+    top: -10px;
+    //left: 30px;
+    background-color: #ffffff;
   }
 
   .form__emotions-title {
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     text-align: center;
+    padding: 0;
+    position: relative;
+    width: 260px;
+    min-height: 38px;
+    top: -20px;
+    //left: 30px;
+    background-color: #ffffff;
   }
 }
 
@@ -196,6 +274,8 @@
   }
 
   .form__user-app {
+    margin: 0;
+    padding: 0;
     background-color: transparent;
   }
 
@@ -309,13 +389,6 @@
     background-color: #ffffff;
   }
 
-  .form-contacts__input {
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding-top: 5px;
-  }
-
   .form__achievments-wrapper {
     display: block;
     width: auto;
@@ -358,7 +431,7 @@
     position: relative;
     width: 260px;
     min-height: 38px;
-    top: -10px;
+    top: -20px;
     //left: 30px;
     background-color: #ffffff;
   }
