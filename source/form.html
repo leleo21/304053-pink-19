@@ -15,8 +15,8 @@
           </a>
           <button class="page-header__toggle" type="button">Закрыть меню</button>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list nav-list">
+        <nav class="main-nav data">
+          <ul class="main-nav__list nav-list data__nav">
             <li><a class="main-nav__link main-nav__nav-index" href="index.html">Главная</a></li>
             <li><a class="main-nav__link main-nav__nav-photo" href="photo.html">Фотографии</a></li>
             <li><a class="main-nav__link main-nav__nav-form">Конкурс</a></li>
@@ -30,9 +30,9 @@
         <div class="contest">
           <div class="contest__page-photo">
             <div class="contest__title-wrapper">
-              <h1 class="contest__title h1-title-style">Конкурс на самое безбашенное путешествие&nbsp;с&nbsp;Пинк</h1>
-              <div class="contest__description-wrapper">
-                <p class="contest__description description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+              <h1 class="contest__title data__h1-title-style">Конкурс на самое безбашенное путешествие&nbsp;с&nbsp;Пинк</h1>
+              <div class="contest__description-wrapper data">
+                <p class="contest__description data__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="data__fill-form">Пожалуйста, заполните форму ниже:</span></p>
               </div>
             </div>
           </div>
@@ -42,17 +42,17 @@
                 <div class="form__personal-data contest__item personal">
                   <div class="form__personal-wrapper">
                     <div class="personal__data-wrapper">
-                      <div class="data personal__wrapper">
-                        <label class="data__label personal__label" for="user_second_name">Фамилия:</label>
-                        <input class="data__input personal__input border" id="user_second_name" type="text" name="personal_data" placeholder="Укажите фамилию *">
+                      <div class="personal__wrapper data">
+                        <label class="data__personal-label personal__label" for="user_second_name">Фамилия:</label>
+                        <input class="data__personal-input personal__input border" id="user_second_name" type="text" name="personal_data" placeholder="Укажите фамилию *">
                       </div>
                       <div class="data personal__wrapper">
-                        <label class="data__label personal__label" for="user_name">Имя:</label>
-                        <input class="data__input personal__input border" id="user_name" type="text" name="personal_data" placeholder="Введите ваше имя *">
+                        <label class="data__personal-label personal__label" for="user_name">Имя:</label>
+                        <input class="data__personal-input personal__input border" id="user_name" type="text" name="personal_data" placeholder="Введите ваше имя *">
                       </div>
                       <div class="data personal__wrapper">
-                        <label class="data__label personal__label" for="user_middle_name">Отчество:</label>
-                        <input class="data__input personal__input border" id="user_middle_name" type="text" name="personal_data" placeholder="Ну и отчество тоже">
+                        <label class="data__personal-label personal__label" for="user_middle_name">Отчество:</label>
+                        <input class="data__personal-input personal__input border" id="user_middle_name" type="text" name="personal_data" placeholder="Ну и отчество тоже">
                       </div>
                     </div>
                   </div>
@@ -110,13 +110,13 @@
                       <div class="form__contacts-border border">
                         <p class="form__contacts h2-title-style form__contacts-title">Контактная информация</p>
                         <div class="form-contacts__wrapper">
-                          <div class="data form-contacts">
-                            <label class="data__label form-contacts__label" for="user_phone">Номер телефона</label>
-                            <input class="data__input form-contacts__input" id="user_phone" type="text" name="user_contacts" placeholder="Номер, пожалуйста">
+                          <div class="data form-contacts__item">
+                            <label class="data__personal-label form-contacts__label" for="user_phone">Номер телефона</label>
+                            <input class="data__personal-input form-contacts__input  border" id="user_phone" type="text" name="user_contacts" placeholder="Номер, пожалуйста">
                           </div>
-                          <div class="data form-contacts">
-                            <label class="data__label form-contacts__label" for="user_mail">Адрес почты</label>
-                            <input class="data__input form-contacts__input" id="user_mail" type="text" name="user_contacts" placeholder="Введите почту *">
+                          <div class="data form-contacts__item">
+                            <label class="data__personal-label form-contacts__label " for="user_mail">Адрес почты</label>
+                            <input class="data__personal-input form-contacts__input  border" id="user_mail" type="text" name="user_contacts" placeholder="Введите почту *">
                           </div>
                         </div>
                       </div>
@@ -155,17 +155,17 @@
                 <div class="form__user-emotions emotions contest__item">
                   <div class="form__content">
                     <div class="form__emotions-wrapper">
-                      <div class="form__emotions-border border">
-                        <label class="form__emotions-title data__label" for="emotions_text">Опишите свои эмоции</label>
+                      <div class="form__emotions-border border data">
+                        <label class="form__emotions-title data__personal-label" for="emotions_text">Опишите свои эмоции</label>
                         <div class="emotions__text-wrapper">
-                          <textarea class="emotions__message data" name="emotions_text" id="emotions_text" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                          <textarea class="emotions__message data__personal-input border" name="emotions_text" id="emotions_text" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="form__submit-form submit-form">
                     <button class="submit" type="submit">Отправить форму</button>
-                    <p class="data__field"><span class="data__mark">*</span> — обязательные <span class="data__to-fill">для заполнения </span>поля</p>
+                    <p class="data__field"><span class="data__mark">*</span> — обязательные<span class="data__to-fill"> для заполнения </span>поля</p>
                   </div>
                 </div>
               </div>
@@ -183,7 +183,7 @@
           <li class="social__item"><a class="social__link social__link--utube" href="#">Ютуб</a></li>
         </ul>
         <div class="page-footer__copyright copyright  page-footer__item">
-          <p class="copyright__text">Разработано
+          <p class="copyright__text data__copyright">Разработано
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html академия</a>
           </p>
         </div>

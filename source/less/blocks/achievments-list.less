@@ -1,14 +1,26 @@
 .achievments-list {
   .list-style-none();
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  min-height: 450px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  //width: 820px;
+  min-height: 466px;
+  /*временно для сетки*/
+  //outline: 2px solid violet;
 }
 
 .achievments-list__item {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-left: 40px;
+  //padding-bottom: 30px;
+  //outline: 2px solid violet;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,7 +63,7 @@
     width: 820px;
     min-height: 122px;
     /*временно для сетки*/
-    outline: 2px solid violet;
+    //outline: 2px solid violet;
   }
 
   /*.achievments-list:nth-child(2n):not(:last-child) {
@@ -69,7 +81,7 @@
     padding: 0;
     min-height: 40px;
     /*временно для сетки*/
-    outline: 2px solid blue;
+    //outline: 2px solid blue;
   }
 
   .achievments-list__item:nth-child(1) {
