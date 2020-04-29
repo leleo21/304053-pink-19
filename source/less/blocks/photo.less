@@ -48,10 +48,11 @@
   //padding-left: 27px;
   background-color: #f2f2f2;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .photo__best-container {
+  //position: relative;
   display: flex;
   flex-wrap: wrap;
   min-height: 38px;
@@ -72,11 +73,11 @@
 }
 
 .photo__image {
-  min-height: 180px;
+  height: 180px;
   margin: 0;
   padding: 0;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .photo__panorama {
@@ -90,26 +91,28 @@
 }
 
 .photo__text {
-  display: block;
+  //display: block;
+  display: flex;
+  flex-direction: column;
   width: auto;
-  min-height: 122px;
+  min-height: 120px;
   margin: 0;
   padding: 0;
   //padding-left: 27px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid black;
 }
 
 .photo__text-container {
-  position: relative;
+  //position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 250px;
   min-height: 37px;
-  padding-top: 12px;
+  padding-top: 18px;
   padding-left: 15px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid blue;
 }
 
 .photo__author {
@@ -143,18 +146,31 @@
   color: #283645;
 }
 
-.photo__likes {
+.photo__likes-container {
   display: block;
-  position: absolute;
-  top: 92px;
-  left: 48px;
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  width: 95px;
+  min-height: 54px;
+  padding-top: 10px;
+  margin-left: 48px;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+}
+
+.photo__likes {
+  display: block;
+  //position: absolute;
+  //top: 92px;
+  //left: 48px;
+  margin: 0;
+  padding: 0;
+  //padding-top: 92px;
+  /*font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #d22856;
+  color: #d22856;*/
 }
 
 @media (min-width: @tablet-width) {
@@ -193,17 +209,18 @@
 
   .photo__best-wrapper {
     display: block;
-    position: relative;
+    //position: relative;
     width: 623px;
     min-height: 115px;
     margin: 0 auto;
     padding: 0;
     padding-left: 27px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__best-container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     min-height: 38px;
@@ -212,14 +229,14 @@
     padding-top: 15px;
     padding-left: 5px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid black;
   }
 
   .photo__best-likes {
     position: absolute;
     display: block;
     top: 18px;
-    right: 58px;
+    left: 448px;
     margin: 0;
     padding: 0;
   }
@@ -241,29 +258,33 @@
     margin: 0;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__text {
-    display: block;
+    //display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: auto;
+    //width: 234px;
     min-height: 155px;
     margin: 0;
     padding: 0;
-    padding-left: 27px;
+    padding-left: 12px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid blue;
   }
 
   .photo__text-container {
-    position: relative;
+    //position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 236px;
-    min-height: 95px;
+    width: 250px;
+    //min-height: 95px;
     padding-top: 22px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__author {
@@ -282,10 +303,24 @@
     padding: 0;
   }
 
+  .photo__likes-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    min-height: 54px;
+    padding-top: 6px;
+    margin-left: 16px;
+    //margin-left: 48px;
+    margin-right: auto;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
   .photo__likes {
-    position: absolute;
-    top: 105px;
-    left: 1px;
+    //position: absolute;
+    //top: 105px;
+    //left: 1px;
     margin: 0;
     padding: 0;
     //padding-top: 10px;
@@ -342,7 +377,6 @@
   }
 
   .photo__best-wrapper {
-    position: relative;
     display: block;
     //display: flex;
     //flex-wrap: wrap;
@@ -352,19 +386,11 @@
     padding: 0;
     padding-left: 27px;
     /*временно для сетки*/
-    outline: 2px solid red;
-  }
-
-  .photo__best-likes {
-    position: absolute;
-    display: block;
-    top: 20px;
-    right: 62px;
-    margin: 0;
-    padding: 0;
+    //outline: 2px solid red;
   }
 
   .photo__best-container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     min-height: 38px;
@@ -372,7 +398,16 @@
     padding: 0;
     padding-top: 20px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
+  }
+
+  .photo__best-likes {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 761px;
+    margin: 0;
+    padding: 0;
   }
 
   .photo__image {
@@ -383,7 +418,21 @@
     width: 300px;
     //height: 300px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
+  }
+
+  .photo__text {
+    //display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    min-height: 153px;
+    margin: 0;
+    padding: 0;
+    padding-left: 27px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .photo__text-container {
@@ -391,21 +440,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 236px;
-    min-height: 95px;
-    padding-top: 22px;
-    /*временно для сетки*/
-    outline: 2px solid red;
-  }
-
-  .photo__text {
-    display: block;
-    width: auto;
-    min-height: 153px;
+    //min-height: 95px;
     margin: 0;
     padding: 0;
-    padding-left: 27px;
+    padding-top: 22px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__author {
@@ -424,10 +464,24 @@
     padding: 0;
   }
 
+  .photo__likes-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    min-height: 54px;
+    padding-top: 6px;
+    //margin-left: 16px;
+    //margin-left: 48px;
+    margin-right: auto;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
   .photo__likes {
-    position: absolute;
+    /*position: absolute;
     top: 105px;
-    left: 1px;
+    left: 1px;*/
     margin: 0;
     padding: 0;
     //padding-top: 10px;
