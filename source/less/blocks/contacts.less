@@ -162,12 +162,13 @@
   }
 
   .contacts__text {
-    display: block;
+    display: flex;
     margin: 0 auto;
     padding: 0;
     padding-top: 60px;
     width: 456px;
-    min-height: 98px;
+    //min-height: 98px;
+    min-height: 90px;
     font-size: 50px;
     font-weight: 300;
     line-height: normal;
@@ -180,7 +181,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 940px;
+    //width: 940px;
+    width: 875px;
     min-height: 97px;
     margin: 0 auto;
     margin-top: 40px;
@@ -191,23 +193,57 @@
 
   .contacts__item {
     display: block;
+    margin: 0;
+    padding: 0;
     /*временно для сетки*/
-    outline: 2px solid blue;
+    outline: 2px solid black;
   }
 
-  .contacts__item--address {
+  /*.contacts__item--address {
     display: block;
-    text-align: center;
+    //text-align: center;
     width: 215px;
     min-height: 50px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
+    //padding-right: 30px;
+    /*временно для сетки
     outline: 2px solid blue;
-  }
+  }*/
 
   .contacts__item:nth-child(2) {
+    display: block;
+    //width: 150px;
     order: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__item--call {
+    display: block;
+    margin: 0;
+    //margin-right: 50px;
+    padding: 0;
+  }
+
+  .contacts__item--mail {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__phone {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    //padding-left: 15px;
   }
 
   .contacts__map {
