@@ -4,46 +4,52 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  min-height: 318px;
+  min-height: 327px;
   /*временно для сетки*/
-  outline: 2px solid violet;
+  //outline: 2px solid violet;
 }
 
 .personal__wrapper {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 90px;
+  min-height: 80px;
   /*временно для сетки*/
-  outline: 2px solid blue;
+  //outline: 2px solid blue;
 }
 
 .personal__label {
   display: block;
-  padding-bottom: 16px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
   padding-left: 20px;
-  padding-right: 22px;
+  //padding-right: 22px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .personal__input {
   display: block;
   width: 100%;
+  margin: 0;
+  padding: 0;
   min-height: 59px;
   padding-left: 20px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 @media (min-width: @tablet-width) {
-  .personal {
+  /*.personal {
     display: flex;
     justify-content: space-between;
     min-height: 273px;
-    /*временно для сетки*/
+    /*временно для сетки
     outline: 2px solid yellowgreen;
-  }
+  }*/
 
   .personal__data-wrapper {
     //display: block;
@@ -55,7 +61,7 @@
     //width: 436px;
     min-height: 292px;
     /*временно для сетки*/
-    outline: 2px solid violet;
+    //outline: 2px solid violet;
   }
 
   .personal__wrapper {
@@ -64,7 +70,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 64px;
+    min-height: 60px;
+    /*временно для сетки*/
+    //outline: 2px solid violet;
   }
 
   .personal__input {
@@ -75,7 +83,7 @@
     padding: 0;
     padding-left: 20px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .personal__label {
@@ -84,41 +92,43 @@
     padding: 0;
     padding-top: 18px;
     //padding-bottom: 18px;
-    padding-right: 22px;
+    padding-right: 20px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .personal {
+  /*.personal {
     display: flex;
     justify-content: space-between;
     min-height: 273px;
-    /*временно для сетки*/
+    /*временно для сетки
     outline: 2px solid yellowgreen;
-  }
+  }*/
 
   .personal__data-wrapper {
-    //display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    width: 436px;
-    min-height: 302px;
+    padding-top: 7px;
+    width: 434px;
+    min-height: 297px;
     /*временно для сетки*/
-    outline: 2px solid violet;
+    //outline: 2px solid blue;
   }
 
   .personal__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 65px;
+    min-height: 60px;
     margin: 0;
     padding: 0;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .personal__input {
@@ -129,17 +139,17 @@
     padding: 0;
     padding-left: 20px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .personal__label {
     display: block;
     margin: 0;
     padding: 0;
-    padding-top: 18px;
+    padding-top: 15px;
     //padding-bottom: 18px;
-    padding-right: 22px;
+    padding-right: 18px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 }

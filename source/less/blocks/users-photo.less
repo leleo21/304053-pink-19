@@ -4,11 +4,14 @@
 
 .users-photo__list {
   .list-style-none();
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 1932px;
   margin: 0;
   padding: 0;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .users-photo__page-photo {
@@ -25,7 +28,7 @@
   padding: 0;
   background-color: #283645;
   /*временно для сетки*/
-  outline: 2px solid green;
+  //outline: 2px solid green;
 }
 
 
@@ -38,7 +41,7 @@
   padding: 0;
   padding-top: 32px;
   /*временно для сетки*/
-  outline: 2px solid green;
+  //outline: 2px solid green;
 }
 
 .users-photo__description-wrapper {
@@ -61,7 +64,7 @@
   padding: 0;
   padding-top: 50px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 @media (min-width: @tablet-width) {
@@ -73,7 +76,7 @@
     padding: 0;
     background-color: #283645;
     /*временно для сетки*/
-    outline: 2px solid green;
+    //outline: 2px solid green;
   }
 
   .users-photo__title {
@@ -85,9 +88,9 @@
     min-height: 104px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 65px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .users-photo__description-wrapper {
@@ -98,7 +101,7 @@
     padding: 0;
     background-color: #ffffff;
     /*временно для сетки*/
-    outline: 2px solid green;
+    //outline: 2px solid green;
   }
 
   .users-photo__description {
@@ -106,14 +109,15 @@
     line-height: 30px;
     font-weight: 300;
     display: block;
-    width: 437px;
+    //width: 437px;
+    width: 445px;
     min-height: 47px;
     text-align: center;
     margin: 0 auto;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 92px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .users-photo__list {
@@ -159,27 +163,31 @@
     /*padding-left: 296px;
     padding-right: 296px;*/
     padding-top: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 86px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .users-photo__title-wrapper {
     display: block;
+    margin: 0;
+    padding: 0;
     width: auto;
-    min-height: 286px;
+    min-height: 284px;
     background-color: #283645;
     /*временно для сетки*/
-    outline: 2px solid green;
+    //outline: 2px solid green;
   }
 
   .users-photo__description-wrapper {
     display: block;
+    margin: 0;
+    padding: 0;
     width: auto;
     min-height: 238px;
     background-color: #ffffff;
     /*временно для сетки*/
-    outline: 2px solid green;
+    //outline: 2px solid green;
   }
 
   .users-photo__description {
@@ -197,6 +205,6 @@
     padding-top: 88px;
     padding-bottom: 90px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 }

@@ -1,53 +1,73 @@
 .form-contacts__wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 15px;
+  //margin-top: 32px;
+  /*padding-left: 60px;
+  padding-right: 60px;*/
   width: 280px;
-  min-height: 203px;
+  min-height: 211px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
-.form-contacts {
-  display: block;
+.form-contacts__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 280px;
   min-height: 90px;
   /*временно для сетки*/
-  outline: 2px solid red;
-}
-
-.form__contacts-title {
-  display: none;
+  //outline: 2px solid blue;
 }
 
 .form-contacts__label {
   display: block;
-  padding-bottom: 16px;
+  min-height: 13px;
+  margin: 0;
+  padding: 0;
+  text-align: none;
+  padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 22px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .form-contacts__input {
   display: block;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  min-height: 59px;
+  min-height: 61px;
   padding-left: 20px;
+  //border: 2px solid #e5e5e5;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 @media (min-width: @tablet-width) {
-  .form-contacts {
+  .form-contacts__item {
     display: flex;
     flex-direction: column-reverse;
     margin: 0;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid greenyellow;
+    //outline: 2px solid greenyellow;
   }
 
-  .form__contacts-title {
+  .form-contacts__label {
     display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 18px;
+    //min-height: 59px;
   }
 
   .form-contacts__input {
@@ -55,59 +75,74 @@
     width: 496px;
     margin: 0;
     padding: 0;
-    padding-left: 20px;
-    min-height: 59px;
+    padding-top: 2px;
+    padding-left: 18px;
+    min-height: 60px;
     /*временно для сетки*/
-    outline: 2px solid greenyellow;
+    //outline: 2px solid greenyellow;
   }
 
   .form-contacts__wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0;
+    margin-top: 7px;
+    //margin-top: 32px;
     /*padding-left: 60px;
     padding-right: 60px;*/
     width: 496px;
-    min-height: 226px;
+    min-height: 237px;
     /*временно для сетки*/
-    outline: 2px solid violet;
+    //outline: 2px solid violet;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-contacts__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    /*margin: 0;
-    padding: 0;*/
+    margin: 0 auto;
+    margin-top: 2px;
+    padding: 0;
+    //padding-top: 25px;
     width: 820px;
     min-height: 96px;
     /*временно для сетки*/
-    outline: 2px solid violet;
+    //outline: 2px solid violet;
   }
 
-  .form-contacts {
+  .form-contacts__item {
     display: flex;
+    justify-content: space-between;
     flex-direction: column-reverse;
     width: 377px;
     margin: 0;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid greenyellow;
+    //outline: 2px solid greenyellow;
   }
 
-  .form__contacts-title {
+  .form-contacts__label {
     display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 20px;
+    //min-height: 59px;
   }
 
   .form-contacts__input {
     display: block;
-    width: 371px;
+    width: 375px;
     margin: 0;
     padding: 0;
+    padding-top: 7px;
     padding-left: 20px;
     min-height: 59px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 }

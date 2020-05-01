@@ -1,3 +1,49 @@
+.your-photo__description-wrapper {
+  display: block;
+  width: auto;
+  min-height: 152px;
+  margin: 0;
+  //margin-top: -65px;
+  padding: 0;
+  /*временно для сетки*/
+  //outline: 2px solid green;
+}
+
+.your-photo__description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  //min-height: 152px;
+  //margin: 0 auto;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  //padding-left: 261px;
+  //padding-right: 261px;
+  padding-top: 20px;
+  //padding-left: 10px;
+  //padding-bottom: 69px;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+}
+
+.your-photo__description {
+  display: block;
+  width: 280px;
+  //min-height: 47px;
+  //margin: 0 auto;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  //padding-left: 261px;
+  //padding-right: 261px;
+  //padding-top: 10px;
+  //padding-bottom: 69px;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+}
+
 .your-photo__wrapper {
   display: block;
   width: 320px;
@@ -24,15 +70,6 @@
   outline: 2px solid red;
 }
 
-.your-photo__description {
-  display: block;
-  text-align: center;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 32px;
-  padding-bottom: 52px;
-}
-
 .your-photo__image {
   display: block;
   margin: 0;
@@ -49,11 +86,52 @@
 }
 
 @media (min-width: @tablet-width) {
+  .your-photo__description-wrapper {
+    display: block;
+    width: auto;
+    min-height: 172px;
+    margin: 0;
+    //margin-top: -65px;
+    padding: 0;
+    /*временно для сетки*/
+    //outline: 2px solid green;
+  }
+
+  .your-photo__description-container {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    min-height: 47px;
+    //margin: 0 auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    //padding-left: 261px;
+    //padding-right: 261px;
+    padding-top: 45px;
+    //padding-left: 10px;
+    //padding-bottom: 69px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
   .your-photo__description {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 54px;
-    padding-bottom: 72px;
+    display: block;
+    width: 460px;
+    //min-height: 47px;
+    //margin: 0 auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    //padding-left: 261px;
+    //padding-right: 261px;
+    //padding-top: 10px;
+    //padding-bottom: 69px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .your-photo__wrapper {
@@ -78,11 +156,26 @@
     outline: 2px solid green;
   }
 
+  .your-photo__image {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 400px;
+  }
+
   .your-photo__button-wrapper {
     margin: 0;
     padding: 0;
+    padding-right: 10px;
     /*временно для сетки*/
     outline: 2px solid red;
+  }
+
+  .your-photo__button {
+    display: block;
+    width: 260px;
+    height: 55px;
   }
 }
 
@@ -100,7 +193,7 @@
     margin: 0 auto;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .your-photo__description-wrapper {
@@ -111,25 +204,44 @@
     //margin-top: -65px;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid green;
+    //outline: 2px solid green;
+  }
+
+  .your-photo__description-container {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    min-height: 47px;
+    //margin: 0 auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    //padding-left: 261px;
+    //padding-right: 261px;
+    padding-top: 10px;
+    //padding-left: 10px;
+    //padding-bottom: 69px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .your-photo__description {
     display: block;
     width: 460px;
-    min-height: 47px;
-    margin: 0 auto;
+    //min-height: 47px;
+    //margin: 0 auto;
+    margin: 0;
     padding: 0;
-    text-align: none;
+    text-align: center;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
     //padding-left: 261px;
     //padding-right: 261px;
-    //padding-top: 68px;
+    //padding-top: 10px;
     //padding-bottom: 69px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .your-photo__wrapper-container {

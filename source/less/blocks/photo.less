@@ -1,9 +1,83 @@
+.photo__best-photo-wrapper {
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 18px;
+  background-color: #d22856;
+  width: 140px;
+  height: 37px;
+  padding: 0;
+  padding-top: 3px;
+  padding-left: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+.photo__best-photo {
+  /*position: absolute;
+  display: block;
+  top: 55px;
+  right: 1px;*/
+  display: block;
+  min-height: 10px;
+  width: 111px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  /*background-color: #d22856;
+  width: 142px;
+  height: 37px;*/
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  //margin-top: 57px;
+  //margin-right: 130px;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+}
+
+.photo__best-wrapper {
+  display: block;
+  position: relative;
+  width: 282px;
+  min-height: 186px;
+  margin: 0 auto;
+  padding: 0;
+  //padding-left: 27px;
+  background-color: #f2f2f2;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+}
+
+.photo__best-container {
+  //position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 38px;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+}
+
+.photo__best-likes {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  margin: 0;
+  padding: 0;
+}
+
 .photo__image {
-  min-height: 180px;
+  height: 180px;
   margin: 0;
   padding: 0;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .photo__panorama {
@@ -11,32 +85,34 @@
   width: 320px;
   margin: 0;
   padding: 0;
-  margin-top: -58px;
+  //margin-top: -58px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .photo__text {
-  display: block;
+  //display: block;
+  display: flex;
+  flex-direction: column;
   width: auto;
-  min-height: 143px;
+  min-height: 120px;
   margin: 0;
   padding: 0;
-  padding-left: 27px;
+  //padding-left: 27px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid black;
 }
 
-.photo__best-wrapper {
-  display: block;
-  width: 282px;
-  min-height: 192px;
-  margin: 0 auto;
-  padding: 0;
-  padding-left: 27px;
-  background-color: #f2f2f2;
+.photo__text-container {
+  //position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  min-height: 37px;
+  padding-top: 18px;
+  padding-left: 15px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid blue;
 }
 
 .photo__author {
@@ -53,6 +129,7 @@
   display: block;
   margin: 0;
   padding: 0;
+  padding-left: 3px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -70,15 +147,31 @@
   color: #283645;
 }
 
-.photo__likes {
+.photo__likes-container {
   display: block;
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  width: 95px;
+  min-height: 54px;
+  padding-top: 10px;
+  margin-left: 48px;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+}
+
+.photo__likes {
+  display: block;
+  //position: absolute;
+  //top: 92px;
+  //left: 48px;
+  margin: 0;
+  padding: 0;
+  //padding-top: 92px;
+  /*font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #d22856;
+  color: #d22856;*/
 }
 
 @media (min-width: @tablet-width) {
@@ -87,28 +180,66 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
     width: 141px;
-    min-height: 37px;
+    //min-height: 37px;
     padding: 0;
-    padding-top: 10px;
+    //padding-top: 10px;
     margin: 0;
     margin-top: 60px;
     margin-right: 20px;
     color: #ffffff;
     background-color: #d22856;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
+  }
+
+  .photo__best-photo-wrapper {
+    position: absolute;
+    display: block;
+    top: 55px;
+    right: 18px;
+    background-color: #d22856;
+    width: 140px;
+    height: 37px;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
   }
 
   .photo__best-wrapper {
     display: block;
+    //position: relative;
     width: 623px;
-    min-height: 123px;
+    min-height: 115px;
     margin: 0 auto;
     padding: 0;
     padding-left: 27px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
+  }
+
+  .photo__best-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 38px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+    /*временно для сетки*/
+    //outline: 2px solid black;
+  }
+
+  .photo__best-likes {
+    position: absolute;
+    display: block;
+    top: 18px;
+    left: 448px;
+    margin: 0;
+    padding: 0;
   }
 
   .photo__panorama {
@@ -116,9 +247,9 @@
     width: 660px;
     margin: 0;
     padding: 0;
-    margin-top: -95px;
+    //margin-top: -95px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__image {
@@ -128,18 +259,33 @@
     margin: 0;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__text {
-    display: block;
+    //display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: auto;
+    //width: 234px;
     min-height: 155px;
     margin: 0;
     padding: 0;
-    padding-left: 27px;
+    padding-left: 12px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid blue;
+  }
+
+  .photo__text-container {
+    //position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    //min-height: 95px;
+    padding-top: 22px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .photo__author {
@@ -150,6 +296,7 @@
   .photo__time {
     margin: 0;
     padding: 0;
+    padding-left: 5px;
   }
 
   .photo__message {
@@ -157,32 +304,113 @@
     padding: 0;
   }
 
-  .photo__likes {
+  .photo__likes-container {
+    display: block;
     margin: 0;
     padding: 0;
+    width: 100px;
+    min-height: 54px;
+    padding-top: 6px;
+    margin-left: 16px;
+    //margin-left: 48px;
+    margin-right: auto;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
+  .photo__likes {
+    //position: absolute;
+    //top: 105px;
+    //left: 1px;
+    margin: 0;
+    padding: 0;
+    //padding-top: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo__panorama {
     margin: 0;
-    margin-top: -92px;
+    //margin-top: -92px;
     padding: 0;
     min-height: 506px;
     width: 1200px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
+  }
+
+  .photo__best-photo-wrapper {
+    position: absolute;
+    display: block;
+    top: 53px;
+    right: 130px;
+    background-color: #d22856;
+    width: 140px;
+    height: 37px;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 18px;
+    margin: 0;
+  }
+
+  .photo__best-photo {
+    /*position: absolute;
+    display: block;
+    top: 55px;
+    right: 1px;*/
+    display: block;
+    min-height: 10px;
+    width: 102px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    /*background-color: #d22856;
+    width: 142px;
+    height: 37px;*/
+    padding: 0;
+    margin: 0;
+    //margin-left: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    //margin-top: 57px;
+    //margin-right: 130px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .photo__best-wrapper {
     display: block;
+    //display: flex;
+    //flex-wrap: wrap;
     width: 940px;
     min-height: 95px;
     margin: 0 auto;
     padding: 0;
     padding-left: 27px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
+  }
+
+  .photo__best-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 38px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
+  .photo__best-likes {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 761px;
+    margin: 0;
+    padding: 0;
   }
 
   .photo__image {
@@ -193,33 +421,34 @@
     width: 300px;
     //height: 300px;
     /*временно для сетки*/
-    outline: 2px solid red;
-  }
-
-  .photo__best-photo {
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 700;
-    display: block;
-    width: 142px;
-    min-height: 37px;
-    padding: 0;
-    margin: 0;
-    margin-top: 57px;
-    margin-right: 130px;
-    /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__text {
-    display: block;
+    //display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: auto;
-    min-height: 157px;
+    min-height: 153px;
     margin: 0;
     padding: 0;
     padding-left: 27px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
+  }
+
+  .photo__text-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 236px;
+    //min-height: 95px;
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .photo__author {
@@ -230,6 +459,7 @@
   .photo__time {
     margin: 0;
     padding: 0;
+    padding-left: 5px;
   }
 
   .photo__message {
@@ -237,8 +467,26 @@
     padding: 0;
   }
 
-  .photo__likes {
+  .photo__likes-container {
+    display: block;
     margin: 0;
     padding: 0;
+    width: 100px;
+    min-height: 54px;
+    padding-top: 6px;
+    //margin-left: 16px;
+    //margin-left: 48px;
+    margin-right: auto;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
+  .photo__likes {
+    /*position: absolute;
+    top: 105px;
+    left: 1px;*/
+    margin: 0;
+    padding: 0;
+    //padding-top: 10px;
   }
 }

@@ -1,7 +1,9 @@
 .contacts__wrapper {
   display: block;
+  margin: 0;
+  padding: 0;
   min-height: 411px;
-  text-align: center;
+  //text-align: center;
   padding-top: 40px;
 }
 
@@ -13,9 +15,9 @@
   min-height: 235px;
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 25px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .contacts__item {
@@ -23,12 +25,16 @@
   min-height: 50px;
   margin: 0;
   padding: 0;
+  padding-bottom: 20px;
+  text-align: center;
   /*временно для сетки*/
-  outline: 2px solid blue;
+  //outline: 2px solid blue;
 }
 
 .contacts__text {
   margin: 0;
+  padding: 0;
+  text-align: center;
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
@@ -37,7 +43,7 @@
 
 .contacts__title {
   display: block;
-  width: 280px;
+  //width: 280px;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -48,7 +54,7 @@
 
 .contacts__link {
   display: block;
-  width: 280px;
+  //width: 280px;
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -71,8 +77,9 @@
     width: 620px;
     text-align: center;
     padding: 0;
+    margin: 0;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .contacts__list {
@@ -81,20 +88,23 @@
     justify-content: space-between;
     flex-wrap: wrap;
     //width: 540px;
-    width: 620px;
+    width: 543px;
     min-height: 185px;
-    margin: 0 auto;
-    margin-top: 35px;
+    //margin: 0 auto;
+    margin-top: 32px;
+    margin-left: 45px;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .contacts__item {
     display: block;
     min-height: 50px;
+    margin: 0;
+    padding: 0;
     /*временно для сетки*/
-    outline: 2px solid blue;
+    //outline: 2px solid blue;
   }
 
   .contacts__item--address {
@@ -106,7 +116,7 @@
     padding: 0;
     margin-top: 45px;
     /*временно для сетки*/
-    outline: 2px solid blue;
+    //outline: 2px solid blue;
   }
 
   .contacts__title {
@@ -134,7 +144,7 @@
     width: 368px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 35px;
+    padding-top: 30px;
     font-size: 40px;
     line-height: normal;
     font-weight: 300;
@@ -158,56 +168,111 @@
     padding: 0;
     min-height: 271px;
     /*временно для сетки*/
-    outline: 2px solid yellowgreen;
+    //outline: 2px solid yellowgreen;
   }
 
   .contacts__text {
-    display: block;
+    display: flex;
     margin: 0 auto;
     padding: 0;
     padding-top: 60px;
     width: 456px;
-    min-height: 98px;
+    //min-height: 98px;
+    min-height: 90px;
     font-size: 50px;
     font-weight: 300;
     line-height: normal;
     /*временно для сетки*/
-    outline: 2px solid blue;
+    //outline: 2px solid blue;
   }
 
   .contacts__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 940px;
+    //justify-content: space-around;
+    //flex-wrap: wrap;
+    //width: 940px;
+    width: 862px;
     min-height: 97px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 50px;
     margin-top: 40px;
     padding: 0;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .contacts__item {
     display: block;
+    margin: 0;
+    padding: 0;
+    text-align: none;
     /*временно для сетки*/
-    outline: 2px solid blue;
+    //outline: 2px solid black;
+  }
+
+  .contacts__item--call {
+    display: block;
+    width: 206px;
+    margin: 0;
+    padding: 0;
+    text-align: none;
+  }
+
+  .contacts__item--mail {
+    display: block;
+    width: 242px;
+    margin: 0;
+    padding: 0;
+    text-align: none;
   }
 
   .contacts__item--address {
     display: block;
-    text-align: center;
+    width: 211px;
+    margin: 0;
+    padding: 0;
+    text-align: none;
+  }
+
+  /*.contacts__item--address {
+    display: block;
+    //text-align: center;
     width: 215px;
     min-height: 50px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
+    //padding-right: 30px;
+    /*временно для сетки
     outline: 2px solid blue;
-  }
+  }*/
 
   .contacts__item:nth-child(2) {
+    display: block;
+    //width: 150px;
     order: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__phone {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    //padding-left: 15px;
+  }
+
+  .contacts__title {
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 
   .contacts__map {
