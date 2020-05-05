@@ -3,7 +3,6 @@
   width: auto;
   min-height: 152px;
   margin: 0;
-  //margin-top: -65px;
   padding: 0;
   /*временно для сетки*/
   //outline: 2px solid green;
@@ -14,16 +13,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 280px;
-  //min-height: 152px;
-  //margin: 0 auto;
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  //padding-left: 261px;
-  //padding-right: 261px;
   padding-top: 20px;
-  //padding-left: 10px;
-  //padding-bottom: 69px;
   /*временно для сетки*/
   //outline: 2px solid red;
 }
@@ -31,15 +24,9 @@
 .your-photo__description {
   display: block;
   width: 280px;
-  //min-height: 47px;
-  //margin: 0 auto;
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  //padding-left: 261px;
-  //padding-right: 261px;
-  //padding-top: 10px;
-  //padding-bottom: 69px;
   /*временно для сетки*/
   //outline: 2px solid red;
 }
@@ -63,26 +50,215 @@
   outline: 2px solid green;
 }
 
-.your-photo__button-wrapper {
-  display: block;
-  padding: 40px 0;
-  /*временно для сетки*/
-  outline: 2px solid red;
-}
-
 .your-photo__image {
-  display: block;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.your-photo__controls {
+  display: block;
+  min-height: 163px;
+  padding: 0;
+  margin: 0;
+  //временно для сетки
+  //outline: 2px solid blue;
+}
+
+.your-photo__filters {
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  margin: 0 auto;
+  min-height: 163px;
+  //временно для сетки
+  //outline: 2px solid red;
+}
+
+.your-photo__pictureform-buttons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 34px;
+  min-height: 100px;
+  width: 243px;
+  align-items: center;
+  //временно для сетки
+  //outline: 2px solid blue;
+}
+
+.your-photo__pictureform-button {
+  width: 44px;
+  height: 49px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.your-photo__pictureform-button-image {
+  width: 48px;
+  height: 48px;
+  fill: #b5b9be;
+
+  &:hover {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: #d22856;
+  }
+}
+
+.your-photo__pictureform-button-image--crop {
+  padding-left: 3px;
+}
+
+.your-photo__pictureform-button--active {
+  fill: #d22856;
+}
+
+.your-photo__pictureform-button-image--contrast {
+  width: 32px;
+  height: 32px;
+}
+
+.your-photo__ranges-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+}
+
+.your-photo__ranges-item {
+  position: relative;
+  display: none;
+}
+
+.your-photo__ranges-item:nth-child(2) {
+  display: none;
+}
+
+.your-photo__ranges-item:nth-child(3) {
+  display: none;
+}
+
+.your-photo__ranges-item::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: -41px;
+  width: 320px;
+  height: 2px;
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
+.your-photo__ranges-item--active {
+  display: flex;
+}
+
+.your-photo__ranges-item--crop .range__toggle {
+  left: 80%;
+}
+
+.your-photo__ranges-item--fill .range__toggle {
+  left: 30%;
+}
+
+.your-photo__ranges-item--contrast .range__toggle {
+  left: 60%;
+}
+
+.your-photo__range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  //временно для сетки
+  //outline: 2px solid blue;
+}
+
+.your-photo__range-bar {
+  width: 100%;
+  height: 2px;
+  background: #283645;
+}
+
+.your-photo__range-toggle {
+  position: absolute;
+  top: -7px;
+  right: 35px;
+  width: 14px;
+  height: 15px;
+  background: #f2f2f2;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d22856;
+  }
+}
+
+.your-photo__button-wrapper {
+  display: block;
+  //padding: 0;
+  padding: 20px 0;
+  /*временно для сетки*/
+  //outline: 2px solid red;
 }
 
 .your-photo__button {
   display: block;
   width: 281px;
   height: 55px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.your-photo__btn-upload {
+  background-color: transparent;
   border: 3px solid #d22856;
   border-radius: 50px;
   color: #d22856;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #d22856;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.your-photo__btn-reset {
+  width: 100%;
+  background-color: transparent;
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
