@@ -51,12 +51,44 @@
   padding: 0;
 }
 
+.contacts__map-container {
+  position: relative;
+  display: block;
+  /*background-image: url("../img/bg-map-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right 1px bottom -20px;
+  width: 100%;*/
+  min-height: 198px;
+  //padding-top: 18px;
+  overflow: hidden;
+}
+
 .contacts__map {
-  width: 320px;
-  height: 202px;
+  position: absolute;
+  top: -445px;
+  left: 1px;
+  //width: 1200px;
+  //height: 507px;
+  width: 100%;
+  //min-height: 502px;
   margin: 0;
-  //margin-top: 45px;
+  //margin-top: 20px;
+  //margin-bottom: 196px;
+  //margin-top: 20px;
   padding: 0;
+}
+
+.contacts__map-container::after {
+  content: "";
+  position: absolute;
+  top: 93px;
+  left: 142px;
+  width: 36px;
+  height: 36px;
+  background: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  /*временно для сетки*/
+  //outline: 2px solid red;
 }
 
 @media (min-width: @tablet-width) {
@@ -127,12 +159,44 @@
     padding-top: 30px;
   }
 
+  .contacts__map-container {
+    position: relative;
+    display: block;
+    /*background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right 1px bottom -20px;
+    width: 100%;*/
+    min-height: 376px;
+    margin-top: 18px;
+    overflow: hidden;
+  }
+
   .contacts__map {
-    width: 660px;
-    height: 375px;
+    position: absolute;
+    top: -312px;
+    left: -1px;
+    //width: 1200px;
+    //height: 507px;
+    width: 100%;
+    //min-height: 502px;
     margin: 0;
-    margin-top: 20px;
+    //margin-top: 20px;
+    //margin-bottom: 196px;
+    //margin-top: 20px;
     padding: 0;
+  }
+
+  .contacts__map-container::after {
+    content: "";
+    position: absolute;
+    top: 196px;
+    left: 310px;
+    width: 36px;
+    height: 36px;
+    background: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 }
 
@@ -248,11 +312,42 @@
     padding: 0;
   }
 
+  .contacts__map-container {
+    position: relative;
+    display: block;
+    /*background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right 1px bottom -20px;
+    width: 100%;*/
+    min-height: 500px;
+    margin-top: 18px;
+    overflow: hidden;
+  }
+
   .contacts__map {
-    width: 1200px;
-    height: 507px;
+    position: absolute;
+    top: -282px;
+    left: 1px;
+    //width: 1200px;
+    //height: 507px;
+    width: 100%;
+    //min-height: 502px;
     margin: 0;
-    margin-top: 20px;
+    //margin-bottom: 196px;
+    //margin-top: 20px;
     padding: 0;
+  }
+
+  .contacts__map-container::after {
+    content: "";
+    position: absolute;
+    top: 260px;
+    left: 582px;
+    width: 36px;
+    height: 36px;
+    background: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 }

@@ -1,5 +1,30 @@
 .copyright__text {
+  position: relative;
   display: block;
   margin: 0;
   padding: 0;
+  padding-top: 18px;
+  padding-left: 28px;
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__link {
+    position: absolute;
+    bottom: -9px;
+    right: 1px;
+    fill: #d22856;
+    //margin-left: 20px;
+  }
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:focus {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
 }
