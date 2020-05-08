@@ -17,18 +17,26 @@
 .users-photo__page-photo {
   margin: 0;
   padding: 0;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  //background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
-.users-photo__title-wrapper {
+.users-photo__title-background {
   display: block;
   width: auto;
   min-height: 171px;
   margin: 0;
   padding: 0;
-  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -65px;
+  //background-color: #283645;
   /*временно для сетки*/
   //outline: 2px solid green;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 171px auto;
+  }
 }
 
 
@@ -68,15 +76,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  .users-photo__title-wrapper {
+  .users-photo__title-background {
     display: block;
     width: auto;
     min-height: 330px;
     margin: 0;
     padding: 0;
-    background-color: #283645;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -110px;
+    //background-color: #283645;
     /*временно для сетки*/
     //outline: 2px solid green;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("img/bg-back-tablet@2x.jpg");
+      background-size: 330px auto;
+    }
   }
 
   .users-photo__title {
@@ -168,15 +184,22 @@
     //outline: 2px solid red;
   }
 
-  .users-photo__title-wrapper {
+  .users-photo__title-background {
     display: block;
+    min-height: 393px;
     margin: 0;
     padding: 0;
-    width: auto;
-    min-height: 284px;
-    background-color: #283645;
+    padding-top: 109px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
     /*временно для сетки*/
-    //outline: 2px solid green;
+    //outline: 2px solid red;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("img/bg-back-desktop@2x.jpg");
+      background-size: 393px auto;
+    }
   }
 
   .users-photo__description-wrapper {

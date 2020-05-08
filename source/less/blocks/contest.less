@@ -48,7 +48,24 @@
 .contest__page-photo {
   margin: 0;
   padding: 0;
+}
+
+.contest__background-wrapper {
+  display: block;
+  min-height: 171px;
+  margin: 0;
+  padding: 0;
+  //padding-top: 109px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -65px;
+  /*временно для сетки*/
+  //outline: 2px solid red;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 171px auto;
+  }
 }
 
 .contest__title-wrapper {
@@ -142,9 +159,27 @@
     min-height: 330px;
     margin: 0;
     padding: 0;
-    background-color: #283645;
+    //background-color: #283645;
     /*временно для сетки*/
     //outline: 2px solid green;
+  }
+
+  .contest__background-wrapper {
+    display: block;
+    min-height: 330px;
+    margin: 0;
+    padding: 0;
+    //padding-top: 109px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -110px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("img/bg-back-tablet@2x.jpg");
+      background-size: 330px auto;
+    }
   }
 
   .contest__title {
@@ -238,9 +273,27 @@
     min-height: 286px;
     padding: 0;
     margin: 0;
-    background-color: #283645;
+    //background-color: #283645;
     /*временно для сетки*/
     //outline: 2px solid green;
+  }
+
+  .contest__background-wrapper {
+    display: block;
+    min-height: 393px;
+    margin: 0;
+    padding: 0;
+    padding-top: 109px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("img/bg-back-desktop@2x.jpg");
+      background-size: 393px auto;
+    }
   }
 
   .contest__title {
