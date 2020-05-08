@@ -20,27 +20,29 @@
 }
 
 .reviews__author {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__content {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #283645;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__about-author {
   display: none;
 }
 
+.reviews__arrow {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
     width: 620px;
-    min-height: 250px;
+    min-height: 280px;
     margin: 0;
     padding: 0;
     //margin: 0 auto;
@@ -64,29 +66,37 @@
   }
 
   .reviews__author {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
+    display: block;
+    min-height: 20px;
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    //padding-top: 20px;
+    /*временно для сетки*/
+    outline: 2px solid red;
   }
 
   .reviews__about-author {
     display: block;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
+    margin: 0;
+    padding: 0;
   }
 
   .reviews__content {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
+    display: block;
+    margin: 0;
+    margin-top: 16px;
+    padding: 0;
+  }
+
+  .reviews__arrow {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
+    position: relative;
     width: 685px;
     min-height: 418px;
     margin: 0 auto;
@@ -96,36 +106,44 @@
     //outline: 2px solid red;
   }
 
+  .reviews__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 305px;
+    width: 85px;
+    height: 65px;
+    background: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    /*временно для сетки*/
+    //outline: 2px solid black;
+  }
+
   .reviews__author {
     display: block;
     text-align: center;
     width: 221px;
     min-height: 54px;
     margin: 0 auto;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
     /*временно для сетки*/
     //outline: 2px solid blue;
   }
 
   .reviews__about-author {
     display: block;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
+    margin: 0;
+    padding: 0;
   }
 
   .reviews__content {
     display: block;
     margin: 0;
     padding: 0;
+    padding-top: 3px;
+    padding-right: 1px;
     text-align: center;
     width: 690px;
     min-height: 79px;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
     /*временно для сетки*/
     //outline: 2px solid blue;
   }
@@ -140,6 +158,35 @@
     padding: 0;
     /*временно для сетки*/
     //outline: 2px solid black;
+  }
+
+  .reviews__arrow {
+    display: block;
+    fill: #caced1;
+
+    &:hover {
+      fill: #7e868f;
+    }
+
+    &:focus {
+      fill: #7e868f;
+    }
+
+    &:active {
+      fill: #e9ebec;
+    }
+  }
+
+  .reviews__arrow-left {
+    position: absolute;
+    top: 212px;
+    left: -128px;
+  }
+
+  .reviews__arrow-right {
+    position: absolute;
+    top: 212px;
+    right: -128px;
   }
 
   .rewiews__toggles {

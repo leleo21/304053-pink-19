@@ -1,8 +1,42 @@
-.main-promo {
+/*.main-promo {
   background-color: #1d2631;
-  /*background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;*/
+  //background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   min-height: 314px;
+}*/
+
+.main-promo {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #1d2631;
+  background-position: bottom 265px right 1px;
+  //min-height: 314px;
+  //background-position: center;
+  //position: relative;
+  //min-height: 545px;
+  //display: flex;
+  //flex-direction: row;
+  /*временно для сетки*/
+  outline: 2px solid red;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 397px auto;
+  }
+}
+
+.main-promo__page-photo-hand {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom 265px right 63px;
+  /*position: absolute;
+  top: 96px;
+  right: 5px;*/
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 287px 255px;
+  }
 }
 
 .main-promo__wrapper {
@@ -71,11 +105,36 @@
 
 .main-promo__list {
   .list-style-none();
-  display: flex;
+  position: relative;
+  //display: flex;
   margin-top: 40px;
   /*временно для сетки*/
   height: 47px;
   //outline: 2px solid red;
+}
+
+.main-promo__icon-list-item--apple {
+  position: absolute;
+  top: -10px;
+  left: 35px;
+  width: 47px;
+  height: 50px;
+}
+
+.main-promo__icon-list-item--android {
+  position: absolute;
+  top: -3px;
+  left: 117px;
+  width: 44px;
+  height: 47px;
+}
+
+.main-promo__icon-list-item--microsoft {
+  position: absolute;
+  top: 1px;
+  left: 197px;
+  width: 44px;
+  height: 47px;
 }
 
 .main-promo__description {
@@ -86,10 +145,6 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 35px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 300;
-  color: #ffffff;
   /*временно для сетки*/
   height: 47px;
   //outline: 2px solid red;
@@ -98,6 +153,37 @@
 @media (min-width: @tablet-width) {
   .main-promo {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 618px auto;
+    }
+  }
+
+  /*.main-promo__page-photo {
+    //position: relative;
+    //background-image: url("../img/iphone-hand-tablet@1x.png");
+    //min-height: 545px;
+    //display: flex;
+    //flex-direction: row;
+    /*временно для сетки
+    //outline: 2px solid red;
+  }*/
+
+  .main-promo__page-photo-hand {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: bottom left -20px;
+    background-repeat: no-repeat;
+    /*position: absolute;
+    top: 96px;
+    right: 5px;*/
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 547px 471px;
+    }
   }
 
   .main-promo__wrapper {
@@ -109,6 +195,8 @@
 
   .main-promo__wrapper-background {
     min-height: 230px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
   }
 
   .main-promo__slogan {
@@ -141,12 +229,37 @@
 
   .main-promo__list {
     .list-style-none();
-    display: flex;
+    position: relative;
+    //display: flex;
     min-height: 60px;
     margin-top: 42px;
     /*временно для сетки*/
     height: 47px;
     //outline: 2px solid red;
+  }
+
+  .main-promo__icon-list-item--apple {
+    position: absolute;
+    top: 1px;
+    left: 50px;
+    width: 47px;
+    height: 50px;
+  }
+
+  .main-promo__icon-list-item--android {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 44px;
+    height: 47px;
+  }
+
+  .main-promo__icon-list-item--microsoft {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    width: 44px;
+    height: 47px;
   }
 
   .main-promo__description {
@@ -173,13 +286,42 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-promo {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 853px;
+    padding-top: 109px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-size: 853px auto;
+  }
+
+  .main-promo__page-photo-hand {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: bottom right 5px;
+    /*position: absolute;
+    top: 96px;
+    right: 5px;*/
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 648px 558px;
+    }
+  }
+
   .main-promo__wrapper {
     min-height: 740px;
     margin: 0;
     padding: 0;
     padding-left: 7px;
     /*временно для сетки*/
-    //outline: 2px solid blue;
+    outline: 2px solid blue;
   }
 
   .main-promo__slogan {
@@ -219,9 +361,39 @@
   }
 
   .main-promo__list {
+    position: relative;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-around;*/
     padding: 0;
     margin: 0;
     margin-top: 67px;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
+  .main-promo__icon-list-item--apple {
+    position: absolute;
+    top: 1px;
+    left: 50px;
+    width: 47px;
+    height: 50px;
+  }
+
+  .main-promo__icon-list-item--android {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 44px;
+    height: 47px;
+  }
+
+  .main-promo__icon-list-item--microsoft {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    width: 44px;
+    height: 47px;
   }
 
   .main-promo__description {

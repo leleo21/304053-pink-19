@@ -5,10 +5,6 @@
   padding: 0;
   padding-top: 30px;
   text-align: center;
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 300;
-  color: #283645;
 }
 
 .advantages__background-wrapper {
@@ -33,6 +29,7 @@
 }
 
 .advantages__list-wrapper {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 65px;
@@ -44,9 +41,6 @@
 
 .advantages__list {
   .list-style-none();
-  //background-image: url("../img/iphone-screen-mobile@1x.png");
-  //background-repeat: no-repeat;
-  //min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -70,6 +64,20 @@
   //outline: 2px solid red;
 }
 
+.advantages__item--mood {
+  display: none;
+}
+
+.advantages__item--world {
+  display: none;
+}
+
+.advantages__item--friends {
+  position: absolute;
+  top: 510px;
+  left: 85px;
+}
+
 .advantages__title {
   display: block;
   margin: 0;
@@ -77,10 +85,6 @@
   padding: 0;
   text-align: center;
   //min-height: 20px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
   /*временно для сетки*/
   //outline: 2px solid blue;
 }
@@ -90,10 +94,6 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283645;
   /*временно для сетки*/
   //outline: 2px solid blue;
 }
@@ -105,26 +105,28 @@
 
 @media (min-width: @tablet-width) {
   .advantages__list-wrapper {
-    //background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    //background-repeat: no-repeat;
+    position: relative;
     min-height: 547px;
     /*временно для сетки*/
-    //outline: 2px solid red;
+    outline: 2px solid red;
   }
 
   .advantages__list {
+    .list-style-none();
     display: flex;
+    flex-direction: column;
     width: 310px;
     min-height: 360px;
     margin: 0;
     padding: 0;
+    padding-left: 5px;
     margin-top: 30px;
     //min-height: 300px;
     margin-left: auto;
+    //margin-right: 30px;
     /*временно для сетки*/
-    //outline: 2px solid black;
+    outline: 2px solid black;
   }
-
 
   .advantages__item {
     display: flex;
@@ -137,6 +139,30 @@
     //text-align: center;
     /*временно для сетки*/
     //outline: 2px solid red;
+  }
+
+  .advantages__item--mood {
+    display: none;
+  }
+
+  .advantages__item--world {
+    display: none;
+  }
+
+  .advantages__item--friends {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  .advantages__text-container {
+    //min-height: 560px;
+    width: 310px;
+    margin: 0 auto;
+    padding: 0;
+    //padding-left: 20px;
+    /*временно для сетки*/
+    //outline: 2px solid blue;
   }
 
   .advantages__title {
@@ -165,10 +191,6 @@
     //min-height: 50px;
     margin: 0;
     padding: 0;
-    font-size: 40px;
-    line-height: normal;
-    font-weight: 300;
-    color: #283645;
     /*временно для сетки*/
     //outline: 2px solid green;
   }
@@ -214,9 +236,8 @@
 
 @media (min-width: @desktop-width) {
   .advantages__text {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: normal;
+    margin: 0;
+    padding: 0;
   }
 
   .advantages__text-wrapper {
@@ -261,33 +282,55 @@
   }
 
   .advantages__list {
+    .list-style-none();
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 874px;
+    width: 935px;
     margin: 0 auto;
+    //margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 60px;
     /*временно для сетки*/
     //outline: 2px solid red;
   }
 
-  .advantages__item {
-    min-height: 560px;
-    //width: 236px;
+  .advantages__text-container {
+    //min-height: 560px;
     width: 238px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    padding-top: 347px;
+    padding-top: 50px;
+    //padding-left: 20px;
     /*временно для сетки*/
     //outline: 2px solid blue;
   }
 
-  .advantages__title {
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 700;
+  .advantages__item {
+    margin: 0;
+    padding: 0;
+    /*временно для сетки*/
+    //outline: 2px solid red;
+  }
+
+  .advantages__item--mood {
     display: block;
+  }
+
+  .advantages__item--world {
+    display: block;
+  }
+
+  .advantages__item--friends {
+    display: block;
+    position: static;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__title {
+    display: block;
+    width: 238px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -296,9 +339,6 @@
   }
 
   .advantages__description {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
     display: block;
     text-align: center;
     padding: 0;
