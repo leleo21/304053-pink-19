@@ -15,22 +15,16 @@
   outline: 2px solid red;
 }
 
-.page-header__logo {
+.page-header__logo-link {
   height: 40px;
   cursor: pointer;
 }
 
-.page-header__logo-image {
-  /*временно для сетки*/
-  outline: 2px solid red;
-}
-
-
 .page-header__logo-mobile {
-  fill: #ffffff;
   position: absolute;
   top: 16px;
   left: 20px;
+  fill: #ffffff;
 
   &:hover {
     fill: #d22856;
@@ -43,6 +37,11 @@
   &:active {
     fill: rgba(255, 255, 255, 0.3);
   }
+}
+
+.page-header__logo-image {
+  /*временно для сетки*/
+  outline: 2px solid red;
 }
 
 .page-header__logo-desktop {
@@ -119,7 +118,6 @@
     /*временно для сетки*/
     outline: 2px solid white;
   }
-
 
   .page-header__logo-wrapper {
     min-height: 109px;
