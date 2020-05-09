@@ -61,11 +61,6 @@
               <p class="main-promo__description data__description-main">Доступно&nbsp;для&nbsp;iPhone,&nbsp;iPad,&nbsp;Android, Windows Phone, OS X, Windows 8</p>
               </div>
             </div>
-            <!--<picture class="main-promo__page-photo-hand">
-              <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
-              <img class="main-promo__image" src="img/iphone-hand-mobile@1x.png" alt="Телефон в руке">
-            </picture>-->
           </div>
         </div>
       </div>
@@ -154,11 +149,11 @@
                 <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
               </svg>
             </div>
-            <p class="rewiews__toggles slider__toggles slider">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
-            </p>
+            <div class="rewiews__toggles">
+              <button class="rewiews__slider-toggle rewiews__slider-toggle-back" type="button"><span class="visually-hidden">назад</span></button>
+              <button class="rewiews__slider-toggle rewiews__slider-toggle-current" type="button"><span class="visually-hidden">текущий слайд</span></button>
+              <button class="rewiews__slider-toggle rewiews__slider-toggle-forward" type="button"><span class="visually-hidden">вперед</span></button>
+            </div>
           </div>
         </div>
       </section>
@@ -167,13 +162,12 @@
           <h2 class="visually-hidden">Фильтр</h2>
           <table class="filter__list container__content data">
             <tr>
-              <td class="filter__table">
-                <p class="filter__title data__filter-title">Пусто</p>
+              <td class="filter__table-empty">
+                <p class="visually-hidden">Пусто</p>
               </td>
               <td class="filter__table">
                 <p class="filter__title data__filter-title">База</p>
                 <span class="filter__price data__filter-price">1,99 USD</span>
-                <span class="filter__hit data__hit">Хит</span>
               </td>
               <td class="filter__table">
                 <p class="filter__title data__filter-title">Стандарт</p>
@@ -183,33 +177,59 @@
               <td class="filter__table">
                 <p class="filter__title data__filter-title">Анлим</p>
                 <span class="filter__price data__filter-price">3,99 USD</span>
-                <span class="filter__hit data__hit">Хит</span>
               </td>
             </tr>
             <tr>
               <td class="filter__value data__filter-value">Розовый фильтр</td>
-              <td class="filter__value filter__value--pink data__filter-value">Розовый фильтр</td>
-              <td class="filter__value filter__value--pink data__filter-value">Розовый фильтр</td>
-              <td class="filter__value filter__value--pink data__filter-value">Розовый фильтр</td>
+              <td class="filter__value">
+                <svg class="filter__value-yes filter__value-yes-mobile" version="1.0" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 00-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 10-1.414 1.414l5.607 5.607a.997.997 0 001.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
+              </td>
+              <td class="filter__value">
+                <span class="filter__value-title-mobile data__filter-value">
+                  Розовый фильтр
+                </span>
+                <svg class="filter__value-yes" version="1.0" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 00-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 10-1.414 1.414l5.607 5.607a.997.997 0 001.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
+              </td>
+              <td class="filter__value">
+                <svg class="filter__value-yes" version="1.0" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 00-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 10-1.414 1.414l5.607 5.607a.997.997 0 001.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
+              </td>
             </tr>
             <tr>
               <td class="filter__value data__filter-value">Смайлики</td>
-              <td class="filter__value filter__value--smiles data__filter-value">Смайлики</td>
-              <td class="filter__value filter__value--smiles data__filter-value">Смайлики</td>
-              <td class="filter__value filter__value--smiles data__filter-value">Смайлики</td>
+              <td class="filter__value">
+                <svg class="filter__value-no" version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.752" height="26.752"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1024.191.441L13.376 11.255 2.562.439A1.5 1.5 0 10.441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 102.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 000-2.121L15.497 13.376z"/></svg>
+              </td>
+              <td class="filter__value">
+                <span class="filter__value-title-mobile data__filter-value">
+                  Смайлики
+                </span>
+                <svg class="filter__value-yes" version="1.0" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 00-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 10-1.414 1.414l5.607 5.607a.997.997 0 001.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
+              </td>
+              <td class="filter__value">
+                <svg class="filter__value-yes" version="1.0" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 00-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 10-1.414 1.414l5.607 5.607a.997.997 0 001.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
+              </td>
             </tr>
             <tr>
               <td class="filter__value data__filter-value">Комментарии</td>
-              <td class="filter__value filter__value--comments data__filter-value">Комментарии</td>
-              <td class="filter__value filter__value--comments data__filter-value">Комментарии</td>
-              <td class="filter__value filter__value--comments data__filter-value">Комментарии</td>
+              <td class="filter__value">
+                <svg class="filter__value-no" version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.752" height="26.752"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1024.191.441L13.376 11.255 2.562.439A1.5 1.5 0 10.441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 102.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 000-2.121L15.497 13.376z"/></svg>
+              </td>
+              <td class="filter__value">
+                <span class="filter__value-title-mobile data__filter-value">
+                  Комментарии
+                </span>
+                <svg class="filter__value-no" version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.752" height="26.752"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1024.191.441L13.376 11.255 2.562.439A1.5 1.5 0 10.441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 102.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 000-2.121L15.497 13.376z"/></svg>
+              </td>
+              <td class="filter__value data__filter-value">
+                <svg class="filter__value-yes" version="1.0" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 00-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 10-1.414 1.414l5.607 5.607a.997.997 0 001.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
+              </td>
             </tr>
           </table>
-          <p class="filter__toggles slider">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <div class="filter__toggles">
+            <button class="filter__slider-toggle filter__slider-toggle-back" type="button"><span class="visually-hidden">назад</span></button>
+            <button class="filter__slider-toggle filter__slider-toggle-current" type="button"><span class="visually-hidden">текущий слайд</span></button>
+            <button class="filter__slider-toggle filter__slider-toggle-forward" type="button"><span class="visually-hidden">вперед</span></button>
+          </div>
         </div>
       </section>
       <section class="contacts container">
