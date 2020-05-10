@@ -52,24 +52,35 @@
 }
 
 .photo__best-container {
-  //position: relative;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   min-height: 38px;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 17px;
   padding-left: 20px;
   /*временно для сетки*/
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 .photo__best-likes {
   position: absolute;
-  top: 140px;
+  top: 147px;
   left: 50px;
   margin: 0;
   padding: 0;
+}
+
+.photo__best-likes::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-heart.svg");
+  display: block;
+  top: 6px;
+  left: -30px;
+  width: 13px;
+  height: 12px;
 }
 
 .photo__panorama-img {
@@ -159,10 +170,11 @@
 }
 
 .photo__likes-container {
+  position: relative;
   display: block;
   margin: 0;
   padding: 0;
-  width: 95px;
+  width: 100px;
   min-height: 54px;
   padding-top: 10px;
   margin-left: 48px;
@@ -183,6 +195,17 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #d22856;*/
+}
+
+.photo__likes::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-heart.svg");
+  display: block;
+  bottom: 26px;
+  left: -30px;
+  width: 13px;
+  height: 12px;
 }
 
 @media (min-width: @tablet-width) {
@@ -228,7 +251,7 @@
     padding: 0;
     padding-left: 27px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__best-container {
@@ -241,16 +264,29 @@
     padding-top: 15px;
     padding-left: 5px;
     /*временно для сетки*/
-    outline: 2px solid black;
+    //outline: 2px solid black;
   }
 
   .photo__best-likes {
     position: absolute;
+    //position: relative;
     display: block;
     top: 18px;
     left: 448px;
     margin: 0;
     padding: 0;
+  }
+
+  .photo__best-likes::before {
+    position: absolute;
+    //content: "";
+    //background-image: url("../img/icon-heart.svg");
+    display: block;
+    top: 6px;
+    //right: -28px;
+    left: 108px;
+    //width: 13px;
+    //height: 12px;
   }
 
   .photo__panorama-img {
@@ -272,7 +308,7 @@
     //width: auto;
     //margin-top: -95px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__image {
@@ -286,7 +322,7 @@
   }
 
   .photo__text {
-    //display: block;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -301,7 +337,6 @@
   }
 
   .photo__text-container {
-    //position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 250px;
@@ -328,6 +363,7 @@
   }
 
   .photo__likes-container {
+    position: static;
     display: block;
     margin: 0;
     padding: 0;
@@ -343,11 +379,23 @@
 
   .photo__likes {
     //position: absolute;
+    //position: relative;
     //top: 105px;
     //left: 1px;
     margin: 0;
     padding: 0;
     //padding-top: 10px;
+  }
+
+  .photo__likes::before {
+    position: absolute;
+    //content: "";
+    //background-image: url("../img/icon-heart.svg");
+    display: block;
+    bottom: 30px;
+    left: 255px;
+    //width: 13px;
+    //height: 12px;
   }
 }
 
@@ -423,7 +471,7 @@
     padding: 0;
     padding-left: 27px;
     /*временно для сетки*/
-    outline: 2px solid red;
+    //outline: 2px solid red;
   }
 
   .photo__best-container {
@@ -439,12 +487,24 @@
   }
 
   .photo__best-likes {
-    position: absolute;
+    position: relative;
+    //position: absolute;
     display: block;
     top: 20px;
     left: 761px;
     margin: 0;
     padding: 0;
+  }
+
+  .photo__best-likes::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    //display: block;
+    top: 6px;
+    right: -32px;
+    width: 13px;
+    height: 12px;
   }
 
   .photo__image {
@@ -460,6 +520,7 @@
 
   .photo__text {
     //display: block;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -516,11 +577,19 @@
   }
 
   .photo__likes {
-    /*position: absolute;
-    top: 105px;
-    left: 1px;*/
+    display: block;
     margin: 0;
     padding: 0;
-    //padding-top: 10px;
+  }
+
+  .photo__likes::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    display: block;
+    bottom: 30px;
+    right: 30px;
+    width: 13px;
+    height: 12px;
   }
 }
