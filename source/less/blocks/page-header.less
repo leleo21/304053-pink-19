@@ -39,9 +39,37 @@
   }
 }
 
-.page-header__logo-image {
-  /*временно для сетки*/
-  //outline: 2px solid red;
+.page-header__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.page-header__toggle-icon {
+  width: auto;
+  height: auto;
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:focus {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .page-header__logo-desktop {
@@ -94,6 +122,21 @@
 
   .page-header__logo-desktop {
     display: none;
+  }
+
+  .page-header__toggle {
+    position: absolute;
+    top: 42px;
+    right: 20px;
+    width: 25px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
   }
 }
 
