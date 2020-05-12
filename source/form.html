@@ -161,23 +161,41 @@
                     <div class="form__user-app-wrapper">
                       <div class="form__user-app-border border">
                         <p class="user-application__title h2-title-style">С каким приложением путешествовали?</p>
-                        <ul class="user-application__list application-list">
-                          <li class="application-list__item application">
-                            <label class="application__label data__label-form" for="pink_ios">
-                              <input  class="application__input" type="radio" name="application" value="pink_ios" id="pink_ios" checked>
+                        <ul class="user-application__list">
+                          <li class="user-application__list--item">
+                            <label class="user-application__list-label data__label-form" for="pink_ios">
+                              <input  class="user-application__list-input" type="radio" name="application" value="pink_ios" id="pink_ios" checked>
                               Pink для iOS
+                              <div class="user-application__list-checkbox-off user-application__list-checkbox-ios">
+                                <span class="visually-hidden">Не выбрано</span>
+                              </div>
+                              <div class="user-application__list-checkbox-on user-application__list-checkbox-ios">
+                                <span class="visually-hidden">Выбрано</span>
+                              </div>
                             </label>
                           </li>
-                          <li class="application-list__item application">
-                            <label class="application__label data__label-form" for="pink_android">
-                              <input  class="application__input" type="radio" name="application" value="pink_android" id="pink_android">
+                          <li class="user-application__list--item">
+                            <label class="user-application__list-label data__label-form" for="pink_android">
+                              <input  class="user-application__list-input" type="radio" name="application" value="pink_android" id="pink_android">
                               Pink на Android
+                              <div class="user-application__list-checkbox-off user-application__list-checkbox-android">
+                                <span class="visually-hidden">Не выбрано</span>
+                              </div>
+                              <div class="user-application__list-checkbox-on user-application__list-checkbox-android">
+                                <span class="visually-hidden">Выбрано</span>
+                              </div>
                             </label>
                           </li>
-                          <li class="application-list__item application">
-                            <label class="application__label data__label-form" for="pink_windows_phone">
-                              <input  class="application__input" type="radio" name="application" value="pink_windows_phone" id="pink_windows_phone">
+                          <li class="user-application__list--item">
+                            <label class="user-application__list-label data__label-form" for="pink_windows_phone">
+                              <input  class="user-application__list-input" type="radio" name="application" value="pink_windows_phone" id="pink_windows_phone">
                               Windows Phone
+                              <div class="user-application__list-checkbox-off user-application__list-checkbox-windows">
+                                <span class="visually-hidden">Не выбрано</span>
+                              </div>
+                              <div class="user-application__list-checkbox-on user-application__list-checkbox-windows">
+                                <span class="visually-hidden">Выбрано</span>
+                              </div>
                             </label>
                           </li>
                         </ul>
