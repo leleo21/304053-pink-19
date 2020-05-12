@@ -1,4 +1,4 @@
-.submit {
+.submit__form {
   width: 276px;
   height: 59px;
   border: 2px solid #2aab6d;
@@ -8,10 +8,29 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2aab6d;
+  cursor: pointer;
+}
+
+.submit__button {
+  &:hover {
+    background-color: #1c9b5e;
+    border: #1c9b5e;
+  }
+
+  &:focus {
+    background-color: #1c9b5e;
+    border: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    border: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .submit {
+  .submit__form {
     width: 300px;
     height: 64px;
     padding: 0;
@@ -20,7 +39,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .submit {
+  .submit__form {
     width: 302px;
     height: 64px;
   }
