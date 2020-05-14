@@ -32,6 +32,19 @@
   background-color: #283645;
   box-shadow: 0 1px 0 0 solid #000000;
   color: #ffffff;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:focus {
+    color: #d22856;
+  }
+
+  &:active {
+    color: #d22856;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -106,6 +119,19 @@
     padding-bottom: 48px;
     padding-left: 40px;
     background-color: transparent;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:focus {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
   }
 
   .main-nav__nav-index {
@@ -134,5 +160,50 @@
     //width: 132px;
     //padding-left: 40px;
     padding-right: 15px;
+  }
+
+  .main-nav__form-active {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 35px;
+      left: 40px;
+      width: 70px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+  }
+
+  .main-nav__index-active {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 35px;
+      left: 40px;
+      width: 70px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+  }
+
+  .main-nav__photo-active {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 35px;
+      left: 40px;
+      width: 107px;
+      height: 3px;
+      background-color: #ffffff;
+    }
   }
 }

@@ -17,6 +17,128 @@
   //outline: 2px solid red;
 }
 
+.user-application__list--item {
+  display: block;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  min-height: 40px;
+  /*временно для сетки*/
+  //outline: 2px solid blue;
+}
+
+.user-application__list--item:nth-child(1) {
+  position: relative;
+  top: -7px;
+  left: -40px;
+  padding-top: 5px;
+  padding-left: 70px;
+}
+
+.user-application__list-checkbox-ios {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.user-application__list--item:nth-child(2) {
+  position: relative;
+  top: -1px;
+  left: -40px;
+  padding-top: 5px;
+  padding-left: 70px;
+}
+
+.user-application__list-checkbox-android {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.user-application__list--item:nth-child(3) {
+  position: relative;
+  top: 5px;
+  left: -40px;
+  padding-top: 5px;
+  padding-left: 70px;
+}
+
+.user-application__list-checkbox-windows {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.user-application__list-input {
+  display: none;
+}
+
+.user-application__list-checkbox-off {
+  display: block;
+  width: 39px;
+  height: 39px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
+}
+
+.user-application__list-checkbox-on {
+  //position: relative;
+  display: none;
+  //display: block;
+  width: 39px;
+  height: 39px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  //background-image: url("../img/icon-yes.svg");
+  //background-repeat: no-repeat;
+  //background-size: 15px 15px;
+  border-radius: 50%;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
+}
+
+.user-application__list-checkbox-on::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.user-application__list-input:checked ~ .user-application__list-checkbox-off {
+  display: none;
+}
+
+.user-application__list-input:checked ~ .user-application__list-checkbox-on {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .user-application {
     display: block;
@@ -32,7 +154,7 @@
     position: relative;
     width: 368px;
     min-height: 38px;
-    top: -10px;
+    top: -17px;
     //left: 30px;
     background-color: #ffffff;
     margin: 0 auto;
@@ -48,8 +170,50 @@
     margin: 0;
     padding: 0;
     margin-top: 20px;
-    margin-left: 90px;
+    margin-left: 98px;
     //margin-top: 22px;
+  }
+
+  .user-application__list--item:nth-child(1) {
+    position: relative;
+    top: -7px;
+    left: -40px;
+    padding-top: 5px;
+    padding-left: 60px;
+  }
+
+  .user-application__list-checkbox-ios {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+
+  .user-application__list--item:nth-child(2) {
+    position: relative;
+    top: -1px;
+    left: -40px;
+    padding-top: 5px;
+    padding-left: 60px;
+  }
+
+  .user-application__list-checkbox-android {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+
+  .user-application__list--item:nth-child(3) {
+    position: relative;
+    top: 5px;
+    left: -40px;
+    padding-top: 5px;
+    padding-left: 60px;
+  }
+
+  .user-application__list-checkbox-windows {
+    position: absolute;
+    top: 1px;
+    left: 1px;
   }
 }
 
@@ -65,10 +229,20 @@
     position: relative;
     width: 368px;
     min-height: 38px;
-    top: -10px;
+    top: -17px;
     //left: 30px;
     background-color: #ffffff;
     margin: 0 auto;
     padding: 0;
   }
+
+  /*.user-application-list__item {
+    display: block;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    min-height: 40px;
+    /*временно для сетки
+    outline: 2px solid blue;
+  }*/
 }
