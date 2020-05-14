@@ -52,21 +52,6 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*.h1-title-style {
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-@media (min-width: @desktop-width) {
-  .h1-title-style {
-    font-size: 21px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-}*/
 .h2-title-style {
   font-size: 14px;
   line-height: 18px;
@@ -78,25 +63,8 @@ a {
   .h2-title-style {
     font-size: 14px;
     line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #d22856;
   }
 }
-@media (min-width: 960px) {
-  .h2-title-style {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #d22856;
-  }
-}
-/*.button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-}*/
 .container {
   width: 320px;
   margin: 0 auto;
@@ -107,45 +75,24 @@ a {
   width: 276px;
   margin: 0 auto;
   padding: 0;
-  /*временно для сетки*/
 }
 @media (min-width: 660px) {
   .container {
     width: 660px;
-    margin: 0 auto;
-    /*временно для сетки*/
   }
   .container__content {
     width: 616px;
-    margin: 0 auto;
-    padding: 0;
-    /*временно для сетки*/
   }
 }
 @media (min-width: 960px) {
   .container {
     width: 1200px;
     min-height: 110px;
-    /*временно для сетки*/
   }
   .container__content {
     width: 960px;
-    margin: 0 auto;
-    padding: 0;
-    /*временно для сетки*/
   }
 }
-/*.nav-list__item {
-  display: block;
-  min-height: 63px;
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  text-align: center;
-  background-color: #283645;
-  /*временно для сетки
-  outline: 2px solid yellow;
-}*/
 .page-header__background-wrapper {
   background-color: #283645;
 }
@@ -159,7 +106,6 @@ a {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  /*временно для сетки*/
   height: 70px;
 }
 .page-header__logo-link {
@@ -226,7 +172,6 @@ a {
   }
   .page-header__logo-wrapper {
     min-height: 109px;
-    position: relative;
   }
   .page-header__logo-tablet {
     display: block;
@@ -251,19 +196,10 @@ a {
     display: none;
   }
   .page-header__toggle {
-    position: absolute;
     top: 42px;
     right: 20px;
     width: 25px;
     height: 26px;
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-color: transparent;
-    border-style: none;
-    outline: none;
-    cursor: pointer;
   }
 }
 @media (min-width: 960px) {
@@ -271,10 +207,6 @@ a {
     position: absolute;
     top: 1px;
     left: 160px;
-    /*background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top;*/
-    /*временно для сетки*/
   }
   .page-header__background-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
@@ -328,7 +260,6 @@ a {
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
-  /*временно для сетки*/
 }
 .main-nav__list {
   list-style: none;
@@ -345,8 +276,6 @@ a {
   margin: 0;
   padding: 0;
   width: 320px;
-  /*min-height: 256px;*/
-  /*временно для сетки*/
 }
 .main-nav__link {
   display: block;
@@ -355,8 +284,8 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 17px;
-  -webkit-box-shadow: 0 1px 0 0 solid #000000;
-          box-shadow: 0 1px 0 0 solid #000000;
+  -webkit-box-shadow: 0 1px 0 0 #000000;
+          box-shadow: 0 1px 0 0 #000000;
   background-color: #283645;
   color: #ffffff;
 }
@@ -375,41 +304,21 @@ a {
     width: auto;
   }
   .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 660px;
     margin: 0 auto;
-    padding: 0;
     min-height: 256px;
   }
   .main-nav__link {
-    display: block;
-    text-align: center;
     font-size: 18px;
     line-height: 32px;
     font-weight: 700;
     min-height: 63px;
-    margin: 0;
-    padding: 0;
     padding-top: 18px;
-    -webkit-box-shadow: 0 1px 0 0 #000000;
-            box-shadow: 0 1px 0 0 #000000;
-    background-color: #283645;
   }
 }
 @media (min-width: 960px) {
   .main-nav {
-    width: auto;
     margin: 0;
-    padding: 0;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
@@ -418,28 +327,19 @@ a {
     /*временно для сетки*/
   }
   .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: auto;
     margin: 0 auto;
     min-height: 110px;
   }
   .main-nav__link {
-    display: block;
     font-size: 18px;
     line-height: 18px;
     font-weight: 300;
     min-height: 16px;
-    margin: 0;
-    padding: 0;
     padding-top: 45px;
     padding-bottom: 48px;
     padding-left: 40px;
