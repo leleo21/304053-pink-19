@@ -70,17 +70,14 @@
 .contacts__map-container {
   position: relative;
   display: block;
-  /*background-image: url("../img/bg-map-desktop@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: right 1px bottom -20px;
-  width: 100%;*/
   min-height: 198px;
   //padding-top: 18px;
   overflow: hidden;
 }
 
 .contacts__map {
-  position: absolute;
+  //position: absolute;
+  position: relative;
   top: -445px;
   left: 1px;
   //width: 1200px;
@@ -180,10 +177,10 @@
   .contacts__map-container {
     position: relative;
     display: block;
-    /*background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right 1px bottom -20px;
-    width: 100%;*/
+    width: 100%;
     min-height: 376px;
     //margin-top: 18px;
     overflow: hidden;
@@ -225,8 +222,6 @@
     margin: 0 auto;
     padding: 0;
     min-height: 271px;
-    /*временно для сетки*/
-    //outline: 2px solid yellowgreen;
   }
 
   .contacts__text {
@@ -235,26 +230,18 @@
     padding: 0;
     padding-top: 60px;
     width: 456px;
-    //min-height: 98px;
     min-height: 90px;
-    /*временно для сетки*/
-    //outline: 2px solid blue;
   }
 
   .contacts__list {
     display: flex;
     flex-direction: row;
-    //justify-content: space-around;
-    //flex-wrap: wrap;
-    //width: 940px;
     width: 862px;
     min-height: 97px;
     margin: 0;
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: 48px;
+    margin-top: 52px;
     padding: 0;
-    /*временно для сетки*/
-    //outline: 2px solid red;
   }
 
   .contacts__item {
@@ -262,8 +249,6 @@
     margin: 0;
     padding: 0;
     text-align: none;
-    /*временно для сетки*/
-    //outline: 2px solid black;
   }
 
   .contacts__item--call {
@@ -287,24 +272,12 @@
     width: 211px;
     margin: 0;
     padding: 0;
+    margin-left: 17px;
     text-align: none;
   }
 
-  /*.contacts__item--address {
-    display: block;
-    //text-align: center;
-    width: 215px;
-    min-height: 50px;
-    margin: 0;
-    padding: 0;
-    //padding-right: 30px;
-    /*временно для сетки
-    outline: 2px solid blue;
-  }*/
-
   .contacts__item:nth-child(2) {
     display: block;
-    //width: 150px;
     order: 1;
     margin: 0;
     padding: 0;
@@ -320,8 +293,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    padding-top: 20px;
-    //padding-left: 15px;
+    padding-top: 16px;
   }
 
   .contacts__title {
@@ -333,10 +305,6 @@
   .contacts__map-container {
     position: relative;
     display: block;
-    /*background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right 1px bottom -20px;
-    width: 100%;*/
     min-height: 500px;
     margin-top: 18px;
     overflow: hidden;
@@ -346,13 +314,8 @@
     position: absolute;
     top: -282px;
     left: 1px;
-    //width: 1200px;
-    //height: 507px;
     width: 100%;
-    //min-height: 502px;
     margin: 0;
-    //margin-bottom: 196px;
-    //margin-top: 20px;
     padding: 0;
   }
 
@@ -365,7 +328,17 @@
     height: 36px;
     background: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
-    /*временно для сетки*/
-    //outline: 2px solid red;
+  }
+
+  .contacts__map-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 102px;
+    background-image: url("./../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center -1px;
+    background-size: 1200px 102px;
   }
 }
