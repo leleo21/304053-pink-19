@@ -413,19 +413,11 @@ a {
     background-color: #ffffff;
   }
 }
-/*.main-promo {
-  background-color: #1d2631;
-  //background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  min-height: 314px;
-}*/
 .main-promo {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #1d2631;
-  background-position: bottom 265px right 1px;
-  /*временно для сетки*/
-  outline: 2px solid red;
+  background-position: bottom 275px right 1px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-promo {
@@ -436,10 +428,7 @@ a {
 .main-promo__page-photo-hand {
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: bottom 265px right 63px;
-  /*position: absolute;
-  top: 96px;
-  right: 5px;*/
+  background-position: bottom 275px right 63px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-promo__page-photo-hand {
@@ -448,22 +437,15 @@ a {
   }
 }
 .main-promo__wrapper {
-  min-height: 667px;
+  min-height: 664px;
   margin: 0;
   padding: 0;
-  /*временно для сетки*/
 }
-/*.main-promo__page-photo {
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  min-height: 396px;
-}*/
 .main-promo__wrapper-background {
   display: block;
   margin: 0;
   padding: 0;
   min-height: 400px;
-  /*временно для сетки*/
 }
 .main-promo__slogan {
   display: block;
@@ -471,17 +453,12 @@ a {
   padding-top: 24px;
   padding-bottom: 27px;
   text-align: center;
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 400;
-  /*временно для сетки*/
 }
 .main-promo__download-wrapper {
   display: block;
   width: 281px;
   height: 55px;
   margin-top: 28px;
-  /*временно для сетки*/
 }
 .main-promo__download {
   font-size: 18px;
@@ -511,8 +488,7 @@ a {
   list-style: none;
   position: relative;
   margin-top: 40px;
-  /*временно для сетки*/
-  height: 47px;
+  min-height: 47px;
 }
 .main-promo__icon-list-item--apple {
   position: absolute;
@@ -541,8 +517,7 @@ a {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 35px;
-  /*временно для сетки*/
-  height: 47px;
+  min-height: 47px;
 }
 @media (min-width: 660px) {
   .main-promo {
@@ -550,33 +525,18 @@ a {
     background-repeat: no-repeat;
     background-position: bottom;
   }
-  /*.main-promo__page-photo {
-    //position: relative;
-    //background-image: url("../img/iphone-hand-tablet@1x.png");
-    //min-height: 545px;
-    //display: flex;
-    //flex-direction: row;
-    /*временно для сетки
-    //outline: 2px solid red;
-  }*/
   .main-promo__page-photo-hand {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: bottom left -20px;
     background-repeat: no-repeat;
-    /*position: absolute;
-    top: 96px;
-    right: 5px;*/
   }
   .main-promo__wrapper {
     width: 300px;
     min-height: 619px;
     padding-top: 36px;
-    /*временно для сетки*/
-    outline: 2px solid red;
   }
   .main-promo__wrapper-background {
     min-height: 230px;
-    /*временно для сетки*/
   }
   .main-promo__slogan {
     display: block;
@@ -588,12 +548,10 @@ a {
     font-size: 40px;
     line-height: normal;
     font-weight: 300;
-    /*временно для сетки*/
   }
   .main-promo__download-wrapper {
     width: 300px;
     margin: 0;
-    /*временно для сетки*/
   }
   .main-promo__download {
     width: 300px;
@@ -605,7 +563,6 @@ a {
     position: relative;
     min-height: 60px;
     margin-top: 42px;
-    /*временно для сетки*/
     height: 47px;
   }
   .main-promo__icon-list-item--apple {
@@ -628,7 +585,6 @@ a {
     left: 210px;
     width: 44px;
     height: 47px;
-    outline: 2px solid red;
   }
   .main-promo__description {
     display: block;
@@ -636,13 +592,8 @@ a {
     margin: 0;
     margin-top: 38px;
     padding-left: 1px;
-    /*временно для сетки*/
     min-height: 47px;
   }
-  /*.main-promo__page-photo {
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    min-height: 545px;
-  }*/
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .main-promo {
@@ -663,15 +614,11 @@ a {
     background-position: bottom;
     min-height: 850px;
     padding-top: 109px;
-    /*временно для сетки*/
   }
   .main-promo__page-photo-hand {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: bottom right 5px;
-    /*position: absolute;
-    top: 96px;
-    right: 5px;*/
   }
   .main-promo__wrapper {
     min-height: 740px;
@@ -689,13 +636,11 @@ a {
     padding: 0;
     padding-top: 107px;
     padding-bottom: 15px;
-    /*временно для сетки*/
   }
   .main-promo__download-wrapper {
     width: 300px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .main-promo__download {
     display: block;
@@ -707,13 +652,9 @@ a {
   }
   .main-promo__list {
     position: relative;
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-around;*/
     padding: 0;
     margin: 0;
     margin-top: 64px;
-    /*временно для сетки*/
   }
   .main-promo__icon-list-item--apple {
     position: absolute;
@@ -758,14 +699,14 @@ a {
   min-height: 50px;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
   text-align: center;
 }
 .advantages__background-wrapper {
   display: block;
   margin: 0;
   padding: 0;
-  min-height: 218px;
+  padding-top: 22px;
+  min-height: 190px;
 }
 .advantages__text-wrapper {
   display: -webkit-box;
@@ -779,18 +720,20 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 204px;
-  min-height: 140px;
+  min-height: 145px;
   margin: 0 auto;
   padding: 0;
-  /*временно для сетки*/
 }
 .advantages__list-wrapper {
   position: relative;
   margin: 0;
   padding: 0;
   padding-top: 65px;
-  min-height: 787px;
-  /*временно для сетки*/
+  min-height: 792px;
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center -20px;
 }
 .advantages__list {
   list-style: none;
@@ -806,9 +749,8 @@ a {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 25px;
   min-height: 376px;
-  /*временно для сетки*/
 }
 .advantages__item {
   display: -webkit-box;
@@ -822,7 +764,6 @@ a {
   padding: 0;
   margin-bottom: 33px;
   min-height: 96px;
-  /*временно для сетки*/
 }
 .advantages__item--mood {
   display: none;
@@ -832,8 +773,9 @@ a {
 }
 .advantages__item--friends {
   position: absolute;
-  top: 510px;
+  top: 515px;
   left: 85px;
+  clip: rect(auto, auto, 278px, auto);
 }
 .advantages__title {
   display: block;
@@ -841,19 +783,13 @@ a {
   margin-bottom: 10px;
   padding: 0;
   text-align: center;
-  /*временно для сетки*/
 }
 .advantages__description {
   display: block;
   text-align: center;
   padding: 0;
   margin: 0;
-  /*временно для сетки*/
 }
-/*.advantages__image {
-  display: block;
-  margin-left: 82px;
-}*/
 @media (min-width: 660px) {
   .advantages__background-wrapper {
     min-height: 238px;
@@ -904,6 +840,7 @@ a {
     position: absolute;
     top: 5px;
     left: 20px;
+    clip: inherit;
   }
   .advantages__text-container {
     width: 310px;
@@ -931,7 +868,7 @@ a {
   .advantages__text--top {
     display: block;
     margin: 0;
-    margin-top: 48px;
+    margin-top: 25px;
     padding: 0;
     width: 620px;
     min-height: 38px;
@@ -976,7 +913,7 @@ a {
     display: block;
     margin: 0;
     padding: 0;
-    padding-top: 69px;
+    padding-top: 45px;
     width: 960px;
     min-height: 38px;
   }
@@ -992,10 +929,11 @@ a {
     background-color: #f2f2f2;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position: center 1px;
+    background-position: center -1px;
     margin: 0;
     padding: 0;
-    min-height: 556px;
+    min-height: 586px;
+    margin-top: -25px;
   }
   .advantages__list {
     list-style: none;
@@ -1062,7 +1000,7 @@ a {
   min-height: 210px;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 43px;
 }
 .reviews__author {
   display: block;
@@ -1164,7 +1102,7 @@ a {
     width: 685px;
     min-height: 413px;
     margin: 0 auto;
-    padding-top: 183px;
+    padding-top: 188px;
   }
   .reviews__wrapper::before {
     content: "";
@@ -1245,12 +1183,13 @@ a {
   position: relative;
   display: block;
   padding-top: 90px;
-  /*text-align: center;*/
   width: 320px;
   min-height: 475px;
-  background-color: #f2f2f2;
   overflow: hidden;
-  /*временно для сетки*/
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: right -1px;
 }
 .filter__title {
   margin: 0;
@@ -1263,7 +1202,7 @@ a {
 .filter__list {
   position: absolute;
   top: 85px;
-  left: -540px;
+  left: -545px;
   margin: 0;
   margin-top: 1px;
   width: 1120px;
@@ -1291,9 +1230,6 @@ a {
   text-align: center;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  /*background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
-  background-position: center;*/
   width: 115px;
   background-color: #d22856;
 }
@@ -1338,7 +1274,6 @@ a {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  /*временно для сетки*/
 }
 .filter__toggle--active {
   background-color: #ffffff;
@@ -1440,7 +1375,7 @@ a {
     padding: 0;
     width: 944px;
     min-height: 281px;
-    margin-top: 143px;
+    margin-top: 155px;
     outline: none;
     border: none;
   }
@@ -1470,7 +1405,8 @@ a {
     text-align: left;
     height: 61px;
     padding: 0;
-    padding-left: 18px;
+    padding-bottom: 8px;
+    padding-left: 22px;
     padding-right: 62px;
     border: 2px solid #e5e5e5;
   }
@@ -1551,6 +1487,7 @@ a {
     display: block;
     margin: 0;
     padding: 0;
+    min-height: 430px;
     background-color: #f2f2f2;
   }
   .research__wrapper {
@@ -1566,13 +1503,13 @@ a {
     position: absolute;
     width: 298px;
     height: 345px;
-    top: 34px;
+    top: 39px;
     left: 130px;
     fill: #dedede;
   }
   .research__timer-full {
     position: absolute;
-    top: 105px;
+    top: 110px;
     left: 153px;
     border: 18px solid #d22856;
     width: 253px;
@@ -1968,20 +1905,18 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 235px;
+  min-height: 205px;
   margin: 0;
   padding: 0;
   padding-top: 25px;
-  /*временно для сетки*/
 }
 .contacts__item {
   display: block;
-  min-height: 50px;
+  min-height: 40px;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
   text-align: center;
-  /*временно для сетки*/
 }
 .contacts__text {
   margin: 0;
@@ -1989,9 +1924,10 @@ a {
   text-align: center;
 }
 .contacts__title {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
+  min-height: 10px;
 }
 .contacts__link {
   display: block;
@@ -2013,28 +1949,43 @@ a {
 }
 .contacts__map-container {
   position: relative;
-  display: block;
-  min-height: 198px;
-  overflow: hidden;
-}
-.contacts__map {
-  position: relative;
-  top: -445px;
-  left: 1px;
+  z-index: 100;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 200px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+  background-position: center bottom;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contacts__map-container {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+.contacts__map-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 62px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center -31px;
 }
 .contacts__map-container::after {
   content: "";
   position: absolute;
-  top: 93px;
-  left: 142px;
+  bottom: 35%;
+  left: 50%;
   width: 36px;
   height: 36px;
-  background: url("../img/icon-map-marker.svg");
+  margin-left: -20px;
+  background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
-  /*временно для сетки*/
+  z-index: -1;
+}
+.contacts__map {
+  width: 100%;
 }
 @media (min-width: 660px) {
   .contacts__wrapper {
@@ -2045,7 +1996,6 @@ a {
     padding: 0;
     padding-top: 15px;
     margin: 0;
-    /*временно для сетки*/
   }
   .contacts__list {
     display: -webkit-box;
@@ -2062,17 +2012,15 @@ a {
         flex-wrap: wrap;
     width: 543px;
     min-height: 185px;
-    margin-top: 32px;
+    margin-top: 40px;
     margin-left: 45px;
     padding: 0;
-    /*временно для сетки*/
   }
   .contacts__item {
     display: block;
     min-height: 50px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .contacts__item--address {
     display: block;
@@ -2082,8 +2030,7 @@ a {
     margin: 0 auto;
     padding: 0;
     padding-right: 10px;
-    margin-top: 38px;
-    /*временно для сетки*/
+    margin-top: 44px;
   }
   .contacts__title {
     display: block;
@@ -2102,34 +2049,32 @@ a {
     padding: 0;
     padding-top: 30px;
   }
-  .contacts__map-container {
-    position: relative;
-    display: block;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right 1px bottom -20px;
-    width: 100%;
-    min-height: 376px;
-    overflow: hidden;
-  }
   .contacts__map {
-    position: absolute;
-    top: -312px;
-    left: -1px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 370px;
   }
-  .contacts__map-container::after {
+  .contacts__map-container {
+    width: 100%;
+    height: 370px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -323px;
+    background-size: 100% auto;
+  }
+  .contacts__map-container::before {
     content: "";
     position: absolute;
-    top: 196px;
-    left: 310px;
-    width: 36px;
-    height: 36px;
-    background: url("../img/icon-map-marker.svg");
+    height: 123px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
-    /*временно для сетки*/
+    background-color: transparent;
+    background-position: center -55px;
+    background-size: cover;
+  }
+}
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .contacts__map-container {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+    background-size: 100% auto;
   }
 }
 @media (min-width: 960px) {
@@ -2146,7 +2091,7 @@ a {
     display: flex;
     margin: 0 auto;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 70px;
     width: 456px;
     min-height: 90px;
   }
@@ -2217,41 +2162,32 @@ a {
     margin: 0;
     padding: 0;
   }
-  .contacts__map-container {
-    position: relative;
-    display: block;
-    min-height: 500px;
-    margin-top: 18px;
-    overflow: hidden;
-  }
   .contacts__map {
-    position: absolute;
-    top: -282px;
-    left: 1px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    min-height: 500px;
   }
-  .contacts__map-container::after {
-    content: "";
-    position: absolute;
-    top: 260px;
-    left: 582px;
-    width: 36px;
-    height: 36px;
-    background: url("../img/icon-map-marker.svg");
+  .contacts__map-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 25px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
+    background-position: center -277px;
   }
   .contacts__map-container::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 102px;
+    height: 140px;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-color: transparent;
-    background-position: center -1px;
-    background-size: 1200px 102px;
+    background-position: center -20px;
+    background-size: cover;
+  }
+}
+@media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .contacts__map-container {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+    background-size: 100% auto;
   }
 }
 .copyright__text {
@@ -4651,7 +4587,7 @@ a {
 }
 .data__h1-title-style-main {
   font-size: 24px;
-  line-height: auto;
+  line-height: 30px;
   font-weight: 300;
   text-transform: none;
   color: #ffffff;
@@ -4665,7 +4601,7 @@ a {
 }
 .data__advantages-text {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   color: #283645;
 }
@@ -4723,13 +4659,13 @@ a {
 }
 .data__contacts-text {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   color: #283645;
 }
 .data__contacts-title {
   font-size: 18px;
-  line-height: 36px;
+  line-height: 30px;
   font-weight: 700;
   color: #283645;
 }

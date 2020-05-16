@@ -3,7 +3,6 @@
   min-height: 50px;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
   text-align: center;
 }
 
@@ -11,8 +10,8 @@
   display: block;
   margin: 0;
   padding: 0;
-  min-height: 218px;
-  //outline: 2px solid red;
+  padding-top: 22px;
+  min-height: 190px;
 }
 
 .advantages__text-wrapper {
@@ -20,12 +19,9 @@
   flex-direction: column;
   justify-content: space-between;
   width: 204px;
-  min-height: 140px;
+  min-height: 145px;
   margin: 0 auto;
   padding: 0;
-  //padding-top: 42px;
-  /*временно для сетки*/
-  //outline: 2px solid blue;
 }
 
 .advantages__list-wrapper {
@@ -33,10 +29,11 @@
   margin: 0;
   padding: 0;
   padding-top: 65px;
-  min-height: 787px;
-  //background-color: #f2f2f2;
-  /*временно для сетки*/
-  //outline: 2px solid blue;
+  min-height: 792px;
+  background-color: #f2f2f2;
+  background-image: url("./../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center -20px;
 }
 
 .advantages__list {
@@ -46,10 +43,8 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 25px;
   min-height: 376px;
-  /*временно для сетки*/
-  //outline: 2px solid black;
 }
 
 .advantages__item {
@@ -59,9 +54,6 @@
   padding: 0;
   margin-bottom: 33px;
   min-height: 96px;
-  //text-align: center;
-  /*временно для сетки*/
-  //outline: 2px solid red;
 }
 
 .advantages__item--mood {
@@ -74,8 +66,9 @@
 
 .advantages__item--friends {
   position: absolute;
-  top: 510px;
+  top: 515px;
   left: 85px;
+  clip: rect(auto, auto, 278px, auto);
 }
 
 .advantages__title {
@@ -84,9 +77,6 @@
   margin-bottom: 10px;
   padding: 0;
   text-align: center;
-  //min-height: 20px;
-  /*временно для сетки*/
-  //outline: 2px solid blue;
 }
 
 .advantages__description {
@@ -94,14 +84,7 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  /*временно для сетки*/
-  //outline: 2px solid blue;
 }
-
-/*.advantages__image {
-  display: block;
-  margin-left: 82px;
-}*/
 
 @media (min-width: @tablet-width) {
   .advantages__background-wrapper {
@@ -149,6 +132,7 @@
     position: absolute;
     top: 5px;
     left: 20px;
+    clip: inherit;
   }
 
   .advantages__text-container {
@@ -181,7 +165,7 @@
   .advantages__text--top {
     display: block;
     margin: 0;
-    margin-top: 48px;
+    margin-top: 25px;
     padding: 0;
     width: 620px;
     min-height: 38px;
@@ -224,7 +208,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    padding-top: 69px;
+    padding-top: 45px;
     width: 960px;
     min-height: 38px;
   }
@@ -240,10 +224,11 @@
     background-color: #f2f2f2;
     background-image: url("./../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position: center 1px;
+    background-position: center -1px;
     margin: 0;
     padding: 0;
-    min-height: 556px;
+    min-height: 586px;
+    margin-top: -25px;
   }
 
   .advantages__list {
