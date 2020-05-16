@@ -570,7 +570,9 @@ a {
   .main-promo__wrapper {
     width: 300px;
     min-height: 619px;
+    padding-top: 36px;
     /*временно для сетки*/
+    outline: 2px solid red;
   }
   .main-promo__wrapper-background {
     min-height: 230px;
@@ -582,7 +584,7 @@ a {
     min-height: 128px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 90px;
+    padding-top: 55px;
     font-size: 40px;
     line-height: normal;
     font-weight: 300;
@@ -608,8 +610,8 @@ a {
   }
   .main-promo__icon-list-item--apple {
     position: absolute;
-    top: 1px;
-    left: 50px;
+    top: 5px;
+    left: 47px;
     width: 47px;
     height: 50px;
   }
@@ -622,23 +624,20 @@ a {
   }
   .main-promo__icon-list-item--microsoft {
     position: absolute;
-    top: 10px;
+    top: 16px;
     left: 210px;
     width: 44px;
     height: 47px;
+    outline: 2px solid red;
   }
   .main-promo__description {
     display: block;
     padding: 0;
     margin: 0;
     margin-top: 38px;
-    padding-left: 4px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 300;
-    color: #ffffff;
+    padding-left: 1px;
     /*временно для сетки*/
-    height: 47px;
+    min-height: 47px;
   }
   /*.main-promo__page-photo {
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -679,7 +678,6 @@ a {
     margin: 0;
     padding: 0;
     padding-left: 12px;
-    /*временно для сетки*/
   }
   .main-promo__slogan {
     display: -webkit-box;
@@ -857,11 +855,16 @@ a {
   margin-left: 82px;
 }*/
 @media (min-width: 660px) {
+  .advantages__background-wrapper {
+    min-height: 238px;
+  }
   .advantages__list-wrapper {
     position: relative;
-    min-height: 547px;
-    /*временно для сетки*/
-    outline: 2px solid red;
+    min-height: 485px;
+    background-color: #f2f2f2;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: center -20px;
   }
   .advantages__list {
     list-style: none;
@@ -876,11 +879,8 @@ a {
     min-height: 360px;
     margin: 0;
     padding: 0;
-    padding-left: 5px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: auto;
-    /*временно для сетки*/
-    outline: 2px solid black;
   }
   .advantages__item {
     display: -webkit-box;
@@ -893,7 +893,6 @@ a {
     margin: 0;
     padding: 0;
     padding-bottom: 18px;
-    /*временно для сетки*/
   }
   .advantages__item--mood {
     display: none;
@@ -903,14 +902,13 @@ a {
   }
   .advantages__item--friends {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 5px;
+    left: 20px;
   }
   .advantages__text-container {
     width: 310px;
     margin: 0 auto;
     padding: 0;
-    /*временно для сетки*/
   }
   .advantages__title {
     display: block;
@@ -918,7 +916,6 @@ a {
     padding: 0;
     padding-bottom: 10px;
     text-align: left;
-    /*временно для сетки*/
   }
   .advantages__description {
     display: block;
@@ -926,21 +923,18 @@ a {
     padding: 0;
     padding-bottom: 19px;
     margin: 0;
-    /*временно для сетки*/
   }
   .advantages__text {
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .advantages__text--top {
     display: block;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 48px;
     padding: 0;
     width: 620px;
     min-height: 38px;
-    /*временно для сетки*/
   }
   .advantages__text--bottom {
     display: block;
@@ -948,7 +942,6 @@ a {
     padding: 0;
     width: 340px;
     min-height: 80px;
-    /*временно для сетки*/
   }
   .advantages__text-wrapper {
     width: 620px;
@@ -965,7 +958,6 @@ a {
     min-height: 135px;
     padding: 0;
     margin: 0;
-    /*временно для сетки*/
   }
 }
 @media (min-width: 960px) {
@@ -1367,11 +1359,12 @@ a {
     display: block;
     padding: 0;
     margin: 0;
-    /*text-align: center;*/
     width: 660px;
     min-height: 375px;
     background-color: #f2f2f2;
-    /*временно для сетки*/
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: right -1px;
   }
   .filter__list {
     position: static;
@@ -1382,21 +1375,19 @@ a {
     margin: 0 auto;
     padding: 0;
     padding-top: 84px;
+    border: none;
   }
   .filter__table {
     position: relative;
     padding: 0;
     margin: 0;
-    padding-top: 18px;
+    padding-top: 13px;
+    padding-bottom: 5px;
     width: 155px;
     min-height: 80px;
   }
   .filter__hit {
     top: 5px;
-    /*text-align: center;
-    transform: rotate(-45deg);
-    width: 115px;
-    background-color: #d22856;*/
   }
   .filter__title {
     margin: 0;
@@ -1411,16 +1402,14 @@ a {
     text-align: left;
     height: 46px;
     padding: 0;
-    padding-left: 18px;
+    padding-left: 16px;
+    padding-right: 24px;
     border: 2px solid #e5e5e5;
   }
   .filter__value-yes {
     position: absolute;
     top: 13px;
     right: 55px;
-    /*fill: #3dc644;
-    width: 33px;
-    height: 23px;*/
   }
   .filter__value-no {
     position: absolute;
@@ -1515,19 +1504,19 @@ a {
     margin-left: auto;
     margin-right: 5px;
     padding: 0;
-    outline: 2px solid red;
+    padding-top: 40px;
   }
   .research__icon-timer {
     position: absolute;
     width: 238px;
     height: 276px;
-    top: 18px;
+    top: 58px;
     left: 22px;
     fill: #dedede;
   }
   .research__timer-full {
     position: absolute;
-    top: 72px;
+    top: 115px;
     left: 40px;
     border: 14px solid #d22856;
     width: 202px;
@@ -1547,7 +1536,7 @@ a {
     width: 296px;
     margin: 0;
     padding: 0;
-    padding-top: 9px;
+    padding-top: 13px;
   }
   .research__more-link {
     display: block;
@@ -1677,6 +1666,8 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     min-height: 127px;
+    margin: 0;
+    padding: 0;
     /*временно для сетки*/
   }
   .page-footer__item {
@@ -2027,7 +2018,6 @@ a {
   overflow: hidden;
 }
 .contacts__map {
-  position: absolute;
   position: relative;
   top: -445px;
   left: 1px;
@@ -2091,7 +2081,8 @@ a {
     min-height: 84px;
     margin: 0 auto;
     padding: 0;
-    margin-top: 45px;
+    padding-right: 10px;
+    margin-top: 38px;
     /*временно для сетки*/
   }
   .contacts__title {
@@ -2232,8 +2223,6 @@ a {
     min-height: 500px;
     margin-top: 18px;
     overflow: hidden;
-    /*временно для сетки*/
-    outline: 2px solid blue;
   }
   .contacts__map {
     position: absolute;
@@ -2252,7 +2241,6 @@ a {
     height: 36px;
     background: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
-    /*временно для сетки*/
   }
   .contacts__map-container::before {
     content: "";
@@ -2264,8 +2252,6 @@ a {
     background-color: transparent;
     background-position: center -1px;
     background-size: 1200px 102px;
-    /*временно для сетки*/
-    outline: 2px solid blue;
   }
 }
 .copyright__text {
@@ -4749,7 +4735,7 @@ a {
 }
 .data__contacts-link {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   color: #d22856;
 }
@@ -4864,7 +4850,7 @@ a {
 @media (min-width: 660px) {
   .data__h1-title-style-main {
     font-size: 40px;
-    line-height: auto;
+    line-height: 50px;
     font-weight: 300;
     text-transform: none;
   }
@@ -4877,7 +4863,7 @@ a {
   }
   .data__advantages-text {
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
     font-weight: 300;
     color: #283645;
   }
@@ -4948,7 +4934,7 @@ a {
   }
   .data__contacts-text {
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
     font-weight: 300;
     color: #283645;
   }

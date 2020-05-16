@@ -104,11 +104,17 @@
 }*/
 
 @media (min-width: @tablet-width) {
+  .advantages__background-wrapper {
+    min-height: 238px;
+  }
+
   .advantages__list-wrapper {
     position: relative;
-    min-height: 547px;
-    /*временно для сетки*/
-    outline: 2px solid red;
+    min-height: 485px;
+    background-color: #f2f2f2;
+    background-image: url("./../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: center -20px;
   }
 
   .advantages__list {
@@ -119,13 +125,8 @@
     min-height: 360px;
     margin: 0;
     padding: 0;
-    padding-left: 5px;
-    margin-top: 30px;
-    //min-height: 300px;
+    margin-top: 10px;
     margin-left: auto;
-    //margin-right: 30px;
-    /*временно для сетки*/
-    outline: 2px solid black;
   }
 
   .advantages__item {
@@ -134,11 +135,6 @@
     margin: 0;
     padding: 0;
     padding-bottom: 18px;
-    //padding-top: 30px;
-    //min-height: 100px;
-    //text-align: center;
-    /*временно для сетки*/
-    //outline: 2px solid red;
   }
 
   .advantages__item--mood {
@@ -151,18 +147,14 @@
 
   .advantages__item--friends {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 5px;
+    left: 20px;
   }
 
   .advantages__text-container {
-    //min-height: 560px;
     width: 310px;
     margin: 0 auto;
     padding: 0;
-    //padding-left: 20px;
-    /*временно для сетки*/
-    //outline: 2px solid blue;
   }
 
   .advantages__title {
@@ -171,8 +163,6 @@
     padding: 0;
     padding-bottom: 10px;
     text-align: left;
-    /*временно для сетки*/
-    //outline: 2px solid blue;
   }
 
   .advantages__description {
@@ -181,29 +171,20 @@
     padding: 0;
     padding-bottom: 19px;
     margin: 0;
-    /*временно для сетки*/
-    //outline: 2px solid blue;
   }
 
   .advantages__text {
-    //display: block;
-    //width: 585px;
-    //min-height: 50px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
-    //outline: 2px solid green;
   }
 
   .advantages__text--top {
     display: block;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 48px;
     padding: 0;
     width: 620px;
     min-height: 38px;
-    /*временно для сетки*/
-    //outline: 2px solid green;
   }
 
   .advantages__text--bottom {
@@ -212,25 +193,16 @@
     padding: 0;
     width: 340px;
     min-height: 80px;
-    /*временно для сетки*/
-    //outline: 2px solid green;
   }
 
   .advantages__text-wrapper {
-    //display: block;
     width: 620px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    //width: 585px;
     min-height: 135px;
     padding: 0;
     margin: 0;
-    //padding-left: 88px;
-    //padding-right: 88px;
-    //padding-top: 42px;
-    /*временно для сетки*/
-    //outline: 2px solid blue;
   }
 }
 
