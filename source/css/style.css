@@ -1602,15 +1602,12 @@ a {
             justify-content: space-between;
     min-height: 127px;
     margin: 0;
-    padding: 0;
-    /*временно для сетки*/
   }
   .page-footer__item {
     display: block;
     width: 182px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .page-footer__pink-icon-tablet-mobile:hover {
     fill: #d22856;
@@ -1621,11 +1618,6 @@ a {
   .page-footer__pink-icon-tablet-mobile:active {
     fill: #283645;
   }
-  /*.page-footer-link {
-    &:active {
-      opacity: 0.3;
-    }
-  }*/
   .page-footer__item--logo {
     padding-top: 34px;
     padding-left: 20px;
@@ -1648,7 +1640,6 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    /*временно для сетки*/
   }
   .page-footer__copyright {
     margin: 0;
@@ -3928,7 +3919,6 @@ a {
   padding: 0;
   padding-top: 30px;
   min-height: 320px;
-  /*временно для сетки*/
 }
 .form__emotions-title {
   display: block;
@@ -3942,22 +3932,18 @@ a {
     margin: 0 auto;
     padding: 0;
     width: 620px;
-    /*временно для сетки*/
   }
   .form__personal-data {
     display: block;
     min-height: 358px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .form__personal-wrapper {
     display: block;
-    width: auto;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     min-height: 340px;
-    /*временно для сетки*/
   }
   .form__contacts-wrapper {
     display: block;
@@ -3965,7 +3951,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 375px;
-    /*временно для сетки*/
   }
   .form__contacts-border {
     display: block;
@@ -3974,7 +3959,6 @@ a {
     padding: 0;
     min-height: 309px;
     border: 2px solid #e5e5e5;
-    /*временно для сетки*/
   }
   .form__achievments-wrapper {
     display: block;
@@ -3982,7 +3966,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 620px;
-    /*временно для сетки*/
   }
   .form__achievments-border {
     display: block;
@@ -3991,7 +3974,6 @@ a {
     padding: 0;
     margin-top: 65px;
     min-height: 554px;
-    /*временно для сетки*/
   }
   .form__emotions-wrapper {
     display: block;
@@ -3999,7 +3981,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 358px;
-    /*временно для сетки*/
   }
   .form__emotions-border {
     display: block;
@@ -4007,7 +3988,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 294px;
-    /*временно для сетки*/
   }
   .form__user-app {
     background-color: transparent;
@@ -4019,7 +3999,6 @@ a {
     min-height: 365px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .form__user-app-border {
     display: block;
@@ -4027,25 +4006,13 @@ a {
     margin: 0;
     padding: 0;
     min-height: 300px;
-    /*временно для сетки*/
   }
-  /*.form__user-contacts {
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding-left: 60px;
-    padding-right: 60px;
-    min-height: 306px;
-    /*временно для сетки
-    outline: 2px solid greenyellow;
-  }*/
   .form__user-achievments {
     display: block;
     margin: 0;
     padding: 0;
     min-height: 554px;
     background-color: transparent;
-    /*временно для сетки*/
   }
   .form__your-achievments-title {
     display: block;
@@ -4062,10 +4029,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
+    width: 620px;
+    margin: 0 auto;
     padding: 0;
     min-height: 59px;
-    /*временно для сетки*/
   }
   .form__contacts-title {
     display: block;
@@ -4105,6 +4072,7 @@ a {
     padding: 0;
     min-height: 365px;
     /*временно для сетки*/
+    outline: 3px solid red;
   }
   .form__user-app {
     margin: 0;
@@ -4113,7 +4081,7 @@ a {
   }
   .form__content {
     display: block;
-    width: 936px;
+    width: 100%;
     min-height: 158px;
     margin: 0 auto;
     padding: 0;
@@ -4123,9 +4091,19 @@ a {
     display: block;
     margin: 0;
     padding: 0;
+    width: 100%;
     min-height: 228px;
     background-color: transparent;
     /*временно для сетки*/
+  }
+  .form__user-contacts {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 236px;
+    /*временно для сетки*/
+    outline: 2px solid greenyellow;
   }
   .form__submit-form {
     display: -webkit-box;
@@ -4162,8 +4140,8 @@ a {
   }
   .form__contacts-wrapper {
     display: block;
-    width: auto;
-    margin: 0;
+    width: 936px;
+    margin: 0 auto;
     padding: 0;
     min-height: 225px;
     /*временно для сетки*/
@@ -4191,8 +4169,8 @@ a {
   }
   .form__achievments-wrapper {
     display: block;
-    width: auto;
-    margin: 0;
+    width: 936px;
+    margin: 0 auto;
     padding: 0;
     min-height: 297px;
     /*временно для сетки*/
@@ -4227,10 +4205,19 @@ a {
     top: -20px;
     background-color: #ffffff;
   }
+  .form__user-emotons {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 230px;
+    /*временно для сетки*/
+    outline: 2px solid greenyellow;
+  }
   .form__emotions-wrapper {
     display: block;
-    width: auto;
-    margin: 0;
+    width: 936px;
+    margin: 0 auto;
     padding: 0;
     min-height: 282px;
     /*временно для сетки*/
@@ -4414,7 +4401,6 @@ a {
     min-height: 330px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .contest__background-wrapper {
     display: block;
@@ -4424,7 +4410,6 @@ a {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -110px;
-    /*временно для сетки*/
   }
   .contest__title {
     display: block;
@@ -4434,8 +4419,7 @@ a {
     min-height: 330px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 63px;
-    /*временно для сетки*/
+    padding-top: 68px;
   }
   .contest__description-wrapper {
     display: block;
@@ -4444,7 +4428,6 @@ a {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .contest__description {
     font-size: 18px;
@@ -4465,6 +4448,10 @@ a {
   }
 }
 @media (min-width: 960px) {
+  .contest {
+    /*временно для сетки*/
+    outline: 2px solid purple;
+  }
   .contest__item-wrapper {
     width: auto;
     min-height: 350px;
@@ -4487,23 +4474,26 @@ a {
   }
   .contest__item {
     display: block;
-    margin: 0;
-    padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid blue;
   }
   .contest__item:nth-child(1) {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    margin-left: 130px;
   }
   .contest__item:nth-child(2) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin: 0 auto;
   }
   .contest__item:nth-child(3) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin: 0 auto;
   }
   .contest__item:nth-child(4) {
     -webkit-box-ordinal-group: 1;
@@ -4514,6 +4504,7 @@ a {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+    margin: 0 auto;
   }
   .contest__title-wrapper {
     display: block;
@@ -4930,7 +4921,7 @@ a {
   }
   .data__h1-title-style {
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
     font-weight: 300;
     text-transform: none;
   }
@@ -5226,7 +5217,6 @@ a {
   margin: 0;
   padding: 0;
   min-height: 327px;
-  /*временно для сетки*/
 }
 .personal__wrapper {
   margin: 0;
@@ -5242,7 +5232,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 80px;
-  /*временно для сетки*/
 }
 .personal__label {
   display: block;
@@ -5250,7 +5239,6 @@ a {
   padding: 0;
   padding-bottom: 5px;
   padding-left: 22px;
-  /*временно для сетки*/
 }
 .personal__input {
   display: block;
@@ -5260,7 +5248,6 @@ a {
   min-height: 64px;
   padding-left: 20px;
   border: 2px solid #e5e5e5;
-  /*временно для сетки*/
 }
 .personal__input:hover {
   border: 2px solid #283645;
@@ -5273,13 +5260,6 @@ a {
   border: 2px solid #d22856;
 }
 @media (min-width: 660px) {
-  /*.personal {
-    display: flex;
-    justify-content: space-between;
-    min-height: 273px;
-    /*временно для сетки
-    outline: 2px solid yellowgreen;
-  }*/
   .personal__data-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5294,7 +5274,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 292px;
-    /*временно для сетки*/
   }
   .personal__wrapper {
     margin: 0;
@@ -5310,7 +5289,6 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     min-height: 60px;
-    /*временно для сетки*/
   }
   .personal__input {
     display: block;
@@ -5319,7 +5297,6 @@ a {
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    /*временно для сетки*/
   }
   .personal__label {
     display: block;
@@ -5327,7 +5304,6 @@ a {
     padding: 0;
     padding-top: 18px;
     padding-right: 20px;
-    /*временно для сетки*/
   }
 }
 @media (min-width: 960px) {
@@ -5404,11 +5380,8 @@ a {
   margin: 0 auto;
   padding: 0;
   margin-top: 15px;
-  /*padding-left: 60px;
-  padding-right: 60px;*/
   width: 280px;
   min-height: 211px;
-  /*временно для сетки*/
 }
 .form-contacts__item {
   display: -webkit-box;
@@ -5425,7 +5398,6 @@ a {
   padding: 0;
   width: 280px;
   min-height: 90px;
-  /*временно для сетки*/
 }
 .form-contacts__label {
   display: block;
@@ -5436,7 +5408,6 @@ a {
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 22px;
-  /*временно для сетки*/
 }
 .form-contacts__input {
   display: block;
@@ -5446,7 +5417,6 @@ a {
   min-height: 61px;
   padding-left: 20px;
   border: 2px solid #e5e5e5;
-  /*временно для сетки*/
 }
 .form-contacts__input:hover {
   border: 2px solid #283645;
@@ -5469,14 +5439,38 @@ a {
             flex-direction: column-reverse;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .form-contacts__label {
     display: block;
+    position: relative;
     margin: 0;
     padding: 0;
     padding-top: 15px;
     padding-left: 18px;
+  }
+  .form-contacts__label--tel::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 435px;
+    width: 60px;
+    height: 59px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .form-contacts__label--mail::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 435px;
+    width: 60px;
+    height: 59px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .form-contacts__input {
     display: block;
@@ -5486,7 +5480,6 @@ a {
     padding-top: 2px;
     padding-left: 18px;
     min-height: 60px;
-    /*временно для сетки*/
   }
   .form-contacts__wrapper {
     display: -webkit-box;
@@ -5502,11 +5495,8 @@ a {
     margin: 0 auto;
     padding: 0;
     margin-top: 7px;
-    /*padding-left: 60px;
-    padding-right: 60px;*/
     width: 496px;
     min-height: 237px;
-    /*временно для сетки*/
   }
 }
 @media (min-width: 960px) {
@@ -6193,7 +6183,6 @@ a {
   margin: 0;
   padding: 0;
   margin-top: 7px;
-  /*временно для сетки*/
 }
 .emotions__message {
   display: -webkit-box;
@@ -6223,19 +6212,15 @@ a {
     text-align: center;
     margin: 0 auto;
     padding: 0;
-    /*padding-left: 20px;
-    padding-right: 26px;*/
     padding-top: 14px;
     width: 496px;
     height: 189px;
-    /*временно для сетки*/
   }
   .emotions__text-wrapper {
     display: block;
     margin: 0;
     padding: 0;
     margin-top: 7px;
-    /*временно для сетки*/
   }
 }
 @media (min-width: 960px) {

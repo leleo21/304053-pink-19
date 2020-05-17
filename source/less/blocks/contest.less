@@ -106,7 +106,6 @@
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
-    //flex-direction: column-reverse;
   }
 
   .contest__item {
@@ -141,9 +140,6 @@
     min-height: 330px;
     margin: 0;
     padding: 0;
-    //background-color: #283645;
-    /*временно для сетки*/
-    //outline: 2px solid green;
   }
 
   .contest__background-wrapper {
@@ -151,12 +147,9 @@
     min-height: 330px;
     margin: 0;
     padding: 0;
-    //padding-top: 109px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -110px;
-    /*временно для сетки*/
-    //outline: 2px solid red;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("img/bg-back-tablet@2x.jpg");
@@ -172,9 +165,7 @@
     min-height: 330px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 63px;
-    /*временно для сетки*/
-    //outline: 2px solid red;
+    padding-top: 68px;
   }
 
   .contest__description-wrapper {
@@ -184,8 +175,6 @@
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    /*временно для сетки*/
-    //outline: 2px solid green;
   }
 
   .contest__description {
@@ -197,14 +186,18 @@
     padding: 0;
     width: 492px;
     min-height: 253px;
-    //padding-left: 86px;
-    //padding-right: 86px;
     padding-top: 90px;
-    //padding-bottom: 76px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contest {
+    //padding-left: 50%;
+    //width: 936px;
+    /*временно для сетки*/
+    outline: 2px solid purple;
+  }
+
   .contest__item-wrapper {
     width: auto;
     min-height: 350px;
@@ -225,20 +218,25 @@
 
   .contest__item {
     display: block;
-    margin: 0;
-    padding: 0;
+    //margin: 0;
+    //padding: 0;
+    /*временно для сетки*/
+    outline: 2px solid blue;
   }
 
   .contest__item:nth-child(1) {
     order: -1;
+    margin-left: 130px;
   }
 
   .contest__item:nth-child(2) {
     order: 2;
+    margin: 0 auto;
   }
 
   .contest__item:nth-child(3) {
     order: 1;
+    margin: 0 auto;
   }
 
   .contest__item:nth-child(4) {
@@ -247,6 +245,7 @@
 
   .contest__item:nth-child(5) {
     order: 3;
+    margin: 0 auto;
   }
 
   .contest__title-wrapper {

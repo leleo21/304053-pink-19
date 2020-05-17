@@ -49,10 +49,10 @@
             </div>
           </div>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__content contest">
+            <div class="contest">
               <div class="contest__wrapper">
                 <div class="form__personal-data contest__item personal">
-                  <div class="form__personal-wrapper">
+                  <div class="form__personal-wrapper form__content">
                     <div class="personal__data-wrapper">
                       <div class="personal__wrapper data">
                         <label class="data__personal-label personal__label" for="user_second_name">Фамилия:</label>
@@ -147,12 +147,12 @@
                       <p class="form__contacts h2-title-style form__contacts-title">Контактная информация</p>
                       <div class="form-contacts__wrapper">
                         <div class="data form-contacts__item">
-                          <label class="data__personal-label form-contacts__label" for="user_phone">Номер телефона</label>
+                          <label class="data__personal-label form-contacts__label form-contacts__label--tel" for="user_phone">Номер телефона</label>
                           <input class="data__personal-input form-contacts__input  border" id="user_phone" type="tel" pattern="+7[0-9]{9}" name="user_contacts" placeholder="Номер, пожалуйста" required>
                         </div>
                         <div class="data form-contacts__item">
-                          <label class="data__personal-label form-contacts__label " for="user_mail">Адрес почты</label>
-                          <input class="data__personal-input form-contacts__input  border" id="user_mail" type="email" name="user_contacts" placeholder="Введите почту *" required>
+                          <label class="data__personal-label form-contacts__label form-contacts__label--mail" for="user_mail">Адрес почты</label>
+                          <input class="data__personal-input form-contacts__input  form-contacts__input--tel border" id="user_mail" type="email" name="user_contacts" placeholder="Введите почту *" required>
                         </div>
                       </div>
                     </div>
@@ -160,7 +160,7 @@
                 </div>
               </div>
               <div class="form__user-app user-application contest__item">
-                <div class="form__content-wrapper">
+                <div class="form__content-wrapper form__content">
                   <div class="form__user-app-wrapper">
                     <div class="form__user-app-border border">
                       <p class="user-application__title h2-title-style">С&nbsp;каким&nbsp;приложением путешествовали?</p>
