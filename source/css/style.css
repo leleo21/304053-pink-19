@@ -31,7 +31,6 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  border: 1px solid #283645;
 }
 img {
   max-width: 100%;
@@ -69,7 +68,8 @@ a {
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  outline: 1px solid #283645;
+  border-left: 1px solid #283645;
+  border-right: 1px solid #283645;
 }
 .container__content {
   width: 276px;
@@ -4071,8 +4071,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 365px;
-    /*временно для сетки*/
-    outline: 3px solid red;
   }
   .form__user-app {
     margin: 0;
@@ -4085,7 +4083,6 @@ a {
     min-height: 158px;
     margin: 0 auto;
     padding: 0;
-    /*временно для сетки*/
   }
   .form__user-achievments {
     display: block;
@@ -4094,7 +4091,6 @@ a {
     width: 100%;
     min-height: 228px;
     background-color: transparent;
-    /*временно для сетки*/
   }
   .form__user-contacts {
     display: block;
@@ -4102,8 +4098,6 @@ a {
     padding: 0;
     width: 100%;
     min-height: 236px;
-    /*временно для сетки*/
-    outline: 2px solid greenyellow;
   }
   .form__submit-form {
     display: -webkit-box;
@@ -4119,16 +4113,14 @@ a {
     margin: 0;
     padding: 0;
     min-height: 59px;
-    /*временно для сетки*/
   }
   .form__user-app-wrapper {
     display: block;
     width: 435px;
     min-height: 360px;
     margin: 0;
-    margin-left: 66px;
+    margin-left: 68px;
     padding: 0;
-    /*временно для сетки*/
   }
   .form__user-app-border {
     display: block;
@@ -4136,15 +4128,14 @@ a {
     margin: 0;
     padding: 0;
     min-height: 300px;
-    /*временно для сетки*/
   }
   .form__contacts-wrapper {
     display: block;
     width: 936px;
     margin: 0 auto;
     padding: 0;
+    padding-top: 8px;
     min-height: 225px;
-    /*временно для сетки*/
   }
   .form__contacts-border {
     display: block;
@@ -4154,7 +4145,6 @@ a {
     margin-top: 20px;
     min-height: 160px;
     border: 2px solid #e5e5e5;
-    /*временно для сетки*/
   }
   .form__contacts-title {
     display: block;
@@ -4164,7 +4154,7 @@ a {
     text-align: center;
     width: 260px;
     min-height: 38px;
-    top: -10px;
+    top: -17px;
     background-color: #ffffff;
   }
   .form__achievments-wrapper {
@@ -4430,9 +4420,6 @@ a {
     background-color: #ffffff;
   }
   .contest__description {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
     display: block;
     margin: 0 auto;
     padding: 0;
@@ -4448,16 +4435,11 @@ a {
   }
 }
 @media (min-width: 960px) {
-  .contest {
-    /*временно для сетки*/
-    outline: 2px solid purple;
-  }
   .contest__item-wrapper {
     width: auto;
     min-height: 350px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .contest__wrapper {
     display: -webkit-box;
@@ -4474,8 +4456,6 @@ a {
   }
   .contest__item {
     display: block;
-    /*временно для сетки*/
-    outline: 2px solid blue;
   }
   .contest__item:nth-child(1) {
     -webkit-box-ordinal-group: 0;
@@ -4512,7 +4492,6 @@ a {
     min-height: 286px;
     padding: 0;
     margin: 0;
-    /*временно для сетки*/
   }
   .contest__background-wrapper {
     display: block;
@@ -4523,7 +4502,6 @@ a {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    /*временно для сетки*/
   }
   .contest__title {
     display: -webkit-box;
@@ -4534,8 +4512,7 @@ a {
     padding: 0;
     text-align: none;
     padding-top: 65px;
-    padding-bottom: 120px;
-    /*временно для сетки*/
+    padding-bottom: 100px;
   }
   .contest__description-wrapper {
     display: block;
@@ -4544,16 +4521,13 @@ a {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .contest__description {
-    display: block;
     margin: 0 auto;
     padding: 0;
     width: 760px;
     min-height: 49px;
-    padding-top: 90px;
-    /*временно для сетки*/
+    padding-top: 95px;
   }
 }
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
@@ -5191,7 +5165,6 @@ a {
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
-    /*временно для сетки*/
   }
   .data__mark {
     color: #d22856;
@@ -5200,7 +5173,11 @@ a {
     display: block;
   }
   .data__fill-form {
-    display: block;
+    display: inline-block;
+    width: 300px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
   }
 }
 .personal__data-wrapper {
@@ -5307,13 +5284,6 @@ a {
   }
 }
 @media (min-width: 960px) {
-  /*.personal {
-    display: flex;
-    justify-content: space-between;
-    min-height: 273px;
-    /*временно для сетки
-    outline: 2px solid yellowgreen;
-  }*/
   .personal__data-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5330,7 +5300,6 @@ a {
     padding-top: 7px;
     width: 434px;
     min-height: 297px;
-    /*временно для сетки*/
   }
   .personal__wrapper {
     display: -webkit-box;
@@ -5346,7 +5315,6 @@ a {
     min-height: 60px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .personal__input {
     display: block;
@@ -5355,7 +5323,6 @@ a {
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    /*временно для сетки*/
   }
   .personal__label {
     display: block;
@@ -5363,7 +5330,6 @@ a {
     padding: 0;
     padding-top: 15px;
     padding-right: 18px;
-    /*временно для сетки*/
   }
 }
 .form-contacts__wrapper {
@@ -5536,10 +5502,36 @@ a {
   }
   .form-contacts__label {
     display: block;
+    position: relative;
     margin: 0;
     padding: 0;
     padding-top: 15px;
     padding-left: 20px;
+    min-height: 59px;
+  }
+  .form-contacts__label--tel::after {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: 313px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .form-contacts__label--mail::after {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: 313px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .form-contacts__input {
     display: block;
@@ -5548,7 +5540,7 @@ a {
     padding: 0;
     padding-top: 7px;
     padding-left: 20px;
-    min-height: 59px;
+    min-height: 65px;
     /*временно для сетки*/
   }
 }
