@@ -1546,8 +1546,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 285px;
-  padding-top: 40px;
-  /*временно для сетки*/
+  padding-top: 55px;
 }
 .page-footer__list {
   list-style: none;
@@ -1563,7 +1562,6 @@ a {
   width: 182px;
   margin: 0 auto;
   padding: 0;
-  /*временно для сетки*/
 }
 .page-footer__pink-icon-desktop {
   display: none;
@@ -1588,7 +1586,7 @@ a {
   padding-left: 3px;
 }
 .page-footer__item--copyright {
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 @media (min-width: 660px) {
   .page-footer__wrapper {
@@ -3859,7 +3857,6 @@ a {
   min-height: 362px;
   margin: 0;
   padding: 0;
-  /*временно для сетки*/
 }
 .form__personal-wrapper {
   display: block;
@@ -3867,30 +3864,28 @@ a {
   margin: 0;
   padding: 0;
   min-height: 370px;
-  /*временно для сетки*/
-}
-.form__achievments-wrapper {
-  display: block;
-  width: auto;
-  margin: 0;
-  padding: 0;
-  min-height: 604px;
-  /*временно для сетки*/
 }
 .form__user-achievments {
   display: block;
+  width: 100%;
   min-height: 604px;
   margin: 0;
   padding: 0;
   padding-top: 40px;
   background-color: #f2f2f2;
 }
+.form__achievments-wrapper {
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-height: 604px;
+}
 .form__your-achievments-title {
   display: block;
   margin: 0 auto;
   text-align: center;
   padding: 0;
-  padding-top: 36px;
+  padding-top: 40px;
   width: 222px;
   min-height: 38px;
 }
@@ -3906,7 +3901,6 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 36px;
-  /*временно для сетки*/
 }
 .form__contacts-wrapper {
   display: block;
@@ -3915,14 +3909,12 @@ a {
   padding: 0;
   padding-top: 20px;
   min-height: 290px;
-  /*временно для сетки*/
 }
 .form__content {
   display: block;
   width: 280px;
   margin: 0 auto;
   padding: 0;
-  /*временно для сетки*/
 }
 .form__contacts-title {
   margin: 0;
@@ -4285,14 +4277,12 @@ a {
   margin: 0 auto;
   padding: 0;
 }
-/*.contest__item-wrapper {
+.contest__item-wrapper {
   width: auto;
   min-height: 350px;
   margin: 0;
   padding: 0;
-  /*временно для сетки
-  outline: 2px solid black;
-}*/
+}
 .contest__item {
   display: block;
   margin: 0;
@@ -4335,7 +4325,6 @@ a {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
-  /*временно для сетки*/
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contest__background-wrapper {
@@ -4350,7 +4339,6 @@ a {
   margin: 0;
   padding: 0;
   background-color: #283645;
-  /*временно для сетки*/
 }
 .contest__title {
   display: block;
@@ -4359,7 +4347,6 @@ a {
   margin: 0 auto;
   padding: 0;
   padding-top: 32px;
-  /*временно для сетки*/
 }
 .contest__description-wrapper {
   display: block;
@@ -4368,7 +4355,6 @@ a {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  /*временно для сетки*/
 }
 .contest__description {
   display: block;
@@ -4697,7 +4683,7 @@ a {
 }
 .data__h1-title-style {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   text-transform: none;
   color: #ffffff;
@@ -4736,6 +4722,41 @@ a {
   color: #283645;
 }
 .data__personal-input {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  color: #283645;
+}
+.data__personal-input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  color: #283645;
+}
+.data__personal-input::-moz-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  color: #283645;
+}
+.data__personal-input:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  color: #283645;
+}
+.data__personal-input::-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  color: #283645;
+}
+.data__personal-input::placeholder {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -5228,7 +5249,7 @@ a {
   margin: 0;
   padding: 0;
   padding-bottom: 5px;
-  padding-left: 20px;
+  padding-left: 22px;
   /*временно для сетки*/
 }
 .personal__input {
@@ -5236,7 +5257,7 @@ a {
   width: 100%;
   margin: 0;
   padding: 0;
-  min-height: 59px;
+  min-height: 64px;
   padding-left: 20px;
   border: 2px solid #e5e5e5;
   /*временно для сетки*/
@@ -5953,8 +5974,9 @@ a {
   list-style: none;
 }
 .user-application__title {
+  width: 176px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .user-application__list {
@@ -6174,17 +6196,16 @@ a {
   /*временно для сетки*/
 }
 .emotions__message {
-  display: block;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
-  /*padding-left: 20px;
-  padding-right: 26px;*/
-  padding-top: 14px;
+  padding-top: 18px;
+  padding-left: 18px;
   width: 280px;
   height: 200px;
   border: 2px solid #e5e5e5;
-  /*временно для сетки*/
 }
 .emotions__message:hover {
   border: 2px solid #283645;
@@ -6243,8 +6264,10 @@ a {
   }
 }
 .submit__form {
-  width: 276px;
-  height: 59px;
+  display: block;
+  width: 280px;
+  height: 62px;
+  margin: 0 auto;
   border: 2px solid #2aab6d;
   font-size: 18px;
   line-height: 30px;
