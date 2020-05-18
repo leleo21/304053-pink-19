@@ -3,18 +3,21 @@
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -221,12 +224,10 @@ a {
             justify-content: space-between;
     width: 960px;
     margin: 0 auto;
-    /*временно для сетки*/
   }
   .page-header__logo-wrapper {
     min-height: 109px;
     position: relative;
-    /*временно для сетки*/
   }
   .page-header__logo {
     height: 40px;
@@ -325,7 +326,6 @@ a {
     font-weight: 400;
     text-transform: none;
     color: #ffffff;
-    /*временно для сетки*/
   }
   .main-nav__list {
     -webkit-box-orient: horizontal;
@@ -1736,7 +1736,6 @@ a {
   height: 52px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
-  /*временно для сетки*/
 }
 .social__link:hover {
   border: 3px solid #283645;
@@ -1775,13 +1774,6 @@ a {
   left: 16px;
 }
 @media (min-width: 660px) {
-  /*.social__item {
-    display: block;
-    width: 180px;
-    min-height: 53px;
-    /*временно для сетки*
-    outline: 2px solid red;
-  }*/
   .social__link {
     position: relative;
     display: block;
@@ -1789,7 +1781,6 @@ a {
     height: 52px;
     border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 50%;
-    /*временно для сетки*/
   }
   .social__link:hover {
     border: 3px solid #283645;
@@ -1829,13 +1820,6 @@ a {
   }
 }
 @media (min-width: 960px) {
-  /*.social__item {
-    display: block;
-    width: 180px;
-    min-height: 53px;
-    /*временно для сетки*
-    outline: 2px solid red;
-  }*/
   .social__link {
     position: relative;
     display: block;
@@ -1843,7 +1827,6 @@ a {
     height: 52px;
     border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 50%;
-    /*временно для сетки*/
   }
   .social__link:hover {
     border: 3px solid #283645;
@@ -2756,43 +2739,6 @@ a {
     min-height: 1166px;
   }
 }
-/*.best-photo {
-  display: block;
-  margin-left: auto;
-  padding: 0;
-  margin-right: 20px;
-  width: 140px;
-  height: 36px;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #d22856;
-  /*временно для сетки
-  outline: 2px solid red;
-}*/
-/*@media (min-width: @tablet-width) {  /positon absolute
-  .best-photo {
-    display: block;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 700;
-    width: 141px;
-    min-height: 37px;
-    padding: 0;
-    padding-top: 10px;
-    margin: 0;
-    margin-left: auto;
-    margin-top: 60px;
-    margin-right: 20px;
-    color: #ffffff;
-    background-color: #d22856;
-    /*временно для сетки
-    outline: 2px solid red;
-  }
-}*/
 @media (min-width: 660px) {
   .best-photo {
     margin: 0;
@@ -2831,6 +2777,7 @@ a {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
+  background-color: #283645;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .users-photo__title-background {
@@ -3952,7 +3899,6 @@ a {
     min-height: 292px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .form__personal-wrapper {
     display: block;
@@ -4052,7 +3998,6 @@ a {
     margin: 0 auto;
     padding: 0;
     min-height: 297px;
-    /*временно для сетки*/
   }
   .form__achievments-border {
     display: block;
@@ -4060,7 +4005,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 232px;
-    /*временно для сетки*/
   }
   .form__your-achievments-title {
     display: block;
@@ -4090,8 +4034,6 @@ a {
     padding: 0;
     width: 100%;
     min-height: 230px;
-    /*временно для сетки*/
-    outline: 2px solid greenyellow;
   }
   .form__emotions-wrapper {
     display: block;
@@ -4099,7 +4041,6 @@ a {
     margin: 0 auto;
     padding: 0;
     min-height: 282px;
-    /*временно для сетки*/
   }
   .form__emotions-border {
     display: block;
@@ -4107,14 +4048,8 @@ a {
     margin: 0;
     padding: 0;
     min-height: 215px;
-    /*временно для сетки*/
   }
 }
-/*.border {
-  margin: 0;
-  padding: 0;
-  border: 2px solid #e5e5e5;
-}*/
 @media (min-width: 660px) {
   .border {
     margin: 0;
@@ -5378,7 +5313,6 @@ a {
     padding: 0;
     width: 820px;
     min-height: 96px;
-    /*временно для сетки*/
   }
   .form-contacts__item {
     display: -webkit-box;
@@ -5394,7 +5328,6 @@ a {
     width: 377px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .form-contacts__label {
     display: block;
@@ -5437,7 +5370,6 @@ a {
     padding-top: 7px;
     padding-left: 20px;
     min-height: 65px;
-    /*временно для сетки*/
   }
 }
 .achievments-list {
@@ -5458,7 +5390,6 @@ a {
   padding: 0;
   margin-top: 20px;
   min-height: 466px;
-  /*временно для сетки*/
 }
 .achievments-list__item {
   display: block;
@@ -5606,7 +5537,6 @@ a {
     padding: 0;
     margin-top: 20px;
     min-height: 452px;
-    /*временно для сетки*/
   }
   .achievments-list__item {
     display: block;
@@ -5615,7 +5545,6 @@ a {
     padding: 0;
     padding-left: 92px;
     min-height: 45px;
-    /*временно для сетки*/
   }
   .achievments-list__item:nth-child(1) {
     position: relative;
@@ -5683,7 +5612,6 @@ a {
     left: 57px;
     padding-top: 5px;
     padding-left: 58px;
-    /*временно для сетки*/
   }
   .achievment-list__checkbox-hotel {
     position: absolute;
@@ -5710,7 +5638,6 @@ a {
     margin-top: 15px;
     width: 820px;
     min-height: 122px;
-    /*временно для сетки*/
   }
   .achievments-list__item {
     display: block;
@@ -5718,7 +5645,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 40px;
-    /*временно для сетки*/
   }
   .achievments-list__item:nth-child(1) {
     position: relative;
@@ -5804,7 +5730,6 @@ a {
     left: 48px;
     padding-top: 5px;
     padding-left: 58px;
-    /*временно для сетки*/
   }
   .achievment-list__checkbox-hotel {
     position: absolute;
@@ -5829,24 +5754,12 @@ a {
     background-size: 22px 16px;
     background-position: center;
   }
-  /*.achievment-list__checkbox-on-icon {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: auto;
-    height: auto;
-    fill: #d22856;
-  }*/
   .achievment-list__content:checked ~ .achievment-list__checkbox-off {
     display: none;
   }
   .achievment-list__content:checked ~ .achievment-list__checkbox-on {
     display: block;
   }
-  /*.achievments-list__item input:checked ~ .achievment__checkbox-on-icon {
-    display: inline;
-  }*/
 }
 .application-list {
   list-style: none;
@@ -5873,7 +5786,6 @@ a {
   margin: 0 auto;
   padding: 0;
   margin-top: 40px;
-  /*временно для сетки*/
 }
 .user-application__list--item {
   display: block;
@@ -5881,7 +5793,6 @@ a {
   margin: 0;
   padding: 0;
   min-height: 40px;
-  /*временно для сетки*/
 }
 .user-application__list--item:nth-child(1) {
   position: relative;
@@ -5978,7 +5889,6 @@ a {
     margin: 0;
     padding: 0;
     min-height: 300px;
-    /*временно для сетки*/
   }
   .user-application__title {
     display: block;
@@ -6056,15 +5966,6 @@ a {
     margin: 0 auto;
     padding: 0;
   }
-  /*.user-application-list__item {
-    display: block;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    min-height: 40px;
-    /*временно для сетки
-    outline: 2px solid blue;
-  }*/
 }
 .emotions__text-wrapper {
   display: block;
@@ -6125,15 +6026,12 @@ a {
     height: 124px;
     text-align: start;
     text-transform: none;
-    /*временно для сетки*/
   }
   .emotions__text-wrapper {
     display: block;
     margin: 0;
     padding: 0;
     padding-top: 5px;
-    /*padding-bottom: 45px;*/
-    /*временно для сетки*/
   }
 }
 .submit__form {
@@ -6186,7 +6084,6 @@ a {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  /*временно для сетки*/
 }
 .popup__container {
   display: -webkit-box;
@@ -6203,7 +6100,6 @@ a {
   padding: 0;
   padding-top: 40px;
   width: 280px;
-  /*временно для сетки*/
 }
 .popup__title {
   display: block;
@@ -6211,7 +6107,6 @@ a {
   padding: 0;
   text-align: center;
   min-height: 16px;
-  /*временно для сетки*/
 }
 .popup__message {
   display: block;
@@ -6220,7 +6115,6 @@ a {
   padding-top: 25px;
   text-align: center;
   min-height: 37px;
-  /*временно для сетки*/
 }
 .popup__button {
   display: block;
@@ -6232,7 +6126,6 @@ a {
   border: none;
   border-radius: 2px;
   background-color: #2aab6d;
-  /*временно для сетки*/
 }
 .popup__send-wrapper {
   display: block;
@@ -6243,7 +6136,6 @@ a {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  /*временно для сетки*/
 }
 .popup__button-background {
   display: block;
@@ -6252,7 +6144,6 @@ a {
   padding-top: 40px;
   width: auto;
   background-color: #ffffff;
-  /*временно для сетки*/
 }
 .popup__button-close-background {
   display: block;
@@ -6263,7 +6154,6 @@ a {
   width: auto;
   min-height: 162px;
   background-color: #f2f2f2;
-  /*временно для сетки*/
 }
 @media (min-width: 660px) {
   .popup__error-wrapper {
@@ -6273,7 +6163,6 @@ a {
     width: 460px;
     min-height: 366px;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .popup__container {
     display: -webkit-box;
@@ -6290,7 +6179,6 @@ a {
     padding: 0;
     padding-top: 38px;
     width: 306px;
-    /*временно для сетки*/
   }
   .popup__send-wrapper {
     display: block;
@@ -6299,7 +6187,6 @@ a {
     width: 460px;
     min-height: 434px;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .popup__button-background {
     display: block;
@@ -6307,7 +6194,6 @@ a {
     padding: 0;
     padding-top: 40px;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .popup__button-close-background {
     display: block;
@@ -6318,7 +6204,6 @@ a {
     width: auto;
     min-height: 162px;
     background-color: #f2f2f2;
-    /*временно для сетки*/
   }
   .popup__button {
     display: block;
@@ -6330,7 +6215,6 @@ a {
     border: none;
     border-radius: 2px;
     background-color: #2aab6d;
-    /*временно для сетки*/
   }
 }
 @media (min-width: 960px) {
@@ -6341,7 +6225,6 @@ a {
     width: 780px;
     min-height: 380px;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .popup__container {
     display: -webkit-box;
@@ -6358,7 +6241,6 @@ a {
     padding: 0;
     padding-top: 36px;
     width: 400px;
-    /*временно для сетки*/
   }
   .popup__send-wrapper {
     display: block;
@@ -6367,7 +6249,6 @@ a {
     width: 780px;
     min-height: 380px;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .popup__button-background {
     display: block;
@@ -6377,7 +6258,6 @@ a {
     padding-top: 48px;
     min-height: 162px;
     background-color: #f2f2f2;
-    /*временно для сетки*/
   }
   .popup__button-close-background {
     display: block;
@@ -6388,7 +6268,6 @@ a {
     width: auto;
     min-height: 162px;
     background-color: #f2f2f2;
-    /*временно для сетки*/
   }
   .popup__button {
     display: block;
@@ -6400,7 +6279,6 @@ a {
     border: none;
     border-radius: 2px;
     background-color: #2aab6d;
-    /*временно для сетки*/
   }
   .popup__button-close {
     display: block;
@@ -6412,7 +6290,6 @@ a {
     border: none;
     border-radius: 2px;
     background-color: #2aab6d;
-    /*временно для сетки*/
   }
 }
 
