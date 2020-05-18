@@ -114,7 +114,7 @@ a {
 }
 .page-header__logo-mobile {
   position: absolute;
-  top: 16px;
+  top: 19px;
   left: 20px;
   fill: #ffffff;
 }
@@ -276,7 +276,7 @@ a {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 320px;
+  width: 318px;
   background-color: #283645;
 }
 .main-nav__link {
@@ -305,7 +305,7 @@ a {
     width: auto;
   }
   .main-nav__list {
-    width: 660px;
+    width: 658px;
     margin: 0 auto;
     min-height: 256px;
   }
@@ -1628,10 +1628,10 @@ a {
     padding-left: 20px;
   }
   .page-footer__item--social {
-    padding-top: 34px;
+    padding-top: 37px;
   }
   .page-footer__item--copyright {
-    padding-top: 34px;
+    padding-top: 40px;
     padding-left: 5px;
   }
   .page-footer__list {
@@ -1664,9 +1664,8 @@ a {
             justify-content: space-between;
     width: 940px;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 25px;
     max-height: 224px;
-    /*временно для сетки*/
   }
   .page-footer__item {
     display: block;
@@ -1675,7 +1674,6 @@ a {
     padding: 0;
     padding-top: 72px;
     min-height: 55px;
-    /*временно для сетки*/
   }
   .page-footer__list {
     display: -webkit-box;
@@ -1689,13 +1687,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     min-height: 55px;
-    /*временно для сетки*/
   }
-  /*.page-footer-link {
-    &:active {
-      opacity: 0.3;
-    }
-  }*/
   .page-footer__pink-icon-tablet-mobile {
     display: none;
   }
@@ -1713,6 +1705,14 @@ a {
   }
   .page-footer__copyright {
     margin: 0;
+  }
+  .page-footer__item--social {
+    padding-left: 10px;
+    padding-top: 75px;
+  }
+  .page-footer__item--copyright {
+    padding-top: 75px;
+    padding-left: 5px;
   }
 }
 .page-footer-index {
@@ -2540,7 +2540,6 @@ a {
     display: block;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .photo__panorama-img {
     display: block;
@@ -2562,10 +2561,6 @@ a {
     margin: 0;
   }
   .photo__best-photo {
-    /*position: absolute;
-    display: block;
-    top: 55px;
-    right: 1px;*/
     display: block;
     min-height: 10px;
     width: 102px;
@@ -2573,14 +2568,10 @@ a {
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
-    /*background-color: #d22856;
-    width: 142px;
-    height: 37px;*/
     padding: 0;
     margin: 0;
     text-transform: uppercase;
     text-align: center;
-    /*временно для сетки*/
   }
   .photo__best-wrapper {
     display: block;
@@ -2588,8 +2579,8 @@ a {
     min-height: 95px;
     margin: 0 auto;
     padding: 0;
+    padding-top: 24px;
     padding-left: 27px;
-    /*временно для сетки*/
   }
   .photo__best-container {
     position: relative;
@@ -2601,13 +2592,11 @@ a {
     min-height: 38px;
     margin: 0;
     padding: 0;
-    padding-top: 20px;
-    /*временно для сетки*/
   }
   .photo__best-likes {
     position: relative;
     display: block;
-    top: 20px;
+    top: -49px;
     left: 761px;
     margin: 0;
     padding: 0;
@@ -2627,7 +2616,6 @@ a {
     margin: 0;
     padding: 0;
     width: 300px;
-    /*временно для сетки*/
   }
   .photo__text {
     position: relative;
@@ -2645,8 +2633,8 @@ a {
     min-height: 153px;
     margin: 0;
     padding: 0;
+    padding-top: 24px;
     padding-left: 27px;
-    /*временно для сетки*/
   }
   .photo__text-container {
     position: relative;
@@ -2658,8 +2646,6 @@ a {
     width: 236px;
     margin: 0;
     padding: 0;
-    padding-top: 22px;
-    /*временно для сетки*/
   }
   .photo__author {
     margin: 0;
@@ -2680,9 +2666,7 @@ a {
     padding: 0;
     width: 100px;
     min-height: 54px;
-    padding-top: 6px;
-    margin-right: auto;
-    /*временно для сетки*/
+    padding-top: 10px;
   }
   .photo__likes {
     display: block;
@@ -2694,7 +2678,7 @@ a {
     content: "";
     background-image: url("../img/icon-heart.svg");
     display: block;
-    bottom: 30px;
+    bottom: 25px;
     right: 30px;
     width: 13px;
     height: 12px;
@@ -2720,7 +2704,6 @@ a {
   padding: 0;
   text-align: left;
   background-color: #f2f2f2;
-  /*временно для сетки*/
 }
 .photo-list__wrapper {
   width: 282px;
@@ -2728,7 +2711,6 @@ a {
   margin-top: 20px;
   padding: 0;
   min-height: 1952px;
-  /*временно для сетки*/
 }
 @media (min-width: 660px) {
   .photo-list__photo-best-container {
@@ -2745,16 +2727,11 @@ a {
     margin-bottom: 20px;
   }
   .photo-list__wrapper {
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;*/
     width: 620px;
     margin: 0 auto;
     margin-top: 50px;
     padding: 0;
     min-height: 1408px;
-    /*временно для сетки*/
   }
 }
 @media (min-width: 960px) {
@@ -2769,7 +2746,7 @@ a {
     padding: 0;
     width: 300px;
     min-height: 555px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
   .photo-list__wrapper {
     width: 940px;
@@ -2777,7 +2754,6 @@ a {
     margin-top: 50px;
     padding: 0;
     min-height: 1166px;
-    /*временно для сетки*/
   }
 }
 /*.best-photo {
@@ -2898,19 +2874,14 @@ a {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -110px;
-    /*временно для сетки*/
   }
   .users-photo__title {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: normal;
     display: block;
     width: 362px;
     min-height: 104px;
     margin: 0 auto;
     padding: 0;
     padding-top: 70px;
-    /*временно для сетки*/
   }
   .users-photo__description-wrapper {
     display: block;
@@ -2919,7 +2890,6 @@ a {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .users-photo__description {
     font-size: 18px;
@@ -2932,7 +2902,6 @@ a {
     margin: 0 auto;
     padding: 0;
     padding-top: 92px;
-    /*временно для сетки*/
   }
   .users-photo__list {
     display: -webkit-box;
@@ -2959,14 +2928,6 @@ a {
   }
 }
 @media (min-width: 960px) {
-  /*.users-photo__page-photo {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    width: 1200px;
-    margin: 0;
-    padding: 0;
-    min-height: 284px;
-  }*/
   .users-photo__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2988,16 +2949,13 @@ a {
     display: block;
     width: 348px;
     margin: 0 auto;
+    margin-top: 5px;
     padding: 0;
     min-height: 99px;
     font-size: 50px;
     line-height: normal;
     font-weight: 300;
-    /*padding-left: 296px;
-    padding-right: 296px;*/
     padding-top: 60px;
-    padding-bottom: 86px;
-    /*временно для сетки*/
   }
   .users-photo__title-background {
     display: block;
@@ -3008,16 +2966,14 @@ a {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    /*временно для сетки*/
   }
   .users-photo__description-wrapper {
     display: block;
     margin: 0;
     padding: 0;
     width: auto;
-    min-height: 238px;
+    min-height: 242px;
     background-color: #ffffff;
-    /*временно для сетки*/
   }
   .users-photo__description {
     display: block;
@@ -3029,11 +2985,7 @@ a {
     font-weight: 400;
     margin: 0 auto;
     padding: 0;
-    /*padding-left: 186px;
-    padding-right: 186px;*/
-    padding-top: 88px;
-    padding-bottom: 90px;
-    /*временно для сетки*/
+    padding-top: 95px;
   }
 }
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
@@ -3537,10 +3489,9 @@ a {
   .your-photo__wrapper {
     display: block;
     width: 942px;
-    min-height: 517px;
+    min-height: 512px;
     margin: 0 auto;
     padding: 0;
-    /*временно для сетки*/
   }
   .your-photo__description-wrapper {
     display: block;
@@ -3548,7 +3499,6 @@ a {
     min-height: 137px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .your-photo__description-container {
     display: -webkit-box;
@@ -3564,7 +3514,6 @@ a {
     padding: 0;
     text-align: center;
     padding-top: 10px;
-    /*временно для сетки*/
   }
   .your-photo__description {
     display: block;
@@ -3575,7 +3524,6 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    /*временно для сетки*/
   }
   .your-photo__wrapper-container {
     display: -webkit-box;
@@ -3594,8 +3542,7 @@ a {
     margin-left: 82px;
     padding: 0;
     padding-top: 57px;
-    padding-bottom: 54px;
-    /*временно для сетки*/
+    padding-bottom: 38px;
   }
   .your-photo__button-wrapper {
     display: -webkit-box;
@@ -3612,7 +3559,6 @@ a {
     margin: 0;
     padding: 0;
     padding-top: 140px;
-    /*временно для сетки*/
   }
   .your-photo__image {
     display: block;
@@ -5041,7 +4987,7 @@ a {
     color: #ffffff;
   }
   .data__time {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     font-weight: 300;
     text-transform: uppercase;
@@ -5061,7 +5007,7 @@ a {
   }
   .data__h1-title-style {
     font-size: 50px;
-    line-height: auto;
+    line-height: 60px;
     font-weight: 300;
     text-transform: none;
   }
