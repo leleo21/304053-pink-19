@@ -1606,6 +1606,7 @@ a {
             justify-content: space-between;
     min-height: 127px;
     margin: 0;
+    padding: 0;
   }
   .page-footer__item {
     display: block;
@@ -2405,20 +2406,16 @@ a {
     width: 141px;
     padding: 0;
     margin: 0;
-    margin-top: 60px;
-    margin-right: 20px;
     color: #ffffff;
-    background-color: #d22856;
-    /*временно для сетки*/
   }
   .photo__best-photo-wrapper {
     position: absolute;
     display: block;
-    top: 55px;
+    top: 57px;
     right: 18px;
     background-color: #d22856;
     width: 140px;
-    height: 37px;
+    height: 36px;
     padding: 0;
     padding-top: 5px;
     margin: 0;
@@ -2426,11 +2423,11 @@ a {
   .photo__best-wrapper {
     display: block;
     width: 623px;
-    min-height: 115px;
+    min-height: 120px;
     margin: 0 auto;
     padding: 0;
-    padding-left: 27px;
-    /*временно для сетки*/
+    padding-top: 23px;
+    padding-left: 25px;
   }
   .photo__best-container {
     position: relative;
@@ -2442,14 +2439,12 @@ a {
     min-height: 38px;
     margin: 0;
     padding: 0;
-    padding-top: 15px;
     padding-left: 5px;
-    /*временно для сетки*/
   }
   .photo__best-likes {
     position: absolute;
     display: block;
-    top: 18px;
+    top: 1px;
     left: 448px;
     margin: 0;
     padding: 0;
@@ -2470,7 +2465,6 @@ a {
     display: block;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .photo__image {
     display: block;
@@ -2478,7 +2472,6 @@ a {
     height: 300px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .photo__text {
     position: relative;
@@ -2497,7 +2490,6 @@ a {
     margin: 0;
     padding: 0;
     padding-left: 12px;
-    /*временно для сетки*/
   }
   .photo__text-container {
     display: -webkit-box;
@@ -2507,7 +2499,6 @@ a {
         flex-wrap: wrap;
     width: 250px;
     padding-top: 22px;
-    /*временно для сетки*/
   }
   .photo__author {
     margin: 0;
@@ -2532,7 +2523,6 @@ a {
     padding-top: 6px;
     margin-left: 16px;
     margin-right: auto;
-    /*временно для сетки*/
   }
   .photo__likes {
     margin: 0;
@@ -2919,7 +2909,7 @@ a {
     min-height: 104px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 65px;
+    padding-top: 70px;
     /*временно для сетки*/
   }
   .users-photo__description-wrapper {
@@ -3298,10 +3288,9 @@ a {
   .your-photo__description-wrapper {
     display: block;
     width: auto;
-    min-height: 172px;
+    min-height: 175px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
   }
   .your-photo__description-container {
     display: -webkit-box;
@@ -3317,7 +3306,6 @@ a {
     padding: 0;
     text-align: center;
     padding-top: 45px;
-    /*временно для сетки*/
   }
   .your-photo__description {
     display: block;
@@ -3328,7 +3316,6 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    /*временно для сетки*/
   }
   .your-photo__wrapper {
     display: block;
@@ -3352,8 +3339,7 @@ a {
     margin: 0 auto;
     padding: 0;
     padding-top: 57px;
-    padding-bottom: 54px;
-    /*временно для сетки*/
+    padding-bottom: 34px;
   }
   .your-photo__image {
     display: block;
@@ -3377,12 +3363,9 @@ a {
     padding: 0;
     padding-top: 58px;
     min-height: 135px;
-    /*временно для сетки*/
   }
   .your-photo__button {
     display: block;
-    margin: 0;
-    padding: 0;
     width: 260px;
     height: 55px;
   }
@@ -3419,6 +3402,9 @@ a {
     margin: 0;
     margin-right: auto;
     padding: 0;
+  }
+  .your-photo__btn-reset {
+    margin-top: -5px;
   }
   .your-photo__pictureform-button-image {
     margin: 0;
@@ -3527,22 +3513,6 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  /*.your-photo__range-toggle {
-    //position: static;
-    //top: -7px;
-    //right: 35px;
-    /*width: 14px;
-    height: 15px;
-    background: #f2f2f2;
-    border: 2px solid #d22856;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
-
-    &:hover {
-      background-color: #d22856;
-    }
-  }*/
   .your-photo__range-toggle--crop {
     position: absolute;
     right: 44px;
