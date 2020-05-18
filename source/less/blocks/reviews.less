@@ -3,10 +3,7 @@
   min-height: 310px;
   margin: 0 auto;
   padding: 0;
-  //padding-top: 193px;
   text-align: center;
-  /*временно для сетки*/
-  //outline: 2px solid red;
 }
 
 .reviews__message-wrapper {
@@ -14,9 +11,7 @@
   min-height: 210px;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
-  /*временно для сетки*/
-  //outline: 2px solid yellowgreen;
+  margin-top: 43px;
 }
 
 .reviews__author {
@@ -40,66 +35,41 @@
   display: none;
 }
 
-.rewiews__toggles {
-  display: flex;
-  justify-content: space-between;
-  width: 62px;
-  margin: 0 auto;
-  margin-top: 36px;
-  //padding-top: 12px;
-  //outline: 2px solid red;
+.reviews__toggles {
+  position: relative;
+  top: 30px;
+  left: -3px;
 }
 
-.rewiews__slider-toggle {
-  display: block;
-  position: relative;
-  background-color: transparent;
+.reviews__toggle {
+  width: 6px;
+  height: 6px;
+  margin-left: 14px;
+  padding: 0;
+  vertical-align: middle;
+  transform: translateX(-5px);
+  background-color: #283645;
+  opacity: 0.3;
   border: none;
-  width: 12px;
-  height: 12px;
+  border-radius: 50%;
   cursor: pointer;
 
-  &:active {
-    outline: none;
+  &--active {
+    background-color: #ffffff;
+    opacity: 1;
+    border: 3px solid #283645;
+    width: 12px;
+    height: 12px;
   }
 
+  &:hover,
   &:focus {
-    outline: none;
+    background-color: rgba(40, 54, 69, 0.6);
   }
-}
 
-.rewiews__slider-toggle-back::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -3px;
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
-  border: 3px solid #283645;
-  border-radius: 50%;
-}
-
-.rewiews__slider-toggle-current::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: rgba(40, 54, 69, 0.3);
-}
-
-.rewiews__slider-toggle-forward::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: rgba(40, 54, 69, 0.3);
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -108,11 +78,6 @@
     min-height: 280px;
     margin: 0;
     padding: 0;
-    //margin: 0 auto;
-    //padding-top: 193px;
-    /*text-align: center;*/
-    /*временно для сетки*/
-    //outline: 2px solid yellowgreen;
   }
 
   .reviews__message-wrapper {
@@ -124,8 +89,6 @@
     padding-top: 10px;
     width: 620px;
     min-height: 173px;
-    /*временно для сетки*/
-    //outline: 2px solid yellowgreen;
   }
 
   .reviews__author {
@@ -134,9 +97,6 @@
     margin: 0;
     margin-top: 35px;
     padding: 0;
-    //padding-top: 20px;
-    /*временно для сетки*/
-    outline: 2px solid red;
   }
 
   .reviews__about-author {
@@ -155,80 +115,15 @@
   .reviews__arrow {
     display: none;
   }
-
-  .rewiews__toggles {
-    display: flex;
-    justify-content: space-between;
-    width: 62px;
-    margin: 0 auto;
-    margin-top: 40px;
-    //padding-top: 12px;
-    //outline: 2px solid red;
-  }
-
-  .rewiews__slider-toggle {
-    display: block;
-    position: relative;
-    background-color: transparent;
-    border: none;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-
-    &:active {
-      outline: none;
-    }
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  .rewiews__slider-toggle-back::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -3px;
-    width: 12px;
-    height: 12px;
-    background-color: #ffffff;
-    border: 3px solid #283645;
-    border-radius: 50%;
-  }
-
-  .rewiews__slider-toggle-current::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: rgba(40, 54, 69, 0.3);
-  }
-
-  .rewiews__slider-toggle-forward::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: rgba(40, 54, 69, 0.3);
-  }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
     position: relative;
     width: 685px;
-    min-height: 418px;
+    min-height: 413px;
     margin: 0 auto;
-    padding-top: 183px;
-    /*text-align: center;*/
-    /*временно для сетки*/
-    //outline: 2px solid red;
+    padding-top: 188px;
   }
 
   .reviews__wrapper::before {
@@ -240,8 +135,6 @@
     height: 65px;
     background: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
-    /*временно для сетки*/
-    //outline: 2px solid black;
   }
 
   .reviews__author {
@@ -250,12 +143,11 @@
     width: 221px;
     min-height: 54px;
     margin: 0 auto;
-    /*временно для сетки*/
-    //outline: 2px solid blue;
   }
 
   .reviews__about-author {
     display: block;
+    min-height: 10px;
     margin: 0;
     padding: 0;
   }
@@ -264,13 +156,10 @@
     display: block;
     margin: 0;
     padding: 0;
-    padding-top: 3px;
     padding-right: 1px;
     text-align: center;
     width: 690px;
-    min-height: 79px;
-    /*временно для сетки*/
-    //outline: 2px solid blue;
+    min-height: 80px;
   }
 
   .reviews__message-wrapper {
@@ -278,11 +167,9 @@
     justify-content: space-between;
     flex-direction: column-reverse;
     width: 688px;
-    min-height: 188px;
+    min-height: 187px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
-    //outline: 2px solid black;
   }
 
   .reviews__arrow {
@@ -314,7 +201,7 @@
     right: -128px;
   }
 
-  .rewiews__toggles {
+  .reviews__toggles {
     display: none;
   }
 }

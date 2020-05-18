@@ -1,6 +1,6 @@
 .data__h1-title-style-main {
   font-size: 24px;
-  line-height: auto;
+  line-height: 30px;
   font-weight: 300;
   text-transform: none;
   color: #ffffff;
@@ -16,7 +16,7 @@
 
 .data__advantages-text {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   color: #283645;
 }
@@ -83,21 +83,21 @@
 
 .data__contacts-text {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   color: #283645;
 }
 
 .data__contacts-title {
   font-size: 18px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 700;
   color: #283645;
 }
 
 .data__contacts-link {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   color: #d22856;
 }
@@ -107,6 +107,14 @@
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.data__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #283645;
 }
 
 .data__likes {
@@ -127,7 +135,7 @@
 
 .data__h1-title-style {
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   text-transform: none;
   color: #ffffff;
@@ -145,7 +153,6 @@
   line-height: 18px;
   font-weight: 700;
   text-transform: none;
-  //color: #d22856;
 }
 
 .data__copyright {
@@ -178,6 +185,14 @@
   font-weight: 400;
   text-transform: none;
   color: #283645;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: none;
+    color: #283645;
+  }
 }
 
 .data__field {
@@ -231,7 +246,7 @@
 @media (min-width: @tablet-width) {
   .data__h1-title-style-main {
     font-size: 40px;
-    line-height: auto;
+    line-height: 50px;
     font-weight: 300;
     text-transform: none;
   }
@@ -246,7 +261,7 @@
 
   .data__advantages-text {
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
     font-weight: 300;
     color: #283645;
   }
@@ -328,7 +343,7 @@
 
   .data__contacts-text {
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
     font-weight: 300;
     color: #283645;
   }
@@ -373,7 +388,7 @@
 
   .data__h1-title-style {
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
     font-weight: 300;
     text-transform: none;
   }
@@ -468,7 +483,7 @@
 @media (min-width: @desktop-width) {
   .data__h1-title-style-main {
     font-size: 50px;
-    line-height: auto;
+    line-height: 60px;
     font-weight: 300;
     text-transform: none;
   }
@@ -483,7 +498,7 @@
 
   .data__advantages-text {
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
     font-weight: 300;
     color: #283645;
   }
@@ -569,14 +584,6 @@
     color: #ffffff;
   }
 
-  /*.data__hit {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-  }*/
-
   .data__filter-value {
     font-size: 18px;
     line-height: 30px;
@@ -587,7 +594,7 @@
 
   .data__contacts-text {
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
     font-weight: 300;
     color: #283645;
   }
@@ -608,7 +615,7 @@
   }
 
   .data__time {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     font-weight: 300;
     text-transform: uppercase;
@@ -631,7 +638,7 @@
 
   .data__h1-title-style {
     font-size: 50px;
-    line-height: auto;
+    line-height: 60px;
     font-weight: 300;
     text-transform: none;
   }
@@ -690,8 +697,6 @@
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
-    /*временно для сетки*/
-    //outline: 2px solid greenyellow;
   }
 
   .data__mark {
@@ -703,6 +708,10 @@
   }
 
   .data__fill-form {
-    display: block;
+    display: inline-block;
+    width: 300px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
   }
 }

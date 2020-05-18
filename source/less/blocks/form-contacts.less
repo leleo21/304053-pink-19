@@ -5,13 +5,8 @@
   margin: 0 auto;
   padding: 0;
   margin-top: 15px;
-  //margin-top: 32px;
-  /*padding-left: 60px;
-  padding-right: 60px;*/
   width: 280px;
   min-height: 211px;
-  /*временно для сетки*/
-  //outline: 2px solid red;
 }
 
 .form-contacts__item {
@@ -22,8 +17,6 @@
   padding: 0;
   width: 280px;
   min-height: 90px;
-  /*временно для сетки*/
-  //outline: 2px solid blue;
 }
 
 .form-contacts__label {
@@ -35,8 +28,6 @@
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 22px;
-  /*временно для сетки*/
-  //outline: 2px solid red;
 }
 
 .form-contacts__input {
@@ -47,8 +38,6 @@
   min-height: 61px;
   padding-left: 20px;
   border: 2px solid #e5e5e5;
-  /*временно для сетки*/
-  //outline: 2px solid red;
 
   &:hover {
     border: 2px solid #283645;
@@ -70,17 +59,41 @@
     flex-direction: column-reverse;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
-    //outline: 2px solid greenyellow;
   }
 
   .form-contacts__label {
     display: block;
+    position: relative;
     margin: 0;
     padding: 0;
     padding-top: 15px;
     padding-left: 18px;
-    //min-height: 59px;
+  }
+
+  .form-contacts__label--tel::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 435px;
+    width: 60px;
+    height: 59px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .form-contacts__label--mail::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 435px;
+    width: 60px;
+    height: 59px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .form-contacts__input {
@@ -91,8 +104,6 @@
     padding-top: 2px;
     padding-left: 18px;
     min-height: 60px;
-    /*временно для сетки*/
-    //outline: 2px solid greenyellow;
   }
 
   .form-contacts__wrapper {
@@ -101,15 +112,9 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
-    //padding-top: 40px;
     margin-top: 7px;
-    //margin-top: 32px;
-    /*padding-left: 60px;
-    padding-right: 60px;*/
     width: 496px;
     min-height: 237px;
-    /*временно для сетки*/
-    //outline: 2px solid violet;
   }
 }
 
@@ -121,11 +126,8 @@
     margin: 0 auto;
     margin-top: 2px;
     padding: 0;
-    //padding-top: 25px;
     width: 820px;
     min-height: 96px;
-    /*временно для сетки*/
-    //outline: 2px solid violet;
   }
 
   .form-contacts__item {
@@ -135,17 +137,42 @@
     width: 377px;
     margin: 0;
     padding: 0;
-    /*временно для сетки*/
-    //outline: 2px solid greenyellow;
   }
 
   .form-contacts__label {
     display: block;
+    position: relative;
     margin: 0;
     padding: 0;
     padding-top: 15px;
     padding-left: 20px;
-    //min-height: 59px;
+    min-height: 59px;
+  }
+
+  .form-contacts__label--tel::after {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: 313px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .form-contacts__label--mail::after {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: 313px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .form-contacts__input {
@@ -155,8 +182,6 @@
     padding: 0;
     padding-top: 7px;
     padding-left: 20px;
-    min-height: 59px;
-    /*временно для сетки*/
-    //outline: 2px solid red;
+    min-height: 65px;
   }
 }
