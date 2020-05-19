@@ -41,14 +41,14 @@
         <div class="contest__page-photo">
           <div class="contest__title-wrapper">
             <div class="contest__background-wrapper">
-              <h1 class="contest__title data__h1-title-style">Конкурс на самое безбашенное путешествие&nbsp;с&nbsp;Пинк</h1>
+              <h1 class="contest__title data__h1-title-style container__wrapper">Конкурс на самое безбашенное путешествие&nbsp;с&nbsp;Пинк</h1>
             </div>
             <div class="contest__description-wrapper data">
               <p class="contest__description data__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="data__fill-form">Пожалуйста, заполните форму ниже:</span></p>
             </div>
           </div>
         </div>
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form container__wrapper" action="https://echo.htmlacademy.ru" method="post">
           <div class="contest">
             <div class="contest__wrapper">
               <div class="form__personal-data contest__item personal">
@@ -218,7 +218,7 @@
                 </div>
               </div>
               <div class="form__submit-form submit data">
-                <button class="submit__form submit__button" type="submit">Отправить форму</button>
+                <button class="submit__form submit__button" type="submit">Отправить форму</button> <!--.popup__error - модальное окно ошибка; .popup__send - форма отправлена-->
                 <p class="data__field"><span class="data__mark">*</span> — обязательные&nbsp;<span class="data__to-fill"> для заполнения</span>&nbsp;поля</p>
               </div>
             </div>
@@ -259,24 +259,26 @@
       </div>
     </footer>
     <div class="popup">
-      <div class="popup__error-wrapper">
-        <div class="popup__container">
-          <p class="popup__title data__popup-title">Что-то пошло не&nbsp;так!</p>
-          <p class="popup__message data__popup-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        </div>
-        <div class="popup__button-background submit">
-          <button class="popup__button submit__button data__popup-button" type="button">Ок</button>
+      <div class="popup__error">
+        <div class="popup__error-wrapper">
+          <div class="popup__container">
+            <p class="popup__title data__popup-title">Что-то пошло не&nbsp;так!</p>
+            <p class="popup__message data__popup-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <div class="popup__button-background submit">
+            <button class="popup__button submit__button data__popup-button" type="button">Ок</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="popup__send-wrapper">
-        <div class="popup__container">
-          <p class="popup__title data__popup-title">Ваша заявка отправлена</p>
-          <p class="popup__message data__popup-message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
-        </div>
-        <div class="popup__button-close-background submit">
-          <button class="popup__button popup__button-close submit__button data__popup-button" type="button">Закрыть окно</button>
+      <div class="popup__send">
+        <div class="popup__send-wrapper">
+          <div class="popup__container">
+            <p class="popup__title data__popup-title">Ваша заявка отправлена</p>
+            <p class="popup__message data__popup-message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
+          </div>
+          <div class="popup__button-close-background submit">
+            <button class="popup__button popup__button-close submit__button data__popup-button" type="button">Закрыть окно</button>
+          </div>
         </div>
       </div>
     </div>
