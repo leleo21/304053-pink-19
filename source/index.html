@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+    <script> document.createElement( "picture" );</script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display: none;">
@@ -36,8 +38,8 @@
         </div>
       </div>
     </header>
-    <main class="page-main container data">
-      <div class="main-promo">
+    <main class="page-main data">
+      <div class="main-promo container">
         <div class="main-promo__page-photo main-promo__page-photo-hand">
           <div class="container__content">
             <div class="main-promo__wrapper">
@@ -70,7 +72,7 @@
           </div>
         </div>
       </div>
-      <section class="advantages data">
+      <section class="advantages data container">
         <div class="container__content">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages__background-wrapper">
@@ -135,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="research">
+      <section class="research container">
         <div class="container__content">
           <h2 class="visually-hidden">Исследование</h2>
           <div class="research__wrapper data">
@@ -151,7 +153,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews container">
         <div class="container__content">
           <div class="reviews__wrapper">
             <h2 class="visually-hidden">Отзывы</h2>
@@ -179,7 +181,7 @@
           </div>
         </div>
       </section>
-      <section class="filter">
+      <section class="filter container">
         <div class="filter__wrapper">
           <h2 class="visually-hidden">Фильтр</h2>
           <table class="filter__list container__content data">
