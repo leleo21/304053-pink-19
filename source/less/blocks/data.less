@@ -690,13 +690,15 @@
   .data__field {
     display: flex;
     margin: 0;
-    margin-left: auto;
-    width: 308px;
+    text-align: none;
+    width: 318px;
     min-height: 20px;
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
+    padding-left: 5px;
+    padding-top: 20px;
   }
 
   .data__mark {
@@ -704,7 +706,10 @@
   }
 
   .data__to-fill {
-    display: block;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
   }
 
   .data__fill-form {
