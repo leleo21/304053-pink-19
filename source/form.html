@@ -34,10 +34,10 @@
       </div>
     </header>
     <main>
-      <div class="contest container">
+      <section class="contest container">
         <div class="contest__page-photo">
           <div class="contest__title-wrapper">
-            <div class="contest__background-wrapper">
+            <div class="contest__background-wrapper data">
               <h1 class="contest__title data__h1-title-style container__wrapper">Конкурс на самое безбашенное путешествие&nbsp;с&nbsp;Пинк</h1>
             </div>
             <div class="contest__description-wrapper data">
@@ -48,7 +48,8 @@
         <form class="form container__wrapper" action="https://echo.htmlacademy.ru" method="post">
           <div class="contest">
             <div class="contest__wrapper">
-              <div class="form__personal-data contest__item personal">
+              <section class="form__personal-data contest__item personal">
+                <h2 class="visually-hidden">Ваши персональные данные</h2>
                 <div class="form__personal-wrapper form__content">
                   <div class="personal__data-wrapper">
                     <div class="personal__wrapper data">
@@ -65,8 +66,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="form__user-achievments contest__item">
+              </section>
+              <section class="form__user-achievments contest__item">
+                <h2 class="visually-hidden">Ваши достижения</h2>
                 <div class="form__content">
                   <div class="form__achievments-wrapper">
                     <div class="form__achievments-border border">
@@ -148,8 +150,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="form__user-contacts contest__item">
+              </section>
+              <section class="form__user-contacts contest__item">
+                <h2 class="visually-hidden">Ваши контакты</h2>
                 <div class="form__content">
                   <div class="form__contacts-wrapper">
                     <div class="form__contacts-border border">
@@ -167,8 +170,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="form__user-app user-application contest__item">
+              </section>
+              <section class="form__user-app user-application contest__item">
+                <h2 class="visually-hidden">Ваше приложение</h2>
                 <div class="form__content-wrapper form__content">
                   <div class="form__user-app-wrapper">
                     <div class="form__user-app-border border">
@@ -214,8 +218,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="form__user-emotions emotions contest__item">
+              </section>
+              <section class="form__user-emotions emotions contest__item">
+                <h2 class="visually-hidden">Ваши впечатления</h2>
                 <div class="form__content">
                   <div class="form__emotions-wrapper">
                     <div class="form__emotions-border border data">
@@ -230,11 +235,11 @@
                   <button class="submit__form submit__button" type="submit">Отправить форму</button> <!--.popup__error - модальное окно ошибка; .popup__send - форма отправлена-->
                   <p class="data__field"><span class="data__mark">*</span> — обязательные&nbsp;<span class="data__to-fill"> для заполнения</span>&nbsp;поля</p>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
         </form>
-      </div>
+      </section>
     </main>
     <footer class="page-footer container">
       <div class="page-footer__wrapper">
@@ -245,17 +250,17 @@
         <ul class="page-footer__list social page-footer__item page-footer__item--social">
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__link--twitter social__link-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z"></path></svg>
+              <svg class="social__link-twitter social__link-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z"></path></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__link--facebook social__link-icon" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944"><path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"></path></svg>
+              <svg class="social__link-facebook social__link-icon" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944"><path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"></path></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__link--utube social__link-icon" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96"><path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"></path></svg>
+              <svg class="social__link-youtube social__link-icon" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96"><path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"></path></svg>
             </a>
           </li>
         </ul>
@@ -271,22 +276,22 @@
     <div class="popup">
       <div class="popup__error">
         <div class="popup__error-wrapper">
-          <div class="popup__container">
+          <div class="popup__container data">
             <p class="popup__title data__popup-title">Что-то пошло не&nbsp;так!</p>
             <p class="popup__message data__popup-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           </div>
-          <div class="popup__button-background submit">
+          <div class="popup__button-background submit data">
             <button class="popup__button submit__button data__popup-button" type="button">Ок</button>
           </div>
         </div>
       </div>
       <div class="popup__send">
         <div class="popup__send-wrapper">
-          <div class="popup__container">
+          <div class="popup__container data">
             <p class="popup__title data__popup-title">Ваша заявка отправлена</p>
             <p class="popup__message data__popup-message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
           </div>
-          <div class="popup__button-close-background submit">
+          <div class="popup__button-close-background submit data">
             <button class="popup__button popup__button-close submit__button data__popup-button" type="button">Закрыть окно</button>
           </div>
         </div>

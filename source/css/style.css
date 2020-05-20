@@ -765,13 +765,13 @@ a {
   margin-bottom: 33px;
   min-height: 96px;
 }
-.advantages__item--mood {
+.advantages__item-mood {
   display: none;
 }
-.advantages__item--world {
+.advantages__item-world {
   display: none;
 }
-.advantages__item--friends {
+.advantages__item-friends {
   position: absolute;
   top: 515px;
   left: 85px;
@@ -830,13 +830,13 @@ a {
     padding: 0;
     padding-bottom: 18px;
   }
-  .advantages__item--mood {
+  .advantages__item-mood {
     display: none;
   }
-  .advantages__item--world {
+  .advantages__item-world {
     display: none;
   }
-  .advantages__item--friends {
+  .advantages__item-friends {
     position: absolute;
     top: 5px;
     left: 20px;
@@ -961,13 +961,13 @@ a {
     margin: 0;
     padding: 0;
   }
-  .advantages__item--mood {
+  .advantages__item-mood {
     display: block;
   }
-  .advantages__item--world {
+  .advantages__item-world {
     display: block;
   }
-  .advantages__item--friends {
+  .advantages__item-friends {
     display: block;
     position: static;
     margin: 0;
@@ -1275,7 +1275,7 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
-.filter__toggle--active {
+.reviews__toggle--active {
   background-color: #ffffff;
   opacity: 1;
   border: 3px solid #283645;
@@ -1758,17 +1758,17 @@ a {
 .social__link-icon:active {
   fill: rgba(210, 40, 86, 0.3);
 }
-.social__link--twitter {
+.social__link-twitter {
   position: absolute;
   top: 17px;
   left: 16px;
 }
-.social__link--facebook {
+.social__link-facebook {
   position: absolute;
   top: 13px;
   left: 18px;
 }
-.social__link--utube {
+.social__link-youtube {
   position: absolute;
   top: 15px;
   left: 16px;
@@ -1803,17 +1803,17 @@ a {
   .social__link-icon:active {
     fill: rgba(210, 40, 86, 0.3);
   }
-  .social__link--twitter {
+  .social__link-twitter {
     position: absolute;
     top: 17px;
     left: 16px;
   }
-  .social__link--facebook {
+  .social__link-facebook {
     position: absolute;
     top: 13px;
     left: 18px;
   }
-  .social__link--utube {
+  .social__link-youtube {
     position: absolute;
     top: 15px;
     left: 16px;
@@ -1847,17 +1847,17 @@ a {
   .social__link-icon:active {
     fill: rgba(210, 40, 86, 0.3);
   }
-  .social__link--twitter {
+  .social__link-twitter {
     position: absolute;
     top: 17px;
     left: 16px;
   }
-  .social__link--facebook {
+  .social__link-facebook {
     position: absolute;
     top: 13px;
     left: 18px;
   }
-  .social__link--utube {
+  .social__link-youtube {
     position: absolute;
     top: 15px;
     left: 16px;
