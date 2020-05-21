@@ -1,23 +1,46 @@
 .container {
-  width: 320px;
+  //width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
-  outline: 2px solid red;
+}
+
+.container__wrapper {
+  width: 100%;
+  min-height: 10px;
+  margin: 0 auto;
 }
 
 .container__content {
   width: 276px;
   margin: 0 auto;
   padding: 0;
+  outline: 2px solid blue;
+}
+
+.container__content-main {
+  width: 276px;
 }
 
 @media (min-width: @tablet-width) {
   .container {
-    width: 660px;
+    //width: 660px;
+    width: 100%;
+  }
+
+  .container__wrapper {
+    width: 100%;
+    min-height: 110px;
+    margin: 0 auto;
   }
 
   .container__content {
     width: 616px;
+    margin: 0 auto;
+  }
+
+  .container__content-main {
+    width: auto;
   }
 }
 
@@ -38,6 +61,10 @@
   }
 
   .container__content {
+    width: 960px;
+  }
+
+  .container__content-main {
     width: 960px;
   }
 }
