@@ -1,3 +1,19 @@
+.page-header--hide-menu .main-nav {
+  display: none;
+}
+
+.page-header--hide-menu .page-header__toggle {
+  display: block;
+}
+
+.page-header__toggle-icon--close {
+  display: none;
+}
+
+.page-header__toggle-icon--open {
+  display: block;
+}
+
 .page-header__logo-wrapper {
   display: flex;
   justify-content: space-between;
@@ -50,9 +66,6 @@
 
 .page-header__toggle {
   display: none;
-  position: absolute;
-  top: 20px;
-  right: 20px;
   width: 25px;
   height: 26px;
   margin: 0;
@@ -64,9 +77,19 @@
   cursor: pointer;
 }
 
+.page-header__toggle-icon--open {
+  position: relative;
+  top: -10px;
+  right: -235px;
+}
+
+.page-header__toggle-icon--close {
+  position: relative;
+  top: -10px;
+  right: -260px;
+}
+
 .page-header__toggle-icon {
-  width: auto;
-  height: auto;
   fill: #ffffff;
 
   &:hover {
@@ -135,15 +158,36 @@
     display: none;
   }
 
-  .page-header__toggle {
-    top: 42px;
-    right: 20px;
-    width: 25px;
-    height: 26px;
+  .page-header__toggle-icon--open {
+    position: relative;
+    top: 1px;
+    right: -570px;
+  }
+
+  .page-header__toggle-icon--close {
+    position: relative;
+    top: 2px;
+    right: -600px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header--hide-menu .main-nav {
+    display: block;
+  }
+
+  .page-header--hide-menu .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__toggle-icon--close {
+    display: none;
+  }
+
+  .page-header__toggle-icon--open {
+    display: none;
+  }
+
   .page-header {
     position: absolute;
     top: 1px;
