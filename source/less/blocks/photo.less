@@ -305,23 +305,29 @@
 @media (min-width: @desktop-width) {
   .photo__link {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
 
   .photo__panorama-img {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
     height: 506px;
+    width: 1200px;
+  }
+
+  .photo__best-photo-container {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
   }
 
   .photo__best-photo-wrapper {
     position: absolute;
     display: block;
     top: 53px;
-    right: 130px;
+    right: 20px;
     background-color: #d22856;
     width: 140px;
     height: 37px;
@@ -329,6 +335,7 @@
     padding-top: 5px;
     padding-left: 18px;
     margin: 0;
+    z-index: 100;
   }
 
   .photo__best-photo {
