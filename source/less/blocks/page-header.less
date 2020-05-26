@@ -56,6 +56,10 @@
   top: 19px;
   left: 1px;
   fill: #ffffff;
+}
+
+.page-header__logo-icon {
+  fill: #ffffff;
 
   &:hover {
     fill: #d22856;
@@ -67,6 +71,17 @@
 
   &:active {
     fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.page-header__logo-active {
+  &:hover {
+    fill: #ffffff;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: #ffffff;
   }
 }
 
@@ -130,18 +145,6 @@
     top: 25px;
     left: 1px;
     fill: #ffffff;
-
-    &:hover {
-      fill: #d22856;
-    }
-
-    &:focus {
-      fill: #d22856;
-    }
-
-    &:active {
-      fill: rgba(255, 255, 255, 0.3);
-    }
   }
 
   .page-header__logo-mobile {
@@ -221,18 +224,6 @@
     top: 25px;
     left: -60px;
     fill: #ffffff;
-
-    &:hover {
-      fill: #d22856;
-    }
-
-    &:focus {
-      fill: #d22856;
-    }
-
-    &:active {
-      fill: rgba(255, 255, 255, 0.3);
-    }
   }
 
   .page-header__logo-tablet {
